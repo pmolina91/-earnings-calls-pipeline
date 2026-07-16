@@ -16,8 +16,16 @@ with sync_playwright() as pw:
     time.sleep(6)
     page.screenshot(path='work/shots/2_depois.png', full_page=True)
     body = page.inner_text('body')[:3000]
-    open('work/shots/resultado.txt','w').write('ACOES: ' + ', '.join(log) + '\n\nPAGINA FINAL:\n' + body)
-    print('ACOES:', log)
     ok = any(k in body.lower() for k in ['confirm', 'registrado', 'aprovada', 'inscri', 'adicionar ao calend', 'you are registered', 'e-mail de confirma'])
+    # sanitizar identidade antes de qualquer saída que vá para repo público
+    red = body
+    for v in [os.environ.get('REG_NAME',''), os.environ.get('REG_EMAIL',''), os.environ.get('REG_COMPANY','')]:
+        if v: red = red.replace(v, '***')
+        if v and ' ' in v:
+            for parte in v.split():
+                red = red.replace(parte, '***')
+    open('work/shots/resultado.txt','w').write(
+        'ACOES: ' + ', '.join(log) + f'\nCONFIRMACAO_DETECTADA: {ok}\nURL_FINAL: ' + page.url + '\n\nPAGINA FINAL (sanitizada):\n' + red)
+    print('ACOES:', log)
     print('CONFIRMACAO_DETECTADA:', ok)
     b.close()
