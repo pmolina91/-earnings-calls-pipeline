@@ -1,0 +1,44 @@
+ACOES: fill:first_name, fill:last_name, fill:email, submit:NAO_ENCONTRADO
+CONFIRMACAO_DETECTADA: True
+URL_FINAL: https://mzgroup.zoom.us/webinar/register/WN_0povELVgTfaspPYt2I56sQ#/registration
+
+PAGINA FINAL (sanitizada):
+Ir para o conteúdo principal
+Visão geral da acessibilidade
+Suporte
+Português 
+TIM | 2Q26 Results Conference
+Data e hora
+28 jul. 2026 14:00 em 
+Horário Universal (UTC)
+Descrição
+2Q26 Earnings Results Conference
+Inscrição no Webinar
+Nome*
+Sobrenome*
+Endereço de E-mail*
+Phone*
+Company*
+Title*
+Pressione Tab para obter mais informações
+Sell side
+Buy side
+Investor
+Student
+Journalist
+Individual
+Others
+In compliance with Law 13.709/2018 (LGPD), we inform you that the data collected in this online event will be used for: registration in the list of participants of the event; issuance of certificate of participation.*
+Pressione Tab para obter mais informações
+I am aware of and accept the data processing as informed. If you have any questions, I will consult the terms of use and data privacy contained on the IR website and I will contact you through the Company's Talk to IR.
+
+As informações fornecidas durante a inscrição serão compartilhadas com o proprietário da conta e o anfitrião e podem ser usadas e compartilhadas por eles de acordo com a Termos e os Política de Privacidade deles.
+
+Inscrição
+
+Copyright ©2026 Zoom Video Communications, Inc. Todos os direitos reservados.
+Políticas legais e de privacidade Do Not Sell My Personal Information Preferências de cookies
+
+O Zoom usa cookies e tecnologias similares, como descrito na nossa cookie statementdeclaração de cookies. Você pode gerenciar suas configurações de cookies ou exercer seus direitos relacionados a cookies através das nossas Configurações de Cookies. Declaração de Privacidade
+
+Configurações de Cookie
