@@ -16,6 +16,16 @@ jobs:
           F=$(git diff --name-only HEAD~1 HEAD -- 'tests/*.json' 2>/dev/null | head -1 || true); [ -z "$F" ] && F=$(git log -1 --name-only --pretty=format: -- tests/ | grep json | head -1)
           echo "file=$F" >> $GITHUB_OUTPUT
           python3 -c "import json;print('mode='+json.load(open('$F')).get('mode',''))" >> $GITHUB_OUTPUT
+      - name: debug detecção
+        run: |
+          echo "job=register file=${{ steps.c.outputs.file }} mode=${{ steps.c.outputs.mode }} sha=$GITHUB_SHA" > /tmp/dbg.txt
+          git log --oneline -3 >> /tmp/dbg.txt
+          git diff --name-only HEAD~1 HEAD >> /tmp/dbg.txt 2>&1 || echo "diff falhou" >> /tmp/dbg.txt
+          mkdir -p logs
+          cp /tmp/dbg.txt logs/DEBUG_register_${{ github.run_id }}.txt
+          git config user.name earnings-bot; git config user.email bot@users.noreply.github.com
+          git pull -q --rebase || true
+          git add logs/ && git commit -m "debug register ${{ github.run_id }}" -q && git push -q || true
       - name: deps
         if: steps.c.outputs.mode == 'register'
         run: pip install -q playwright && playwright install --with-deps chromium
@@ -44,6 +54,16 @@ jobs:
           F=$(git diff --name-only HEAD~1 HEAD -- 'tests/*.json' 2>/dev/null | head -1 || true); [ -z "$F" ] && F=$(git log -1 --name-only --pretty=format: -- tests/ | grep json | head -1)
           echo "file=$F" >> $GITHUB_OUTPUT
           python3 -c "import json;print('mode='+json.load(open('$F')).get('mode',''))" >> $GITHUB_OUTPUT
+      - name: debug detecção
+        run: |
+          echo "job=replay file=${{ steps.c.outputs.file }} mode=${{ steps.c.outputs.mode }} sha=$GITHUB_SHA" > /tmp/dbg.txt
+          git log --oneline -3 >> /tmp/dbg.txt
+          git diff --name-only HEAD~1 HEAD >> /tmp/dbg.txt 2>&1 || echo "diff falhou" >> /tmp/dbg.txt
+          mkdir -p logs
+          cp /tmp/dbg.txt logs/DEBUG_replay_${{ github.run_id }}.txt
+          git config user.name earnings-bot; git config user.email bot@users.noreply.github.com
+          git pull -q --rebase || true
+          git add logs/ && git commit -m "debug replay ${{ github.run_id }}" -q && git push -q || true
       - name: deps
         if: steps.c.outputs.mode == 'replay'
         run: |
