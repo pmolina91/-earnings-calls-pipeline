@@ -1,0 +1,85 @@
+name: capture-earnings-call
+# Disparo: push de um job spec em jobs/*.json (o "cérebro" na nuvem do Claude faz o push).
+# O job acorda, valida o horário, espera até T-10min, registra no webcast, grava, transcreve
+# em blocos e publica no Notion ao vivo; no fim, transcrição final + áudio como artifact.
+on:
+  push:
+    paths: ['jobs/*.json']
+  workflow_dispatch:
+    inputs:
+      job_file:
+        description: 'caminho do job spec (jobs/XXXX.json)'
+        required: true
+
+concurrency:
+  group: capture-${{ github.sha }}
+  cancel-in-progress: false
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355  # < 6h (teto do GitHub)
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Identificar job spec
+        id: spec
+        run: |
+          if [ -n "${{ github.event.inputs.job_file }}" ]; then
+            echo "file=${{ github.event.inputs.job_file }}" >> $GITHUB_OUTPUT
+          else
+            F=$(git diff --name-only HEAD~1 HEAD -- 'jobs/*.json' | head -1)
+            [ -z "$F" ] && F=$(ls -t jobs/*.json | head -1)
+            echo "file=$F" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Validar janela de tempo (só roda se o call for nas próximas 6h)
+        id: gate
+        run: python3 scripts/gate.py "${{ steps.spec.outputs.file }}"
+
+      - name: Instalar dependências
+        if: steps.gate.outputs.run == 'yes'
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg pulseaudio
+          pip install -q faster-whisper playwright requests
+          playwright install --with-deps chromium
+          # modelo whisper small int8 (fonte git, ~460MB, rápida)
+          python3 scripts/get_model.py
+
+      - name: Esperar até T-10min, entrar no webcast e gravar
+        if: steps.gate.outputs.run == 'yes'
+        env:
+          REG_NAME: ${{ secrets.REG_NAME }}
+          REG_EMAIL: ${{ secrets.REG_EMAIL }}
+          REG_COMPANY: ${{ secrets.REG_COMPANY }}
+        run: python3 scripts/capture.py "${{ steps.spec.outputs.file }}"
+
+      - name: Transcrição ao vivo + publicação incremental no Notion
+        if: steps.gate.outputs.run == 'yes'
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+        run: python3 scripts/live_loop.py "${{ steps.spec.outputs.file }}" &
+
+      - name: Aguardar fim da gravação
+        if: steps.gate.outputs.run == 'yes'
+        run: python3 scripts/wait_end.py
+
+      - name: Transcrição final + publicação no Notion
+        if: steps.gate.outputs.run == 'yes'
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+        run: python3 scripts/finalize.py "${{ steps.spec.outputs.file }}"
+
+      - name: Commit da transcrição no repo
+        if: steps.gate.outputs.run == 'yes'
+        run: |
+          git config user.name "earnings-bot"; git config user.email "bot@users.noreply.github.com"
+          git add transcripts/ && git commit -m "transcript: $(basename ${{ steps.spec.outputs.file }} .json)" && git push || echo "nada a commitar"
+
+      - name: Upload do áudio (artifact, 90 dias)
+        if: always() && steps.gate.outputs.run == 'yes'
+        uses: actions/upload-artifact@v4
+        with:
+          name: audio-${{ github.run_id }}
+          path: work/audio/
+          retention-days: 90
