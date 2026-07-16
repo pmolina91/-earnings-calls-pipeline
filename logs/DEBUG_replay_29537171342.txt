@@ -1,0 +1,6 @@
+job=replay file=tests/replay-tim-1t26.json mode=replay sha=b40b83b23b3301d876b7f4ebd0760664ea6aa8aa
+b40b83b teste replay via RSS (runner resolve mp3)
+2b1ddec debug register 29536090986
+scripts/__pycache__/test_replay.cpython-311.pyc
+scripts/test_replay.py
+tests/replay-tim-1t26.json
