@@ -15,6 +15,9 @@ concurrency:
   group: capture-${{ github.sha }}
   cancel-in-progress: false
 
+permissions:
+  contents: write
+
 jobs:
   capture:
     runs-on: ubuntu-latest

@@ -2,6 +2,9 @@ name: dry-run-tests
 on:
   push:
     paths: ['tests/*.json']
+permissions:
+  contents: write
+
 jobs:
   register:
     runs-on: ubuntu-latest
