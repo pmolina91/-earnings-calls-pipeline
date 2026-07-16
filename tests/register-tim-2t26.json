@@ -1,5 +1,6 @@
 {
-  "mode": "register",
-  "label": "TIM_2T26_zoom_registro",
-  "register_url": "https://mzgroup.zoom.us/webinar/register/WN_0povELVgTfaspPYt2I56sQ#/registration"
+ "mode": "register",
+ "label": "TIM_2T26_zoom_registro",
+ "register_url": "https://mzgroup.zoom.us/webinar/register/WN_0povELVgTfaspPYt2I56sQ#/registration",
+ "rev": 2
 }
