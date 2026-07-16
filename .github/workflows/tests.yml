@@ -4,15 +4,16 @@ on:
     paths: ['tests/*.json']
 jobs:
   register:
-    if: true
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
       - name: check spec
         id: c
         run: |
-          F=$(git diff --name-only HEAD~1 HEAD -- 'tests/*.json' | head -1); [ -z "$F" ] && F=$(ls -t tests/*.json | head -1)
+          F=$(git diff --name-only HEAD~1 HEAD -- 'tests/*.json' 2>/dev/null | head -1 || true); [ -z "$F" ] && F=$(git log -1 --name-only --pretty=format: -- tests/ | grep json | head -1)
           echo "file=$F" >> $GITHUB_OUTPUT
           python3 -c "import json;print('mode='+json.load(open('$F')).get('mode',''))" >> $GITHUB_OUTPUT
       - name: deps
@@ -35,10 +36,12 @@ jobs:
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
       - name: check spec
         id: c
         run: |
-          F=$(git diff --name-only HEAD~1 HEAD -- 'tests/*.json' | head -1); [ -z "$F" ] && F=$(ls -t tests/*.json | head -1)
+          F=$(git diff --name-only HEAD~1 HEAD -- 'tests/*.json' 2>/dev/null | head -1 || true); [ -z "$F" ] && F=$(git log -1 --name-only --pretty=format: -- tests/ | grep json | head -1)
           echo "file=$F" >> $GITHUB_OUTPUT
           python3 -c "import json;print('mode='+json.load(open('$F')).get('mode',''))" >> $GITHUB_OUTPUT
       - name: deps

@@ -21,6 +21,8 @@ jobs:
     timeout-minutes: 355  # < 6h (teto do GitHub)
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
 
       - name: Identificar job spec
         id: spec
@@ -28,8 +30,8 @@ jobs:
           if [ -n "${{ github.event.inputs.job_file }}" ]; then
             echo "file=${{ github.event.inputs.job_file }}" >> $GITHUB_OUTPUT
           else
-            F=$(git diff --name-only HEAD~1 HEAD -- 'jobs/*.json' | head -1)
-            [ -z "$F" ] && F=$(ls -t jobs/*.json | head -1)
+            F=$(git diff --name-only HEAD~1 HEAD -- 'jobs/*.json' 2>/dev/null | head -1 || true)
+            [ -z "$F" ] && F=$(git log -1 --name-only --pretty=format: -- jobs/ | grep json | head -1)
             echo "file=$F" >> $GITHUB_OUTPUT
           fi
 
