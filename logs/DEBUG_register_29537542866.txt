@@ -1,0 +1,7 @@
+job=register file=tests/register-tim-2t26.json mode=register sha=b8f5a46cdc116669cd2672cfda2aea84c287e602
+b8f5a46 teste registro publica resultado sanitizado no repo
+6f2d5ff teste de transcricao
+.github/workflows/tests.yml
+scripts/__pycache__/test_register.cpython-311.pyc
+scripts/test_register.py
+tests/register-tim-2t26.json
