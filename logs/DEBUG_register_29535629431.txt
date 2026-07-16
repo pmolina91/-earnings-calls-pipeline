@@ -1,0 +1,4 @@
+job=register file=tests/replay-tim-1t26.json mode=replay sha=fc3eae9de1569ed43f10c336483badd6d657ed31
+fc3eae9 re-teste replay rev5
+8444b48 fix: permissions contents:write para workflows commitarem resultados
+tests/replay-tim-1t26.json
