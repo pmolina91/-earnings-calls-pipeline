@@ -12,6 +12,15 @@ with sync_playwright() as pw:
     page.goto(url, timeout=90000, wait_until='domcontentloaded')
     time.sleep(6)
     page.screenshot(path='work/shots/1_antes.png', full_page=True)
+    # dump da estrutura do formulário (sem dados pessoais)
+    form_dump = page.evaluate('''() => {
+      const els = [...document.querySelectorAll('input, select, textarea, button, [role=checkbox], [role=combobox], [role=radio]')];
+      return els.map(e => ({tag: e.tagName, type: e.type||'', id: e.id||'', name: e.name||'',
+        placeholder: e.placeholder||'', aria: e.getAttribute('aria-label')||'', role: e.getAttribute('role')||'',
+        text: (e.tagName==='BUTTON'||e.tagName==='SELECT') ? (e.innerText||'').slice(0,60) : ''}));
+    }''')
+    import json as _json
+    open('work/shots/form_dump.json','w').write(_json.dumps(form_dump, ensure_ascii=False, indent=1))
     log = try_register(page, os.environ['REG_NAME'], os.environ['REG_EMAIL'], os.environ['REG_COMPANY'])
     time.sleep(6)
     page.screenshot(path='work/shots/2_depois.png', full_page=True)

@@ -43,6 +43,7 @@ jobs:
         if: always() && steps.c.outputs.mode == 'register'
         run: |
           mkdir -p logs && cp scripts/work/shots/resultado.txt logs/REGISTRO_${{ github.run_id }}.txt 2>/dev/null || true
+          cp scripts/work/shots/form_dump.json logs/FORM_${{ github.run_id }}.json 2>/dev/null || true
           git config user.name earnings-bot; git config user.email bot@users.noreply.github.com
           git pull -q --rebase || true
           git add logs/ && git commit -q -m "resultado registro" && git push -q || true
