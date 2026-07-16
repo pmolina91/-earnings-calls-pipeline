@@ -1,0 +1,4 @@
+job=register file=tests/register-tim-2t26.json mode=register sha=70fbf00e852b76c4c8de53eecf72f0c7ea22516f
+70fbf00 re-teste registro rev3
+49c86dd log de erro replay
+tests/register-tim-2t26.json
