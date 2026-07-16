@@ -1,7 +1,7 @@
 {
  "mode": "replay",
- "label": "TIM_1T26_replay",
- "replay_url": "https://youtu.be/c6XFDz1To8g",
- "limit_seconds": 900,
- "rev": 5
+ "label": "podcast_pt_pipeline",
+ "rss_url": "https://www.omnycontent.com/d/playlist/651a251e-06e1-47e0-9336-ac5a00f41628/fc243b66-f34c-4656-9042-acd400edcca5/d4c8e398-446c-447a-ad41-acd400edccc1/podcast.rss",
+ "limit_seconds": 600,
+ "rev": 6
 }

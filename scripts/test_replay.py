@@ -10,6 +10,18 @@ def main():
     t0=time.time()
     url = spec.get('replay_url','')
     direct = spec.get('direct_audio_url','')
+    rss = spec.get('rss_url','')
+    if rss and not direct:
+        import urllib.request, re, gzip, io
+        req = urllib.request.Request(rss, headers={'User-Agent':'Mozilla/5.0','Accept-Encoding':'gzip'})
+        raw = urllib.request.urlopen(req, timeout=60).read()
+        try: raw = gzip.decompress(raw)
+        except Exception: pass
+        xml = raw.decode('utf-8', 'ignore')
+        m2 = re.search(r'<enclosure[^>]*url="([^"]+)"', xml)
+        if not m2: raise RuntimeError('nenhum enclosure no RSS')
+        direct = m2.group(1).replace('&amp;','&')
+        print('mp3 do RSS:', direct[:120])
     if direct:
         subprocess.run(['ffmpeg','-loglevel','error','-i',direct,'-ac','1','-ar','16000',
                         '-t',str(spec.get('limit_seconds',900)),'work/cut.wav'], check=True)
