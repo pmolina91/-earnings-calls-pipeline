@@ -1,0 +1,57 @@
+name: dry-run-tests
+on:
+  push:
+    paths: ['tests/*.json']
+jobs:
+  register:
+    if: true
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: check spec
+        id: c
+        run: |
+          F=$(git diff --name-only HEAD~1 HEAD -- 'tests/*.json' | head -1); [ -z "$F" ] && F=$(ls -t tests/*.json | head -1)
+          echo "file=$F" >> $GITHUB_OUTPUT
+          python3 -c "import json;print('mode='+json.load(open('$F')).get('mode',''))" >> $GITHUB_OUTPUT
+      - name: deps
+        if: steps.c.outputs.mode == 'register'
+        run: pip install -q playwright && playwright install --with-deps chromium
+      - name: run register test
+        if: steps.c.outputs.mode == 'register'
+        env:
+          REG_NAME: ${{ secrets.REG_NAME }}
+          REG_EMAIL: ${{ secrets.REG_EMAIL }}
+          REG_COMPANY: ${{ secrets.REG_COMPANY }}
+        run: cd scripts && python3 test_register.py "../${{ steps.c.outputs.file }}"
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.c.outputs.mode == 'register'
+        with:
+          name: register-shots-${{ github.run_id }}
+          path: scripts/work/shots/
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: check spec
+        id: c
+        run: |
+          F=$(git diff --name-only HEAD~1 HEAD -- 'tests/*.json' | head -1); [ -z "$F" ] && F=$(ls -t tests/*.json | head -1)
+          echo "file=$F" >> $GITHUB_OUTPUT
+          python3 -c "import json;print('mode='+json.load(open('$F')).get('mode',''))" >> $GITHUB_OUTPUT
+      - name: deps
+        if: steps.c.outputs.mode == 'replay'
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install -q faster-whisper yt-dlp
+          python3 scripts/get_model.py
+      - name: run replay test
+        if: steps.c.outputs.mode == 'replay'
+        run: python3 scripts/test_replay.py "${{ steps.c.outputs.file }}"
+      - name: commit transcript
+        if: steps.c.outputs.mode == 'replay'
+        run: |
+          git config user.name earnings-bot; git config user.email bot@users.noreply.github.com
+          git pull -q; git add transcripts/ && git commit -m "teste de transcricao" && git push || echo nada

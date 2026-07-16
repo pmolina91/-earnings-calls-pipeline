@@ -5,17 +5,22 @@ from faster_whisper import WhisperModel
 import notion_api
 
 spec = json.load(open(sys.argv[1]))
+NOTION_ON = bool(os.environ.get('NOTION_TOKEN')) and spec.get('notion_database_id','').lower() not in ('', 'sera_preenchido', 'none', 'skip')
+if not NOTION_ON:
+    print('[live] NOTION desativado (sem token ou database) — transcrevendo sem publicar')
 page_id_file = 'work/notion_page_id'
 model = WhisperModel('models/faster-whisper-small', device='cpu', compute_type='int8')
 print('[live] modelo ok')
 
 # cria a página do call no Notion (com marcação LIVE)
-title = f"Call {spec['quarter']} - {spec['ticker_short']} [LIVE - transcrição automática em andamento]"
-page_id = notion_api.create_call_page(spec['notion_database_id'], title,
-                                      spec['quarter'], spec['call_datetime_utc'][:10])
-open(page_id_file,'w').write(page_id)
-notion_api.append_text(page_id, f"Transcrição ao vivo iniciada. Fonte: {spec['webcast_url']}",
-                       heading='Transcrição (ao vivo)')
+page_id = None
+if NOTION_ON:
+    title = f"Call {spec['quarter']} - {spec['ticker_short']} [LIVE - transcrição automática em andamento]"
+    page_id = notion_api.create_call_page(spec['notion_database_id'], title,
+                                          spec['quarter'], spec['call_datetime_utc'][:10])
+    open(page_id_file,'w').write(page_id)
+    notion_api.append_text(page_id, f"Transcrição ao vivo iniciada. Fonte: {spec['webcast_url']}",
+                           heading='Transcrição (ao vivo)')
 
 done, empty_streak = set(), 0
 while True:
@@ -27,7 +32,8 @@ while True:
             segs,_ = model.transcribe(c, language='pt', vad_filter=True, beam_size=2)
             text = ' '.join(s.text.strip() for s in segs).strip()
             if text:
-                notion_api.append_text(page_id, text); empty_streak = 0
+                if NOTION_ON: notion_api.append_text(page_id, text)
+                empty_streak = 0
             else:
                 empty_streak += 1
             with open('work/transcript_live.txt','a') as f: f.write(text+'\n')

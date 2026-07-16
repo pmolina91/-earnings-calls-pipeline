@@ -21,11 +21,14 @@ final='\n'.join(lines)
 out=f"transcripts/{spec['ticker_short']}_{spec['quarter']}.md"
 os.makedirs('transcripts',exist_ok=True)
 open(out,'w').write(f"# {spec['ticker_short']} — Call {spec['quarter']}\n\n{final}\n")
-page_id=open('work/notion_page_id').read().strip()
-notion_api.append_text(page_id, final[:180000], heading='Transcrição final (consolidada, com timestamps)')
-# renomear título removendo [LIVE]
-import requests, os as _os
-requests.patch(f'https://api.notion.com/v1/pages/{page_id}',
-    headers={'Authorization':f"Bearer {_os.environ['NOTION_TOKEN']}",'Notion-Version':'2022-06-28','Content-Type':'application/json'},
-    json={'properties':{'Name':{'title':[{'text':{'content':f"Call {spec['quarter']} - {spec['ticker_short']}"}}]}}})
+import os as _os
+if _os.path.exists('work/notion_page_id') and _os.environ.get('NOTION_TOKEN'):
+    page_id=open('work/notion_page_id').read().strip()
+    notion_api.append_text(page_id, final[:180000], heading='Transcrição final (consolidada, com timestamps)')
+    import requests
+    requests.patch(f'https://api.notion.com/v1/pages/{page_id}',
+        headers={'Authorization':f"Bearer {_os.environ['NOTION_TOKEN']}",'Notion-Version':'2022-06-28','Content-Type':'application/json'},
+        json={'properties':{'Name':{'title':[{'text':{'content':f"Call {spec['quarter']} - {spec['ticker_short']}"}}]}}})
+else:
+    print('[final] Notion desativado — transcrição só no repo')
 print('final publicada:', out)
