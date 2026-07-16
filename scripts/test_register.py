@@ -21,11 +21,12 @@ with sync_playwright() as pw:
     }''')
     import json as _json
     open('work/shots/form_dump.json','w').write(_json.dumps(form_dump, ensure_ascii=False, indent=1))
-    log = try_register(page, os.environ['REG_NAME'], os.environ['REG_EMAIL'], os.environ['REG_COMPANY'])
+    log = try_register(page, os.environ['REG_NAME'], os.environ['REG_EMAIL'], os.environ['REG_COMPANY'], os.environ.get('REG_PHONE',''), os.environ.get('REG_TITLE_CATEGORY','Buy side'))
     time.sleep(6)
     page.screenshot(path='work/shots/2_depois.png', full_page=True)
     body = page.inner_text('body')[:3000]
-    ok = any(k in body.lower() for k in ['confirm', 'registrado', 'aprovada', 'inscri', 'adicionar ao calend', 'you are registered', 'e-mail de confirma'])
+    u = page.url
+    ok = ('success' in u.lower()) or any(k in body.lower() for k in ['inscrição confirmada', 'registro aprovado', 'you are registered', 'registration approved', 'e-mail de confirmação', 'adicionar ao calend', 'foi aprovada'])
     # sanitizar identidade antes de qualquer saída que vá para repo público
     red = body
     for v in [os.environ.get('REG_NAME',''), os.environ.get('REG_EMAIL',''), os.environ.get('REG_COMPANY','')]:

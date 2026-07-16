@@ -16,31 +16,14 @@ if wait > 0:
     print(f'esperando {wait/60:.0f}min até T-10min...'); time.sleep(wait)
 
 NAME, EMAIL, COMPANY = os.environ['REG_NAME'], os.environ['REG_EMAIL'], os.environ['REG_COMPANY']
+PHONE, TITLECAT = os.environ.get('REG_PHONE',''), os.environ.get('REG_TITLE_CATEGORY','Buy side')
+import sys as _sys; _sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from registration import try_register as _try_register
 MEDIA_RE = re.compile(r'\.(m3u8|mpd|mp3|aac)(\?|$)')
 stream_url = {}
 
 def try_register(page):
-    """Preenche formulários de registro comuns (nome/email/empresa) e entra."""
-    sels = {
-        'name':  ['input[name*=name i]','input[id*=name i]','input[placeholder*=nome i]','input[placeholder*=name i]','#join-name','input[aria-label*=name i]'],
-        'email': ['input[type=email]','input[name*=email i]','input[id*=email i]','input[placeholder*=mail i]'],
-        'company': ['input[name*=company i]','input[name*=empresa i]','input[id*=org i]','input[placeholder*=empresa i]','input[placeholder*=company i]'],
-    }
-    vals = {'name': NAME, 'email': EMAIL, 'company': COMPANY}
-    for field, cands in sels.items():
-        for s in cands:
-            try:
-                el = page.locator(s).first
-                if el.is_visible(timeout=1500): el.fill(vals[field]); break
-            except Exception: pass
-    for s in ['button[type=submit]','button:has-text("Join")','button:has-text("Entrar")',
-              'button:has-text("Register")','button:has-text("Registrar")','button:has-text("Acessar")',
-              'button:has-text("Assistir")','input[type=submit]']:
-        try:
-            el = page.locator(s).first
-            if el.is_visible(timeout=1500): el.click(); return True
-        except Exception: pass
-    return False
+    return _try_register(page, NAME, EMAIL, COMPANY, PHONE, TITLECAT)
 
 def record_hls(url):
     print('gravando via ffmpeg (stream direto):', url[:100])
