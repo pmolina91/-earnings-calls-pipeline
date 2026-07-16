@@ -53,6 +53,12 @@ jobs:
       - name: run replay test
         if: steps.c.outputs.mode == 'replay'
         run: python3 scripts/test_replay.py "${{ steps.c.outputs.file }}"
+      - name: publicar erro no repo
+        if: failure() && steps.c.outputs.mode == 'replay'
+        run: |
+          mkdir -p logs && cp work/error.txt logs/ERRO_replay_${{ github.run_id }}.txt 2>/dev/null || echo "sem error.txt" > logs/ERRO_replay_${{ github.run_id }}.txt
+          git config user.name earnings-bot; git config user.email bot@users.noreply.github.com
+          git pull -q; git add logs/ && git commit -m "log de erro replay" && git push || true
       - name: commit transcript
         if: steps.c.outputs.mode == 'replay'
         run: |
