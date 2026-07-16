@@ -1,0 +1,7 @@
+job=register file=tests/register-tim-2t26.json mode=register sha=20c35e9800a3d816e1b95f850e8907366a27b00d
+20c35e9 dump da estrutura do formulário Zoom (sem dados pessoais)
+7f61a13 resultado registro
+.github/workflows/tests.yml
+scripts/__pycache__/test_register.cpython-311.pyc
+scripts/test_register.py
+tests/register-tim-2t26.json
