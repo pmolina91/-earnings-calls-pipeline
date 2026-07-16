@@ -1,0 +1,422 @@
+{
+ "TIMS3": {
+  "ticker_short": "TIMS",
+  "notion_database_id": "a4639564ee8a4a5e9d5f628a677dbdbd",
+  "notion_collection_id": "8198e418-e32e-4731-a954-d0a37cce0eb4"
+ },
+ "VIVT3": {
+  "ticker_short": "VIVT",
+  "notion_database_id": "93e36ce639554db6943eca37ee22f420",
+  "notion_collection_id": "707c443f-3b89-4af7-898b-172a61759586"
+ },
+ "SANB11": {
+  "ticker_short": "SANB",
+  "notion_database_id": "be982e1e79b04eb9a9722e85675fe1ac",
+  "notion_collection_id": "70e095ea-858e-4c97-ab51-fe0ae3baf963"
+ },
+ "MOTV3": {
+  "ticker_short": "MOTV",
+  "notion_database_id": "d38de1d334b4439cb3e75de7d1f32e8d",
+  "notion_collection_id": "e92924d2-1881-4347-95ac-c813e0f1dfef"
+ },
+ "ABEV3": {
+  "ticker_short": "ABEV",
+  "notion_database_id": "ee0306a6237647d1b69817034333b1e2",
+  "notion_collection_id": "ea803513-f5e9-4d26-8b34-fc24299db78b"
+ },
+ "ECOR3": {
+  "ticker_short": "ECOR",
+  "notion_database_id": "4a6c7444c16945cd9159a94bcf97e166",
+  "notion_collection_id": "85d72484-8c6f-4089-a831-a2e57c59e03f"
+ },
+ "MULT3": {
+  "ticker_short": "MULT",
+  "notion_database_id": "6b713cf6e8534ec68ea4cfea6b424adf",
+  "notion_collection_id": "969eeed0-ec16-422b-bc79-8f3afec3c6c4"
+ },
+ "VALE3": {
+  "ticker_short": "VALE",
+  "notion_database_id": "ef2d98ee8b784e5a8a0bddb7000629e6",
+  "notion_collection_id": "23ecb9e9-3c8c-4c22-974f-ca528b9e6cd6"
+ },
+ "USIM5": {
+  "ticker_short": "USIM",
+  "notion_database_id": "b9f2ec0ba27c4356b594a8509ff95926",
+  "notion_collection_id": "09debd28-640a-4a4d-ade9-7529712c48cf"
+ },
+ "BBSE3": {
+  "ticker_short": "BBSE",
+  "notion_database_id": "51a0fd31e17f4c5e8b3338942f79140e",
+  "notion_collection_id": "1a23a9f6-8730-48b6-be1d-5916ee3e1949"
+ },
+ "ISAE4": {
+  "ticker_short": "ISAE",
+  "notion_database_id": "6728a692c38d4edc9d1080d07cc9bacf",
+  "notion_collection_id": "f9161c19-e4d2-458a-9570-f8965d49bcb4"
+ },
+ "PGMN3": {
+  "ticker_short": "PGMN",
+  "notion_database_id": "56a4c17de4c44dfea8b8248ceaedf970",
+  "notion_collection_id": "1d1da50d-6efc-4c48-8401-514d8665af31"
+ },
+ "CBAV3": {
+  "ticker_short": "CBAV",
+  "notion_database_id": "df98a3700fea4aef99324dc0aa0c12ed",
+  "notion_collection_id": "e8979ffb-046a-48b8-8072-f1d9f753058f"
+ },
+ "CEAB3": {
+  "ticker_short": "CEAB",
+  "notion_database_id": "b3d644edb1eb46418d6e96ade377adf1",
+  "notion_collection_id": "1a93531f-300b-4a99-b076-2ac01b35d809"
+ },
+ "GGBR4": {
+  "ticker_short": "GGBR",
+  "notion_database_id": "5b24a8ae859f488cb82e140e5fead637",
+  "notion_collection_id": "7908037a-1508-46a1-9a33-b28c2e36dffe"
+ },
+ "ITUB4": {
+  "ticker_short": "ITUB",
+  "notion_database_id": "1ffd93181b3649d38003857f1b02dc40",
+  "notion_collection_id": "207f9aeb-dddb-43d3-b597-0ddf32c2c7ee"
+ },
+ "PCAR3": {
+  "ticker_short": "PCAR",
+  "notion_database_id": "061bdb40f6154a67bf6ceb6afe027911",
+  "notion_collection_id": "33439317-50b6-423b-a696-f3ecb2326254"
+ },
+ "PRIO3": {
+  "ticker_short": "PRIO",
+  "notion_database_id": "22c71c31eed64117b299e04184056345",
+  "notion_collection_id": "104640c9-3282-47df-89fc-ef8ca08bed6a"
+ },
+ "CMIN3": {
+  "ticker_short": "CMIN",
+  "notion_database_id": "6dd4bdc59a27417f8ea2b251732f3872",
+  "notion_collection_id": "519b7ec7-725a-42db-b670-56f8441f96f9"
+ },
+ "CSNA3": {
+  "ticker_short": "CSNA",
+  "notion_database_id": "14fcc323af4c40a9be3d0671870b0b97",
+  "notion_collection_id": "1bdb9de7-e816-43f7-9719-b6b45219cda4"
+ },
+ "DXCO3": {
+  "ticker_short": "DXCO",
+  "notion_database_id": "1932a0c55c974388a15da16205857783",
+  "notion_collection_id": "8cd4ab6e-3b11-4663-b33d-e7b7c81aef95"
+ },
+ "KLBN11": {
+  "ticker_short": "KLBN",
+  "notion_database_id": "6dcc3bd14fa54ccf8ee5a507f11e5940",
+  "notion_collection_id": "1ac7313e-1d49-416d-9c55-981373271042"
+ },
+ "ALOS3": {
+  "ticker_short": "ALOS",
+  "notion_database_id": "914d0c87433047f5b8222cc1fb42760e",
+  "notion_collection_id": "efa00e92-2ed6-471c-8663-71b8964cf062"
+ },
+ "EZTC3": {
+  "ticker_short": "EZTC",
+  "notion_database_id": "6aa5ed0b446542f8949644c56a3a46cb",
+  "notion_collection_id": "021ef814-80b7-4dbf-8408-36c0bfdd040d"
+ },
+ "PETR4": {
+  "ticker_short": "PETR",
+  "notion_database_id": "7747990eec2d43c394cb7d606edbf5c3",
+  "notion_collection_id": "573296ea-2975-45f0-8a7f-18b1dbabdc94"
+ },
+ "PNVL3": {
+  "ticker_short": "PNVL",
+  "notion_database_id": "e3317c5178e6459488388232fcc346ff",
+  "notion_collection_id": "6cef1c3c-eecf-49a2-9d27-f92afe5027f5"
+ },
+ "CXSE3": {
+  "ticker_short": "CXSE",
+  "notion_database_id": "17ff75e0c0684fb3acca72af5b62990b",
+  "notion_collection_id": "d224446e-1487-456a-8105-fe0d3cbd14e5"
+ },
+ "BBAS3": {
+  "ticker_short": "BBAS",
+  "notion_database_id": "bf6db6cae2ce49fd8d11489493c0b9a6",
+  "notion_collection_id": "45250708-3da7-4552-bee5-a45b403910ce"
+ },
+ "EQTL3": {
+  "ticker_short": "EQTL",
+  "notion_database_id": "3e57e94c601143f8aa57d64e49f4a545",
+  "notion_collection_id": "0314c764-8990-4404-9aa0-68d8b2dcbe8c"
+ },
+ "GMAT3": {
+  "ticker_short": "GMAT",
+  "notion_database_id": "a6bcfff3c6134c66a21c0951f867d476",
+  "notion_collection_id": "d9350334-9c6a-4bf8-b682-072f8b33d9d2"
+ },
+ "MOVI3": {
+  "ticker_short": "MOVI",
+  "notion_database_id": "bd9164193aeb4ca2981b220ff37cff90",
+  "notion_collection_id": "232d6282-166a-4e96-94cc-5d96e68a926d"
+ },
+ "MRVE3": {
+  "ticker_short": "MRVE",
+  "notion_database_id": "4ed8a706b212495293a6157da792b491",
+  "notion_collection_id": "540b4b0e-e2ca-48e1-949b-1dc6fce96b11"
+ },
+ "UGPA3": {
+  "ticker_short": "UGPA",
+  "notion_database_id": "04d77ee24e7d4c6d9fd044f66ea0bc5e",
+  "notion_collection_id": "ba965bcc-ac44-4d5d-8059-754e5baefea0"
+ },
+ "VAMO3": {
+  "ticker_short": "VAMO",
+  "notion_database_id": "308726e21ca34f7cbe0cf4c2259ddb20",
+  "notion_collection_id": "3a61d8ab-f606-473a-aadd-50869d5024eb"
+ },
+ "CSAN3": {
+  "ticker_short": "CSAN",
+  "notion_database_id": "94b3ddb8329543a2a2f8db61f45d743d",
+  "notion_collection_id": "a80ac68f-e615-4057-b99c-0f15cb23771e"
+ },
+ "VBBR3": {
+  "ticker_short": "VBBR",
+  "notion_database_id": "fb836a5943ed4a698c799ce1d22963fb",
+  "notion_collection_id": "8915a1d0-d6ba-4ed9-b570-243d873c81fc"
+ },
+ "SUZB3": {
+  "ticker_short": "SUZB",
+  "notion_database_id": "f04a25f645604569993e25b9cf2844f0",
+  "notion_collection_id": "595a3b48-bab3-499b-8c1e-3db66e39ebfc"
+ },
+ "RADL3": {
+  "ticker_short": "RADL",
+  "notion_database_id": "91b3524bec804e788fc06e6d793f9095",
+  "notion_collection_id": "0159a902-5b4e-4b76-9b3d-04f779fd6f60"
+ },
+ "VULC3": {
+  "ticker_short": "VULC",
+  "notion_database_id": "8c54413915e34d16aab69f0b68075c02",
+  "notion_collection_id": "ce098a74-e29d-4705-a5bc-5533f5559341"
+ },
+ "AXIA3": {
+  "ticker_short": "AXIA",
+  "notion_database_id": "867a973add2c43cd9989f621b6de0a4d",
+  "notion_collection_id": "fdd5614c-c870-4d39-94ba-b681a50833f3"
+ },
+ "BBDC4": {
+  "ticker_short": "BBDC",
+  "notion_database_id": "e2af9a0f572f4ff8ad6786d27bb668d5",
+  "notion_collection_id": "01c5a993-9ddb-4c53-a53c-4301f07d9aa3"
+ },
+ "CPLE3": {
+  "ticker_short": "CPLE",
+  "notion_database_id": "31da8d2711544ad5a00ddd80c6d71696",
+  "notion_collection_id": "4c114f12-1693-4f7e-8d68-5e999277c960"
+ },
+ "SMFT3": {
+  "ticker_short": "SMFT",
+  "notion_database_id": "e13b775c4604402b93b13ac637243b3c",
+  "notion_collection_id": "492ed986-acd6-4448-8a1f-9ae722e18a11"
+ },
+ "TOTS3": {
+  "ticker_short": "TOTS",
+  "notion_database_id": "9b816edc782a4336b51672daf5bad568",
+  "notion_collection_id": "c0c254d0-5017-4177-93d5-bfa7fdced2ad"
+ },
+ "VIVA3": {
+  "ticker_short": "VIVA",
+  "notion_database_id": "f1bf2052487d412d8d79638eb9f3ee92",
+  "notion_collection_id": "a90b6c1c-c184-4af7-8b15-38d367f851d5"
+ },
+ "ALPA4": {
+  "ticker_short": "ALPA",
+  "notion_database_id": "778b1b2c208449c19db36d7976a27995",
+  "notion_collection_id": "6fc24074-1b41-40c7-8623-2a1c280b9d2c"
+ },
+ "ALUP11": {
+  "ticker_short": "ALUP",
+  "notion_database_id": "e8c0e1e9e7e141448a1f5de13e3e4c62",
+  "notion_collection_id": "0d30a6ad-1111-47ce-9f23-35e35a092b6f"
+ },
+ "ASAI3": {
+  "ticker_short": "ASAI",
+  "notion_database_id": "2bf34e95fbeb4639874d9a5869609971",
+  "notion_collection_id": "63b7e9cb-47e0-49f5-a3e6-a3bd780d79d6"
+ },
+ "AURE3": {
+  "ticker_short": "AURE",
+  "notion_database_id": "6f2365419902487ea03182ad8fab7860",
+  "notion_collection_id": "597400db-181b-4645-83d3-761ce31e3189"
+ },
+ "EGIE3": {
+  "ticker_short": "EGIE",
+  "notion_database_id": "a7348ad39da345f3914b55f0c6911305",
+  "notion_collection_id": "0837657e-270d-4a0a-8be0-fc70ab58d755"
+ },
+ "ENGI11": {
+  "ticker_short": "ENGI",
+  "notion_database_id": "96e386767ce5494da4ad0d132131cde9",
+  "notion_collection_id": "5beb86dc-3aa5-4386-b02e-18f4457c0de5"
+ },
+ "FLRY3": {
+  "ticker_short": "FLRY",
+  "notion_database_id": "6bbbb23dd0b9428dad19c5fcec41bd80",
+  "notion_collection_id": "16f43395-8c4f-46b6-bfd9-8d003713de44"
+ },
+ "HYPE3": {
+  "ticker_short": "HYPE",
+  "notion_database_id": "668df5275fdd4dd3b5d7280869766938",
+  "notion_collection_id": "8434c0d8-d2d4-44e1-96cf-17eadc0b53b1"
+ },
+ "LREN3": {
+  "ticker_short": "LREN",
+  "notion_database_id": "d22538ec721d4005b2999d86177a673e",
+  "notion_collection_id": "009d7265-2937-42d6-ae1f-94d3cf5858cf"
+ },
+ "MGLU3": {
+  "ticker_short": "MGLU",
+  "notion_database_id": "ee4ea82977304218b727c9efd37a0ad6",
+  "notion_collection_id": "11def122-099d-4f89-a145-3aa77f2bb6cc"
+ },
+ "RENT3": {
+  "ticker_short": "RENT",
+  "notion_database_id": "eb1715da84194161ac0c20d774f010f1",
+  "notion_collection_id": "9df598b0-ac75-43d7-ab2e-edb21c83642d"
+ },
+ "NATU3": {
+  "ticker_short": "NATU",
+  "notion_database_id": "002572e6e06f4e908f1da21fa62752f0",
+  "notion_collection_id": "5ab3512a-8077-43cd-ab8c-a69feab96bf4"
+ },
+ "SMTO3": {
+  "ticker_short": "SMTO",
+  "notion_database_id": "102ae328baa74352af0b9f2bf8ac0b08",
+  "notion_collection_id": "4785e8db-da10-447e-b6cc-71d712d5b490"
+ },
+ "B3SA3": {
+  "ticker_short": "B3SA",
+  "notion_database_id": "2494f9d3b356810d9696f81ba3ebcff8",
+  "notion_collection_id": "2494f9d3-b356-8187-b85a-000bcfb688c6"
+ },
+ "TAEE11": {
+  "ticker_short": "TAEE",
+  "notion_database_id": "eb36d8b24d354ade8c453bbdc3b37d56",
+  "notion_collection_id": "175cae12-2bfc-4d13-9a89-4459a9516940"
+ },
+ "AZUL54": {
+  "ticker_short": "AZUL",
+  "notion_database_id": "4da588d9dc8d4b4da37be91817206ba1",
+  "notion_collection_id": "1e7a4974-7d63-4e5a-8112-7c523767a0ea"
+ },
+ "AZZA3": {
+  "ticker_short": "AZZA",
+  "notion_database_id": "dfcdf5c124954d149d20856f7653ce51",
+  "notion_collection_id": "681d365b-50ef-479b-970d-27ff6a8eff4a"
+ },
+ "CVCB3": {
+  "ticker_short": "CVCB",
+  "notion_database_id": "0f4f45226dd1424c9d1e5117ae1a83cf",
+  "notion_collection_id": "1e86cb0a-9616-4868-9536-de5eb7fd57c6"
+ },
+ "ENEV3": {
+  "ticker_short": "ENEV",
+  "notion_database_id": "d6874aedbad74e39ae5bad6c52015c30",
+  "notion_collection_id": "7f463d27-a4bb-4b65-b2a8-12dabce74c61"
+ },
+ "HAPV3": {
+  "ticker_short": "HAPV",
+  "notion_database_id": "b035a050ae6b45aba96efb62687b0f66",
+  "notion_collection_id": "4ebb70ed-2b24-4013-98ac-0e50876b1c80"
+ },
+ "RAIL3": {
+  "ticker_short": "RAIL",
+  "notion_database_id": "c743139c6069406e98e54da8acdd6787",
+  "notion_collection_id": "93391938-5652-43d0-82cc-d42bc1e755dc"
+ },
+ "RDOR3": {
+  "ticker_short": "RDOR",
+  "notion_database_id": "84e03e8987f94d7d8b6782e49e77b88e",
+  "notion_collection_id": "35cf0af1-9ba5-4a51-97fb-c4e6fb7552e3"
+ },
+ "SBSP3": {
+  "ticker_short": "SBSP",
+  "notion_database_id": "01edeffe6cda400fbaf7eacf89b94768",
+  "notion_collection_id": "7027f2bc-8cdd-4882-96d9-548763406c18"
+ },
+ "SLCE3": {
+  "ticker_short": "SLCE",
+  "notion_database_id": "33e71f388bcb40879e646de827f5533c",
+  "notion_collection_id": "3dbbe8f4-4ff8-4f73-b1f2-c86664efc86a"
+ },
+ "AUAU3": {
+  "ticker_short": "AUAU",
+  "notion_database_id": "d33d5367f26d4c5a81db080db68a38fa",
+  "notion_collection_id": "de14af71-8ef9-4f5f-976f-3bd729464b71"
+ },
+ "CMIG4": {
+  "ticker_short": "CMIG",
+  "notion_database_id": "24a0becea91c4a9e9c34fc6b19dd8d0b",
+  "notion_collection_id": "84a6b8f3-e3fe-42d1-96b8-4cf340081abd"
+ },
+ "CYRE3": {
+  "ticker_short": "CYRE",
+  "notion_database_id": "dfdf6a6011604eaaa58015e6178e715d",
+  "notion_collection_id": "8d359552-b871-4603-838c-84d0783961e7"
+ },
+ "LIGT3": {
+  "ticker_short": "LIGT",
+  "notion_database_id": "281599b2e6f64cf79b578c3b6794845a",
+  "notion_collection_id": "6c7d471b-c284-498f-9df0-cd445d3fe78a"
+ },
+ "LWSA3": {
+  "ticker_short": "LWSA",
+  "notion_database_id": "759bc8283c0b40a8957ffd8fddfe370a",
+  "notion_collection_id": "87d1c943-2d7b-4ee6-a3cc-effeea7aa3ee"
+ },
+ "MBRF3": {
+  "ticker_short": "MBRF",
+  "notion_database_id": "1a74f9d3b3568184856dd59cf0ac2916",
+  "notion_collection_id": "1a74f9d3-b356-8189-b797-000ba4225620"
+ },
+ "MDIA3": {
+  "ticker_short": "MDIA",
+  "notion_database_id": "9f4a7d566882406ba3caf5d62d994fa0",
+  "notion_collection_id": "40ac8b66-b1ba-4782-9e1a-b778c3dc5c03"
+ },
+ "CSMG3": {
+  "ticker_short": "CSMG",
+  "notion_database_id": "cc34f9d3b356827c886b811a18651b3b",
+  "notion_collection_id": "8094f9d3-b356-839a-9963-87c399424e8e"
+ },
+ "BPAC11": {
+  "ticker_short": "BPAC",
+  "notion_database_id": "ff8562c432724996bf8e5ac74fa097c2",
+  "notion_collection_id": "881c54c4-5397-4227-b9a8-2139db3a21b2"
+ },
+ "CPFE3": {
+  "ticker_short": "CPFE",
+  "notion_database_id": "2038b6d5e3d34637b18ea406c3e24f11",
+  "notion_collection_id": "6c916004-bf3c-4313-abc3-5bc20ec95677"
+ },
+ "ONCO3": {
+  "ticker_short": "ONCO",
+  "notion_database_id": "88f3d8677db84218974747ca49403e57",
+  "notion_collection_id": "1ed26f94-cec0-4827-928c-4d15901ce7f3"
+ },
+ "RIAA3": {
+  "ticker_short": "RIAA",
+  "notion_database_id": "MISSING",
+  "notion_collection_id": "MISSING"
+ },
+ "RECV3": {
+  "ticker_short": "RECV",
+  "notion_database_id": "MISSING",
+  "notion_collection_id": "MISSING"
+ },
+ "SBFG3": {
+  "ticker_short": "SBFG",
+  "notion_database_id": "MISSING",
+  "notion_collection_id": "MISSING"
+ },
+ "BEEF3": {
+  "ticker_short": "BEEF",
+  "notion_database_id": "MISSING",
+  "notion_collection_id": "MISSING"
+ }
+}
