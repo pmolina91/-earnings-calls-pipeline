@@ -1,0 +1,28 @@
+ACOES: adapter:zoom, fill:first, fill:last, fill:email, fill:phone, fill:company, categoria:Buy side:True, lgpd:True, submit
+CONFIRMACAO_DETECTADA: True
+URL_FINAL: https://mzgroup.zoom.us/rest/webinar/registrant/WN_0povELVgTfaspPYt2I56sQ/info?tk=fefWBlwt9otb1K70NMI293PBGhj-HJvQgw6Mg8tw3GcFEIuvOObenhs.0gk5vTTmvfXKzec3&ac=approved&timezone_id=UTC#/registration
+
+PAGINA FINAL (sanitizada):
+Ir para o conteúdo principal
+Visão geral da acessibilidade
+Suporte
+Português 
+Você se inscreveu com sucesso
+
+Verifique o e-mail de confirmação enviado para philippemolina.i**@gmail.com
+
+Tópico
+TIM | 2Q26 Results Conference
+Data e hora
+
+28 jul. 2026 14:00
+
+Descrição
+2Q26 Earnings Results Conference
+
+Não recebeu um e-mail? Clique em 
+aqui
+ para reenviá-lo
+
+Copyright ©2026 Zoom Video Communications, Inc. Todos os direitos reservados.
+Políticas legais e de privacidade Do Not Sell My Personal Information Preferências de cookies
