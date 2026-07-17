@@ -1,0 +1,7 @@
+job=register file=tests/mailing-lote1.json mode=mailing sha=b4d12e7e6cc27743efd2f86c5bf6768c944c1d91
+b4d12e7 inscrição automática no mailing de RI (lote 1: 14 empresas prioritárias)
+9ff2e43 idioma original do call no job spec (language: pt/en/auto)
+.github/workflows/tests.yml
+scripts/__pycache__/mailing_signup.cpython-311.pyc
+scripts/mailing_signup.py
+tests/mailing-lote1.json
