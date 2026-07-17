@@ -22,12 +22,19 @@ def register_zoom(page, name, email, company, phone='', title_category='Buy side
     fill('#question_email', email, 'email')
     if phone: fill('#question_Phone', phone, 'phone')
     fill('#question_Company', company, 'company')
-    # categoria (checkboxes "Title"): marcar a que contém o texto da categoria
+    # categoria (checkboxes "Title"): marcar a que corresponde ao texto
     try:
-        cb = page.locator(f'label:has-text("{title_category}")').first
-        cb.click(timeout=3000); log.append(f'check:{title_category}')
+        page.get_by_text(title_category, exact=True).first.click(timeout=3000)
+        log.append(f'check:{title_category}')
     except Exception:
-        log.append(f'ERRO:categoria')
+        try:
+            # ordem observada: Sell side, Buy side, Investor, Student, Journalist, Individual, Others
+            ordem = ['Sell side','Buy side','Investor','Student','Journalist','Individual','Others']
+            idx = ordem.index(title_category) if title_category in ordem else 1
+            page.locator('input[name="question_Titleundefined"]').nth(idx).check(timeout=3000, force=True)
+            log.append(f'check:categoria_idx{idx}')
+        except Exception:
+            log.append('ERRO:categoria')
     # consentimento LGPD (Lei 13.709/2018) — autorizado pelo usuário em 16/07/2026
     try:
         lgpd = page.locator('input[type=checkbox][name*="13.709"], input[type=checkbox][name*="compliance"]').first
