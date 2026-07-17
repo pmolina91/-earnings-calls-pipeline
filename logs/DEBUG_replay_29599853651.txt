@@ -1,0 +1,4 @@
+job=replay file=tests/replay-axia-final.json mode=replay sha=55c30270328338bd9e791772f59feb89ef6bfd39
+55c3027 benchmark versão final (beam 5, arquivo único) Axia 1T26
+0921d05 teste de transcricao
+tests/replay-axia-final.json
