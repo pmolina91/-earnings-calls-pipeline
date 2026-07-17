@@ -1,0 +1,4 @@
+job=register file=tests/register-tim-2t26.json mode=register sha=39e348281f754e6f0b4b2482fd804fec9f0d30ce
+39e3482 teste adapter Zoom rev6
+b4b7bbd adapter Zoom preciso (campos question_*, categoria, LGPD, Inscrição)
+tests/register-tim-2t26.json
