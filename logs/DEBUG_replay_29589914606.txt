@@ -1,0 +1,7 @@
+job=replay file=tests/capture-radio.json mode=capture sha=e74140647f4dd5a5943599ad0d00e7304c9d4043
+e741406 teste de captura de áudio de página (sniff + PulseAudio/xvfb)
+26a5215 resultado registro
+.github/workflows/tests.yml
+scripts/__pycache__/test_capture.cpython-311.pyc
+scripts/test_capture.py
+tests/capture-radio.json
