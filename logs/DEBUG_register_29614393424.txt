@@ -1,0 +1,4 @@
+job=register file=tests/replay-axia-1t26.json mode=replay sha=2681b94d66f246a2f7d1af671514c9f14e195101
+2681b94 re-regressão live v2
+0c462bc CI: arquivo do run fixado no github.sha + commits com retry
+tests/replay-axia-1t26.json
