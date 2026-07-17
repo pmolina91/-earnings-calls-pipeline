@@ -1,0 +1,6 @@
+{
+ "mode": "capture",
+ "label": "radio_senado_ao_vivo",
+ "page_url": "https://www.radiosenado.leg.br/ao-vivo",
+ "duration_seconds": 240
+}
