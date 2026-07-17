@@ -1,0 +1,4 @@
+job=register file=tests/register-tim-2t26.json mode=register sha=a9fdaa941939b6b151b2d9f12b4e7cabad620954
+a9fdaa9 teste final: registro completo TIM 2T26
+47dad28 resultado registro
+tests/register-tim-2t26.json
