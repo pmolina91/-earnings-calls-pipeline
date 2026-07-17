@@ -16,7 +16,7 @@ jobs:
       - name: check spec
         id: c
         run: |
-          F=$(git diff --name-only HEAD~1 HEAD -- 'tests/*.json' 2>/dev/null | head -1 || true); [ -z "$F" ] && F=$(git log -1 --name-only --pretty=format: -- tests/ | grep json | head -1)
+          F=$(git diff --name-only ${{ github.sha }}~1 ${{ github.sha }} -- 'tests/*.json' 2>/dev/null | head -1 || true); [ -z "$F" ] && F=$(git log -1 --name-only --pretty=format: ${{ github.sha }} -- tests/ | grep json | head -1)
           echo "file=$F" >> $GITHUB_OUTPUT
           python3 -c "import json;print('mode='+json.load(open('$F')).get('mode',''))" >> $GITHUB_OUTPUT
       - name: debug detecção
@@ -47,8 +47,7 @@ jobs:
           mkdir -p logs && cp scripts/work/shots/resultado.txt logs/REGISTRO_${{ github.run_id }}.txt 2>/dev/null || true
           cp scripts/work/shots/form_dump.json logs/FORM_${{ github.run_id }}.json 2>/dev/null || true
           git config user.name earnings-bot; git config user.email bot@users.noreply.github.com
-          git pull -q --rebase || true
-          git add logs/ && git commit -q -m "resultado registro" && git push -q || true
+          for i in 1 2 3; do git pull -q --rebase || true; git add logs/; git commit -q -m "registro ${{ github.run_id }}" && git push -q && break || sleep $((i*7)); done; true
       - uses: actions/upload-artifact@v4
         if: always() && steps.c.outputs.mode == 'register'
         with:
@@ -64,7 +63,7 @@ jobs:
       - name: check spec
         id: c
         run: |
-          F=$(git diff --name-only HEAD~1 HEAD -- 'tests/*.json' 2>/dev/null | head -1 || true); [ -z "$F" ] && F=$(git log -1 --name-only --pretty=format: -- tests/ | grep json | head -1)
+          F=$(git diff --name-only ${{ github.sha }}~1 ${{ github.sha }} -- 'tests/*.json' 2>/dev/null | head -1 || true); [ -z "$F" ] && F=$(git log -1 --name-only --pretty=format: ${{ github.sha }} -- tests/ | grep json | head -1)
           echo "file=$F" >> $GITHUB_OUTPUT
           python3 -c "import json;print('mode='+json.load(open('$F')).get('mode',''))" >> $GITHUB_OUTPUT
       - name: debug detecção
@@ -96,7 +95,7 @@ jobs:
         if: steps.c.outputs.mode == 'replay'
         run: |
           git config user.name earnings-bot; git config user.email bot@users.noreply.github.com
-          git pull -q; git add transcripts/ && git commit -m "teste de transcricao" && git push || echo nada
+          for i in 1 2 3; do git pull -q --rebase || true; git add transcripts/; git commit -q -m "transcricao ${{ github.run_id }}" && git push -q && break || sleep $((i*7)); done; true
 
   capture:
     runs-on: ubuntu-latest
@@ -108,7 +107,7 @@ jobs:
       - name: check spec
         id: c
         run: |
-          F=$(git diff --name-only HEAD~1 HEAD -- 'tests/*.json' 2>/dev/null | head -1 || true); [ -z "$F" ] && F=$(git log -1 --name-only --pretty=format: -- tests/ | grep json | head -1)
+          F=$(git diff --name-only ${{ github.sha }}~1 ${{ github.sha }} -- 'tests/*.json' 2>/dev/null | head -1 || true); [ -z "$F" ] && F=$(git log -1 --name-only --pretty=format: ${{ github.sha }} -- tests/ | grep json | head -1)
           echo "file=$F" >> $GITHUB_OUTPUT
           python3 -c "import json;print('mode='+json.load(open('$F')).get('mode',''))" >> $GITHUB_OUTPUT
       - name: deps
@@ -126,8 +125,7 @@ jobs:
         run: |
           mkdir -p logs && cp work/error.txt logs/ERRO_capture_${{ github.run_id }}.txt 2>/dev/null || true
           git config user.name earnings-bot; git config user.email bot@users.noreply.github.com
-          git pull -q --rebase || true
-          git add transcripts/ logs/ 2>/dev/null; git commit -q -m "resultado captura ${{ github.run_id }}" && git push -q || true
+          for i in 1 2 3; do git pull -q --rebase || true; git add transcripts/ logs/ 2>/dev/null; git commit -q -m "captura ${{ github.run_id }}" && git push -q && break || sleep $((i*7)); done; true
 
   scan:
     runs-on: ubuntu-latest
@@ -139,7 +137,7 @@ jobs:
       - name: check spec
         id: c
         run: |
-          F=$(git diff --name-only HEAD~1 HEAD -- 'tests/*.json' 2>/dev/null | head -1 || true); [ -z "$F" ] && F=$(git log -1 --name-only --pretty=format: -- tests/ | grep json | head -1)
+          F=$(git diff --name-only ${{ github.sha }}~1 ${{ github.sha }} -- 'tests/*.json' 2>/dev/null | head -1 || true); [ -z "$F" ] && F=$(git log -1 --name-only --pretty=format: ${{ github.sha }} -- tests/ | grep json | head -1)
           echo "file=$F" >> $GITHUB_OUTPUT
           python3 -c "import json;print('mode='+json.load(open('$F')).get('mode',''))" >> $GITHUB_OUTPUT
       - name: deps
@@ -153,5 +151,4 @@ jobs:
         run: |
           mkdir -p logs && cp work/scan_ri.json logs/SCAN_RI_${{ github.run_id }}.json 2>/dev/null || true
           git config user.name earnings-bot; git config user.email bot@users.noreply.github.com
-          git pull -q --rebase || true
-          git add logs/ && git commit -q -m "scan RI browser" && git push -q || true
+          for i in 1 2 3; do git pull -q --rebase || true; git add logs/; git commit -q -m "scan ${{ github.run_id }}" && git push -q && break || sleep $((i*7)); done; true
