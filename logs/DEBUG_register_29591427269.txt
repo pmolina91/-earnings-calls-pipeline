@@ -1,0 +1,6 @@
+job=register file=tests/capture-radio.json mode=capture sha=9670077dc917941dad60ff47f1ba29f1fa6ec51e
+9670077 captura com lista de candidatos e fallback
+17b1aee resultado captura 29589914606
+scripts/__pycache__/test_capture.cpython-311.pyc
+scripts/test_capture.py
+tests/capture-radio.json
