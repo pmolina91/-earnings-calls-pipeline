@@ -1,0 +1,17 @@
+{
+ "mode": "scan",
+ "empresas": [
+  {"ticker": "USIM5", "urls": ["https://ri.usiminas.com/", "https://ri.usiminas.com/servicos-de-ri/agenda-de-ri/"]},
+  {"ticker": "VULC3", "urls": ["https://www.vulcabrasri.com/", "https://www.vulcabrasri.com/informacoes-aos-investidores/calendario-de-eventos/"]},
+  {"ticker": "TOTS3", "urls": ["https://ri.totvs.com/", "https://ri.totvs.com/servicos-aos-investidores/agenda-e-eventos/agenda-de-ri/"]},
+  {"ticker": "VIVA3", "urls": ["https://ri.vivara.com.br/", "https://ri.vivara.com.br/servicos-aos-investidores/calendario-de-eventos/"]},
+  {"ticker": "SBFG3", "urls": ["https://ri.gruposbf.com.br/", "https://ri.gruposbf.com.br/servicos-aos-investidores/calendario-de-divulgacao/"]},
+  {"ticker": "BPAC11", "urls": ["https://ri.btgpactual.com/", "https://ri.btgpactual.com/servicos-aos-investidores/calendario-de-eventos/"]},
+  {"ticker": "BEEF3", "urls": ["https://ri.minervafoods.com/", "https://ri.minervafoods.com/calendario-de-eventos/"]},
+  {"ticker": "ONCO3", "urls": ["https://ri.grupooncoclinicas.com/", "https://ri.grupooncoclinicas.com/servicos-aos-investidores/calendario-de-eventos/"]},
+  {"ticker": "UGPA3", "urls": ["https://ri.ultra.com.br/", "https://ri.ultra.com.br/en/investor-services/events-calendar/"]},
+  {"ticker": "CPFE3", "urls": ["https://ri.cpfl.com.br/", "https://ri.cpfl.com.br/ListaAgenda.aspx?idCanal=8qBoOA71QTz4ZntZ3g5J+w%3D%3D&linguagem=pt"]},
+  {"ticker": "SANB11", "urls": ["https://www.santander.com.br/ri/", "https://www.santander.com.br/ri/informacoes-corporativas/calendario-de-eventos/"]},
+  {"ticker": "RDOR3", "urls": ["https://ri.rededorsaoluiz.com.br/", "https://ri.rededorsaoluiz.com.br/servicos-aos-investidores/calendario-corporativo/"]}
+ ]
+}
