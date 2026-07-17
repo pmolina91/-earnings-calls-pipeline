@@ -1,0 +1,58 @@
+{
+ "SANB11": {
+  "status": "FORM_NAO_ACHADO",
+  "url": "https://www.santander.com.br/ri/"
+ },
+ "ABEV3": {
+  "status": "CAPTCHA",
+  "url": "https://ri.ambev.com.br/perguntas-frequentes/mailing/"
+ },
+ "ECOR3": {
+  "status": "CAPTCHA",
+  "url": "https://ri.ecorodovias.com.br/servicos-aos-investidores/cadastre-se-mailing-list/"
+ },
+ "MULT3": {
+  "status": "CAPTCHA",
+  "url": "https://ri.multiplan.com.br/contato/cadastre-se-no-mailing/"
+ },
+ "USIM5": {
+  "status": "CAPTCHA",
+  "url": "https://ri.usiminas.com/"
+ },
+ "GGBR4": {
+  "status": "CAPTCHA",
+  "url": "https://ri.gerdau.com/servicos-de-ri/cadastre-se-no-mailing/"
+ },
+ "ITUB4": {
+  "status": "FORM_NAO_ACHADO",
+  "url": "https://www.itau.com.br/relacoes-com-investidores/"
+ },
+ "AXIA3": {
+  "status": "CAPTCHA",
+  "url": "https://ri.axia.com.br/cadastre-se-no-mailing/"
+ },
+ "CMIN3": {
+  "status": "CAPTCHA",
+  "url": "https://ri.csnmineracao.com.br/servicos-ri/cadastre-se-no-mailing/"
+ },
+ "CPLE3": {
+  "status": "CAPTCHA",
+  "url": "https://ri.copel.com/servicos-aos-investidores/mailing-do-ri/"
+ },
+ "DXCO3": {
+  "status": "FORM_NAO_ACHADO",
+  "url": "https://ri.dex.co/"
+ },
+ "KLBN11": {
+  "status": "CAPTCHA",
+  "url": "https://ri.klabin.com.br/para-o-investidor/e-mail-alerta/"
+ },
+ "VIVT3": {
+  "status": "FORM_NAO_ACHADO",
+  "url": "https://ri.telefonica.com.br/"
+ },
+ "TIMS3": {
+  "status": "CAPTCHA",
+  "url": "https://ri.tim.com.br/servicos/mailing-ri/"
+ }
+}
