@@ -1,0 +1,7 @@
+job=replay file=tests/scan-asteriscos.json mode=scan sha=9667f6f6f714b463c95faaa40fd14a47d22e1612
+9667f6f varredura de RI com navegador real (JS) para casos de agregador
+98acd57 resultado captura 29611434140
+.github/workflows/tests.yml
+scripts/__pycache__/scan_ri.cpython-311.pyc
+scripts/scan_ri.py
+tests/scan-asteriscos.json
