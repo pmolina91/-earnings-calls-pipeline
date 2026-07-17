@@ -152,3 +152,34 @@ jobs:
           mkdir -p logs && cp work/scan_ri.json logs/SCAN_RI_${{ github.run_id }}.json 2>/dev/null || true
           git config user.name earnings-bot; git config user.email bot@users.noreply.github.com
           for i in 1 2 3; do git pull -q --rebase || true; git add logs/; git commit -q -m "scan ${{ github.run_id }}" && git push -q && break || sleep $((i*7)); done; true
+
+  mailing:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: check spec
+        id: c
+        run: |
+          F=$(git diff --name-only ${{ github.sha }}~1 ${{ github.sha }} -- 'tests/*.json' 2>/dev/null | head -1 || true); [ -z "$F" ] && F=$(git log -1 --name-only --pretty=format: ${{ github.sha }} -- tests/ | grep json | head -1)
+          echo "file=$F" >> $GITHUB_OUTPUT
+          python3 -c "import json;print('mode='+json.load(open('$F')).get('mode',''))" >> $GITHUB_OUTPUT
+      - name: deps
+        if: steps.c.outputs.mode == 'mailing'
+        run: pip install -q playwright && playwright install --with-deps chromium
+      - name: run mailing signup
+        if: steps.c.outputs.mode == 'mailing'
+        env:
+          REG_NAME: ${{ secrets.REG_NAME }}
+          REG_EMAIL: ${{ secrets.REG_EMAIL }}
+          REG_COMPANY: ${{ secrets.REG_COMPANY }}
+          REG_PHONE: ${{ secrets.REG_PHONE }}
+        run: python3 scripts/mailing_signup.py "${{ steps.c.outputs.file }}"
+      - name: publicar
+        if: always() && steps.c.outputs.mode == 'mailing'
+        run: |
+          mkdir -p logs && cp work/mailing.json logs/MAILING_${{ github.run_id }}.json 2>/dev/null || true
+          git config user.name earnings-bot; git config user.email bot@users.noreply.github.com
+          for i in 1 2 3; do git pull -q --rebase || true; git add logs/; git commit -q -m "mailing ${{ github.run_id }}" && git push -q && break || sleep $((i*7)); done; true

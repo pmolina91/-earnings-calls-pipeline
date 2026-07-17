@@ -1,0 +1,19 @@
+{
+ "mode": "mailing",
+ "empresas": [
+  {"ticker": "SANB11", "url": "https://www.santander.com.br/ri/"},
+  {"ticker": "ABEV3", "url": "https://ri.ambev.com.br/"},
+  {"ticker": "ECOR3", "url": "https://ri.ecorodovias.com.br/"},
+  {"ticker": "MULT3", "url": "https://ri.multiplan.com.br/"},
+  {"ticker": "USIM5", "url": "https://ri.usiminas.com/"},
+  {"ticker": "GGBR4", "url": "https://ri.gerdau.com/"},
+  {"ticker": "ITUB4", "url": "https://www.itau.com.br/relacoes-com-investidores/"},
+  {"ticker": "AXIA3", "url": "https://ri.axia.com.br/"},
+  {"ticker": "CMIN3", "url": "https://ri.csnmineracao.com.br/"},
+  {"ticker": "CPLE3", "url": "https://ri.copel.com/"},
+  {"ticker": "DXCO3", "url": "https://ri.dex.co/"},
+  {"ticker": "KLBN11", "url": "https://ri.klabin.com.br/"},
+  {"ticker": "VIVT3", "url": "https://ri.telefonica.com.br/"},
+  {"ticker": "TIMS3", "url": "https://ri.tim.com.br/"}
+ ]
+}
