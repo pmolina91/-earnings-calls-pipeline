@@ -36,13 +36,18 @@ def register_zoom(page, name, email, company, phone='', title_category='Buy side
         except Exception:
             log.append('ERRO:categoria')
     # consentimento LGPD (Lei 13.709/2018) — autorizado pelo usuário em 16/07/2026
-    try:
-        lgpd = page.locator('input[type=checkbox][name*="13.709"], input[type=checkbox][name*="compliance"]').first
-        lgpd.check(timeout=3000, force=True); log.append('check:lgpd')
-    except Exception:
+    lgpd_ok = False
+    for strat, fn in [
+        ('lgpd_name', lambda: page.locator('input[type=checkbox][name*="13.709"], input[type=checkbox][name*="compliance"], input[type=checkbox][name*="Law"]').first.check(timeout=2500, force=True)),
+        ('lgpd_ultimo', lambda: page.locator('input[type=checkbox]').last.check(timeout=2500, force=True)),
+        ('lgpd_texto', lambda: page.get_by_text('13.709').first.click(timeout=2500)),
+    ]:
         try:
-            page.locator('label:has-text("13.709")').first.click(timeout=3000); log.append('check:lgpd_label')
-        except Exception: log.append('ERRO:lgpd')
+            fn(); log.append(f'check:{strat}'); lgpd_ok = True; break
+        except Exception:
+            continue
+    if not lgpd_ok: log.append('ERRO:lgpd')
+    time.sleep(1)
     # enviar
     try:
         page.locator('button:has-text("Inscrição"), button:has-text("Register"), button:has-text("Inscrever")').first.click(timeout=4000)
