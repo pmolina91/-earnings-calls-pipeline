@@ -1,0 +1,6 @@
+job=replay file=tests/register-tim-2t26.json mode=register sha=8a093b2370df8a3e73e9dd261f76473a9e730cb4
+8a093b2 fix categoria Buy side (get_by_text + fallback índice)
+97468eb resultado registro
+scripts/__pycache__/registration.cpython-311.pyc
+scripts/registration.py
+tests/register-tim-2t26.json
