@@ -1,0 +1,4 @@
+job=register file=tests/replay-axia-1t26.json mode=replay sha=db1f0287c06a97126a6571175de3d24036290dae
+db1f028 regressão: Axia live v2 com glossário
+23b443e live v2: chunks 120s, beam5, hotwords/glossário, contexto encadeado; force_pulse no teste de captura
+tests/replay-axia-1t26.json
