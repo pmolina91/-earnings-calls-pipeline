@@ -1,0 +1,6 @@
+job=replay file=tests/register-tim-2t26.json mode=register sha=c36b22c43d7da6e365ec5322f0595736507f46ac
+c36b22c LGPD com 3 estratégias em cascata
+6896abf resultado registro
+scripts/__pycache__/registration.cpython-311.pyc
+scripts/registration.py
+tests/register-tim-2t26.json
