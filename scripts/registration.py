@@ -22,31 +22,35 @@ def register_zoom(page, name, email, company, phone='', title_category='Buy side
     fill('#question_email', email, 'email')
     if phone: fill('#question_Phone', phone, 'phone')
     fill('#question_Company', company, 'company')
-    # categoria (checkboxes "Title"): marcar a que corresponde ao texto
+    # categoria (checkboxes "Title"): JS-click no input correto + verificação
     try:
-        page.get_by_text(title_category, exact=True).first.click(timeout=3000)
-        log.append(f'check:{title_category}')
-    except Exception:
-        try:
-            # ordem observada: Sell side, Buy side, Investor, Student, Journalist, Individual, Others
-            ordem = ['Sell side','Buy side','Investor','Student','Journalist','Individual','Others']
-            idx = ordem.index(title_category) if title_category in ordem else 1
-            page.locator('input[name="question_Titleundefined"]').nth(idx).check(timeout=3000, force=True)
-            log.append(f'check:categoria_idx{idx}')
-        except Exception:
-            log.append('ERRO:categoria')
+        ordem = ['Sell side','Buy side','Investor','Student','Journalist','Individual','Others']
+        idx = ordem.index(title_category) if title_category in ordem else 1
+        checked = page.evaluate('''(idx) => {
+            const cbs = [...document.querySelectorAll('input[type=checkbox]')].filter(e => (e.name||'').startsWith('question_Title'));
+            if (!cbs[idx]) return null;
+            if (!cbs[idx].checked) cbs[idx].click();
+            return cbs[idx].checked;
+        }''', idx)
+        log.append(f'categoria:{title_category}:{checked}')
+    except Exception as e:
+        log.append(f'ERRO:categoria:{e}')
     # consentimento LGPD (Lei 13.709/2018) — autorizado pelo usuário em 16/07/2026
-    lgpd_ok = False
-    for strat, fn in [
-        ('lgpd_name', lambda: page.locator('input[type=checkbox][name*="13.709"], input[type=checkbox][name*="compliance"], input[type=checkbox][name*="Law"]').first.check(timeout=2500, force=True)),
-        ('lgpd_ultimo', lambda: page.locator('input[type=checkbox]').last.check(timeout=2500, force=True)),
-        ('lgpd_texto', lambda: page.get_by_text('13.709').first.click(timeout=2500)),
-    ]:
-        try:
-            fn(); log.append(f'check:{strat}'); lgpd_ok = True; break
-        except Exception:
-            continue
-    if not lgpd_ok: log.append('ERRO:lgpd')
+    try:
+        checked = page.evaluate('''() => {
+            const cbs = [...document.querySelectorAll('input[type=checkbox]')];
+            let el = cbs.find(e => (e.name||'').includes('13.709') || (e.name||'').toLowerCase().includes('compliance') || (e.name||'').includes('Law'));
+            if (!el) el = cbs[cbs.length - 1];
+            if (!el) return null;
+            if (!el.checked) el.click();
+            if (!el.checked) { // custom component: tentar o wrapper
+                (el.closest('label') || el.parentElement).click();
+            }
+            return el.checked;
+        }''')
+        log.append(f'lgpd:{checked}')
+    except Exception as e:
+        log.append(f'ERRO:lgpd:{e}')
     time.sleep(1)
     # enviar
     try:
