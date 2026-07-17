@@ -1,0 +1,6 @@
+job=replay file=tests/register-tim-2t26.json mode=register sha=5dd7b25a14022483bba7c143323fbf7a88cecc7f
+5dd7b25 checkboxes via JS-click com verificação de estado real
+24bb8b6 resultado registro
+scripts/__pycache__/registration.cpython-311.pyc
+scripts/registration.py
+tests/register-tim-2t26.json
