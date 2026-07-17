@@ -1,6 +1,13 @@
 {
  "mode": "capture",
- "label": "radio_senado_ao_vivo",
- "page_url": "https://www.radiosenado.leg.br/ao-vivo",
- "duration_seconds": 240
+ "label": "radio_pt_multi",
+ "duration_seconds": 240,
+ "candidates": [
+  {"page_url": "https://radios.ebc.com.br/radionacional"},
+  {"page_url": "https://www.radiosenado.leg.br/ao-vivo"},
+  {"page_url": "https://bandnewsfm.band.uol.com.br/ao-vivo/"},
+  {"direct_audio_url": "https://stream.zeno.fm/0r0xa792kwzuv"},
+  {"page_url": "https://www.cnnbrasil.com.br/ao-vivo/"}
+ ],
+ "rev": 2
 }
