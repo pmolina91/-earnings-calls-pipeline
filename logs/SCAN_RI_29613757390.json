@@ -1,0 +1,156 @@
+{
+ "USIM5": {
+  "trechos": [
+   "Divulgação de Resultados 1T26",
+   "31/07/2026 Divulgação de Resultados 2T26",
+   "30/10/2026 Divulgação de Resultados 3T26",
+   "24/04/2026 Divulgação de Resultados 1T26",
+   "13/02/2026 Divulgação de Resultados 4T25"
+  ],
+  "links": [],
+  "erros": []
+ },
+ "VULC3": {
+  "trechos": [
+   "Divulgação de Resultados 2T26",
+   "Videoconferencia dos Resultados do 2T26",
+   "Divulgação de Resultados 3T26",
+   "04/08/2026 Divulgação de Resultados 2T26",
+   "05/08/2026 Videoconferencia dos Resultados do 2T26",
+   "10/11/2026 Divulgação de Resultados 3T26"
+  ],
+  "links": [
+   {
+    "t": "Vídeoconferência",
+    "h": "https://mzcast.mziq.com/webcast/vulcabras/vulcabras_3t23_por.mp4"
+   }
+  ],
+  "erros": []
+ },
+ "TOTS3": {
+  "trechos": [
+   "2T26",
+   "DIVULGAÇÃO DE RESULTADOS 2T26",
+   "Divulgação de Resultados 2T26",
+   "05/08/2026 Divulgação de Resultados 2T26",
+   "06/08/2026 Videoconferência - Divulgação de Resultados 2T26",
+   "04/11/2026 Divulgação de Resultados 3T26"
+  ],
+  "links": [
+   {
+    "t": "CLIQUE AQUI PARA SE INSCREVER",
+    "h": "https://totvs.zoom.us/webinar/register/WN_T_YAsicwQrWyfSYr3ZAOJg#/registration"
+   },
+   {
+    "t": "INSCRIÇÃO",
+    "h": "https://mailerurl.mziq.com/ls/click?upn=u001.p5t26WVS9GxGJv9ToUhXUwjoGWN00eZKDFJ6AXW34m1i1YmgW0hTJfkvj9SqgseGYLrXBnmMEY5EsBNO-2F3d9fRreTl7vrQGhWv7e-2B-2FMGt1N0nt-2BCM2PvKEvHm3NOLz3kg9iY_SdsJoSTtdxFVPK6URfPpIH1RmXApL10DAhrO76yMb7QGBH-2FbonWtVWm3b6nGGD2NqAsH4Lzwgk6CixX3Ve2wOIkzk9qCNOVfm2ayCbMWvujEhE3K833AzpzQaKTu8b8IJ33DZdI89g0hfQxFSuS6ST3p7WKHKmCqlSzmQM0O2BvYTwVCiqsD3Po6XuQhUhJdpqGx8fAkXua2Fp8vhSCvHxnRB1G1v9PThzkuiHcpti6lEB0QXe9TYvE3NHYhPPIeXki3GFiqtocfhkaa5dT-2Bb2wksx88xtNI3ByI-2FUcf-2FPtOnE046JShiTNjp5fv6mud4z8ZYqjSsoUNNWlk4O4811tziiU-2FWISWFLduo2V5Ayc-2B-2F5a1KvpKatyrJxr-2F5uyv0zTeHjd3CNwc-2BuINzd9wzORsVZd013LZSE0U8TTBoYwmVX4f9L-2BJgk45CLv50QOA"
+   }
+  ],
+  "erros": []
+ },
+ "VIVA3": {
+  "trechos": [
+   "Divulgação de Resultados 2T2026",
+   "Teleconferência de Resultados 2T2026",
+   "Divulgação de Resultados 3T2026",
+   "05/08/2026 Divulgação de Resultados 2T2026",
+   "06/08/2026 Teleconferência de Resultados 2T2026",
+   "05/11/2026 Divulgação de Resultados 3T2026"
+  ],
+  "links": [],
+  "erros": []
+ },
+ "SBFG3": {
+  "trechos": [
+   "DIVULGAÇÃO DE RESULTADOS 2T26",
+   "10/08/2026 Divulgação de Resultados 2T26",
+   "11/08/2026 Call de Resultados 2T26",
+   "09/11/2026 Divulgação de Resultados 3T26",
+   "11/05/2026 Divulgação de Resultados 1T26",
+   "09/03/2026 Divulgação de Resultados 4T25"
+  ],
+  "links": [
+   {
+    "t": "Clique aqui",
+    "h": "https://mzgroup.zoom.us/webinar/register/WN_NhL5TkVwQMet3eUFyOyVuA#/registration"
+   }
+  ],
+  "erros": []
+ },
+ "BPAC11": {
+  "trechos": [
+   "Divulgação de Resultados 1T26",
+   "Divulgação de resultados 2T26",
+   "Teleconferência de resultados - 2T26",
+   "Teleconferência de resultados - 3T26",
+   "Teleconferência de resultados 2T2026",
+   "Teleconferência de resultados 3T2026"
+  ],
+  "links": [],
+  "erros": []
+ },
+ "BEEF3": {
+  "trechos": [
+   "12/08/2026 Divulgação de Resultados 2T26 Minerva",
+   "13/08/2026 Teleconferências dos Resultados 2T26 Minerva",
+   "04/11/2026 Divulgação de Resultados 3T26 Minerva",
+   "05/11/2026 Teleconferências dos Resultados 3T26 Minerva",
+   "07/05/2026 Teleconferências dos Resultados 1T26 Minerva Minerva",
+   "06/05/2026 Divulgação de Resultados 1T26 Minerva Minerva"
+  ],
+  "links": [
+   {
+    "t": "Apresentações e Webcasts",
+    "h": "https://ri.minervafoods.com/apresentacoes-e-webcasts/"
+   },
+   {
+    "t": "Apresentações",
+    "h": "http://ri.minervafoods.com/apresentacoes-e-webcasts/"
+   }
+  ],
+  "erros": []
+ },
+ "ONCO3": {
+  "trechos": [
+   "12/08/2026 Divulgação de Resultados 2T26 Divulgação dos resultados referentes ao segundo trimestre de 2026.",
+   "13/08/2026 Teleconferência de Resultados 2T26 Teleconferência de apresentação dos resultados do 2T26 com analistas e investidores.",
+   "11/11/2026 Divulgação de Resultados 3T26 Divulgação dos resultados referentes ao terceiro trimestre de 2026.",
+   "12/11/2026 Teleconferência de Resultados 3T26 Teleconferência de apresentação dos resultados do 3T26 com analistas e investidores.",
+   "14/05/2026 Divulgação de Resultados 1T26 Divulgação dos resultados referentes ao primeiro trimestre de 2026.",
+   "15/05/2026 Teleconferência de Resultados 1T26 Teleconferência de apresentação dos resultados do 1T26 com analistas e investidores."
+  ],
+  "links": [],
+  "erros": []
+ },
+ "UGPA3": {
+  "trechos": [],
+  "links": [],
+  "erros": []
+ },
+ "CPFE3": {
+  "trechos": [
+   "14/05/2026 Divulgação de Resultados 1T26",
+   "05/03/2026 Divulgação de Resultados 4T25",
+   "13/11/2025 Divulgação de Resultados 3T25"
+  ],
+  "links": [],
+  "erros": []
+ },
+ "SANB11": {
+  "trechos": [],
+  "links": [],
+  "erros": []
+ },
+ "RDOR3": {
+  "trechos": [
+   "12/08/2026 Divulgação de Resultados - 2T26",
+   "13/08/2026 Teleconferência de Resultados - 2T26",
+   "11/11/2026 Divulgação de Resultados - 3T26",
+   "12/11/2026 Teleconferência de Resultados - 3T26",
+   "07/05/2026 Teleconferência de Resultados - 1T26",
+   "06/05/2026 Divulgação de Resultados - 1T26"
+  ],
+  "links": [],
+  "erros": []
+ }
+}
