@@ -1,0 +1,35 @@
+{
+ "strategy": "sniff_ffmpeg",
+ "candidato": "https://radios.ebc.com.br/radionacional",
+ "media_urls": [
+  "https://radionacionalrio-stream.ebc.com.br/ebc/radionacionalriodejaneiro/playlist.m3u8"
+ ],
+ "chunks": [
+  {
+   "f": "chunk_000.wav",
+   "kb": 1875
+  },
+  {
+   "f": "chunk_001.wav",
+   "kb": 1875
+  },
+  {
+   "f": "chunk_002.wav",
+   "kb": 1874
+  },
+  {
+   "f": "chunk_003.wav",
+   "kb": 1874
+  }
+ ],
+ "notes": [
+  "tentando: https://radios.ebc.com.br/radionacional",
+  "click:button:has-text(\"Ouvir\")",
+  "chunk_000.wav: 815 chars",
+  "chunk_001.wav: 737 chars",
+  "chunk_002.wav: 831 chars",
+  "chunk_003.wav: 883 chars"
+ ],
+ "transcricao_total_chars": 3266,
+ "tempo_transcricao_s": 51
+}
