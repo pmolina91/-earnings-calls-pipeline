@@ -23,14 +23,18 @@ if NOTION_ON:
                            heading='Transcrição (ao vivo)')
 
 done, empty_streak = set(), 0
+HOT = spec.get('hotwords','') or None
+ultimo_texto = ''
 while True:
     chunks = sorted(glob.glob('work/audio/chunk_*.wav'))
     new = [c for c in chunks if c not in done and os.path.getsize(c) > 60000
            and time.time()-os.path.getmtime(c) > 5]
     for c in new:
         try:
-            segs,_ = model.transcribe(c, language='pt', vad_filter=True, beam_size=2)
+            segs,_ = model.transcribe(c, language='pt', vad_filter=True, beam_size=5,
+                                      hotwords=HOT, initial_prompt=(ultimo_texto[-200:] or None))
             text = ' '.join(s.text.strip() for s in segs).strip()
+            if text: ultimo_texto = text
             if text:
                 if NOTION_ON: notion_api.append_text(page_id, text)
                 empty_streak = 0

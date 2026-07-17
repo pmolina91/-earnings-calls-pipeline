@@ -12,7 +12,7 @@ with open('work/list.txt','w') as f:
 subprocess.run(['ffmpeg','-loglevel','error','-f','concat','-safe','0','-i','work/list.txt',
                 '-c','copy','work/full.wav'], check=True)
 m = WhisperModel('models/faster-whisper-small', device='cpu', compute_type='int8')
-segs,_ = m.transcribe('work/full.wav', language='pt', vad_filter=True, beam_size=5)
+segs,_ = m.transcribe('work/full.wav', language='pt', vad_filter=True, beam_size=5, hotwords=(spec.get('hotwords','') or None))
 lines=[]
 for s in segs:
     mm,ss = divmod(int(s.start),60); hh,mm = divmod(mm,60)

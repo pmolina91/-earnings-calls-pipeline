@@ -42,17 +42,21 @@ def main():
     t0=time.time()
     m = WhisperModel('models/faster-whisper-small', device='cpu', compute_type='int8')
     if spec.get('live_style'):
-        # simular o AO VIVO: chunks de 60s, beam 2 (mesma config do live_loop)
+        # AO VIVO v2: chunks de 120s, beam 5, hotwords (glossário) e contexto encadeado
         os.makedirs('work/chunks', exist_ok=True)
+        seg = str(spec.get('chunk_seconds', 120))
         subprocess.run(['ffmpeg','-loglevel','error','-i','work/cut.wav','-f','segment',
-                        '-segment_time','60','-reset_timestamps','1','work/chunks/c_%04d.wav'], check=True)
+                        '-segment_time',seg,'-reset_timestamps','1','work/chunks/c_%04d.wav'], check=True)
         import glob
         chunks = sorted(glob.glob('work/chunks/c_*.wav'))
         textos = []
+        hot = spec.get('hotwords','') or None
         for i, ck in enumerate(chunks):
-            segs, _ = m.transcribe(ck, language='pt', vad_filter=True, beam_size=2)
+            prev = textos[-1][-200:] if textos else None
+            segs, _ = m.transcribe(ck, language='pt', vad_filter=True, beam_size=5,
+                                   hotwords=hot, initial_prompt=prev)
             textos.append(' '.join(s.text.strip() for s in segs).strip())
-            if i % 10 == 0: print(f'chunk {i}/{len(chunks)} em {time.time()-t0:.0f}s', flush=True)
+            if i % 5 == 0: print(f'chunk {i}/{len(chunks)} em {time.time()-t0:.0f}s', flush=True)
         out = f"transcripts/LIVE_{spec['label']}.txt"
         open(out,'w').write('\n\n'.join(textos) + '\n')
         print(f'live-style: {len(chunks)} chunks em {(time.time()-t0)/60:.1f}min | {out}')

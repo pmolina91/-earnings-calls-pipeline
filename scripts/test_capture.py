@@ -24,7 +24,8 @@ def gravar_direct(url, dur, report):
                     '-f', 'segment', '-segment_time', '60', '-reset_timestamps', '1',
                     '-t', str(dur), 'work/audio/chunk_%03d.wav'], timeout=dur + 90)
 
-def gravar_pagina(page_url, dur, report):
+def gravar_pagina(page_url, dur, report, force_pulse=False):
+    report['_force_pulse'] = force_pulse
     from playwright.sync_api import sync_playwright
     media = []
     with sync_playwright() as pw:
@@ -45,7 +46,7 @@ def gravar_pagina(page_url, dur, report):
                 pass
         time.sleep(10)
         report['media_urls'] = [u[:120] for u in media]
-        if media:
+        if media and not report.get('_force_pulse'):
             report['strategy'] = 'sniff_ffmpeg'
             p = subprocess.Popen(['ffmpeg', '-loglevel', 'warning', '-i', media[0], '-vn', '-ac', '1',
                 '-ar', '16000', '-f', 'segment', '-segment_time', '60', '-reset_timestamps', '1',
@@ -81,7 +82,7 @@ def main():
             if cand.get('direct_audio_url'):
                 gravar_direct(cand['direct_audio_url'], dur, report)
             else:
-                gravar_pagina(cand['page_url'], dur, report)
+                gravar_pagina(cand['page_url'], dur, report, force_pulse=spec.get('force_pulse', False))
         except Exception as e:
             report['notes'].append(f'falhou: {str(e)[:200]}')
             continue
