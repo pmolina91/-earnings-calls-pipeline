@@ -24,6 +24,8 @@ if NOTION_ON:
 
 done, empty_streak = set(), 0
 HOT = spec.get('hotwords','') or None
+LANG = spec.get('language','pt') or None
+if LANG == 'auto': LANG = None  # deixa o whisper detectar
 ultimo_texto = ''
 while True:
     chunks = sorted(glob.glob('work/audio/chunk_*.wav'))
@@ -31,7 +33,7 @@ while True:
            and time.time()-os.path.getmtime(c) > 5]
     for c in new:
         try:
-            segs,_ = model.transcribe(c, language='pt', vad_filter=True, beam_size=5,
+            segs,_ = model.transcribe(c, language=LANG, vad_filter=True, beam_size=5,
                                       hotwords=HOT, initial_prompt=(ultimo_texto[-200:] or None))
             text = ' '.join(s.text.strip() for s in segs).strip()
             if text: ultimo_texto = text

@@ -51,9 +51,11 @@ def main():
         chunks = sorted(glob.glob('work/chunks/c_*.wav'))
         textos = []
         hot = spec.get('hotwords','') or None
+        lang = spec.get('language','pt') or None
+        if lang == 'auto': lang = None
         for i, ck in enumerate(chunks):
             prev = textos[-1][-200:] if textos else None
-            segs, _ = m.transcribe(ck, language='pt', vad_filter=True, beam_size=5,
+            segs, _ = m.transcribe(ck, language=lang, vad_filter=True, beam_size=5,
                                    hotwords=hot, initial_prompt=prev)
             textos.append(' '.join(s.text.strip() for s in segs).strip())
             if i % 5 == 0: print(f'chunk {i}/{len(chunks)} em {time.time()-t0:.0f}s', flush=True)
@@ -61,7 +63,9 @@ def main():
         open(out,'w').write('\n\n'.join(textos) + '\n')
         print(f'live-style: {len(chunks)} chunks em {(time.time()-t0)/60:.1f}min | {out}')
     else:
-        segs, info = m.transcribe('work/cut.wav', language='pt', vad_filter=True, beam_size=5)
+        _lang = spec.get('language','pt') or None
+        if _lang == 'auto': _lang = None
+        segs, info = m.transcribe('work/cut.wav', language=_lang, vad_filter=True, beam_size=5)
         lines=[]
         for s in segs:
             mm,ss = divmod(int(s.start),60)
