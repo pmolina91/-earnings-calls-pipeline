@@ -1,0 +1,4 @@
+job=replay file=tests/capture-radio.json mode=capture sha=6bdcf477ca10e2927177d3d5923b4e8b6fa32db6
+6bdcf47 teste PulseAudio (força captura de aba na página da rádio)
+db1f028 regressão: Axia live v2 com glossário
+tests/capture-radio.json
