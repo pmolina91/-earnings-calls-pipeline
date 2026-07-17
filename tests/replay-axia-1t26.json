@@ -4,6 +4,6 @@
  "direct_audio_url": "https://api.mziq.com/mzfilemanager/v2/d/abb77a17-3348-4bc7-849a-154998e06ca3/1366abc8-39d6-bcf3-fab5-4618fcf554c5?origin=2",
  "live_style": true,
  "chunk_seconds": 120,
- "hotwords": "AXIA Energia, Ivan de Souza Monteiro, Eduardo Haiama, Antônio Varejão de Godoy, Camila Gualda Sampaio Araújo, Élio Wolff, RAP, PLD, preço spot, MW médio, ANEEL, EBITDA, capex, alavancagem, transmissão, geração, GSF",
- "rev": 7
+ "hotwords": "AXIA Energia, Ivan de Souza Monteiro, Eduardo Haiama, Ant\u00f4nio Varej\u00e3o de Godoy, Camila Gualda Sampaio Ara\u00fajo, \u00c9lio Wolff, RAP, PLD, pre\u00e7o spot, MW m\u00e9dio, ANEEL, EBITDA, capex, alavancagem, transmiss\u00e3o, gera\u00e7\u00e3o, GSF",
+ "rev": 8
 }
