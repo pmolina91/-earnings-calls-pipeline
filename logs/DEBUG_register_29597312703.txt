@@ -1,0 +1,7 @@
+job=register file=tests/replay-axia-1t26.json mode=replay sha=d575ded21c9bd166b6a0ba897ae284d9178614dc
+d575ded teste benchmark Axia 1T26: transcrição live-style vs oficial
+af29e9f resultado captura 29591427269
+.github/workflows/tests.yml
+scripts/__pycache__/test_replay.cpython-311.pyc
+scripts/test_replay.py
+tests/replay-axia-1t26.json
