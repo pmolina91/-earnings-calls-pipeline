@@ -1,0 +1,423 @@
+{
+ "SANB11": {
+  "mailing_urls": [],
+  "form_na_home": false
+ },
+ "ABEV3": {
+  "mailing_urls": [
+   "https://ri.ambev.com.br/perguntas-frequentes/mailing/"
+  ],
+  "form_na_home": true
+ },
+ "ECOR3": {
+  "mailing_urls": [
+   "https://ri.ecorodovias.com.br/servicos-aos-investidores/cadastre-se-mailing-list/"
+  ],
+  "form_na_home": true
+ },
+ "USIM5": {
+  "mailing_urls": [
+   "https://ri.usiminas.com/servicos-de-ri/e-mail-alerta/",
+   ""
+  ],
+  "form_na_home": false
+ },
+ "GGBR4": {
+  "mailing_urls": [
+   "https://ri.gerdau.com/a-gerdau/dados-cadastrais/",
+   "https://ri.gerdau.com/servicos-de-ri/cadastre-se-no-mailing/"
+  ],
+  "form_na_home": false
+ },
+ "ITUB4": {
+  "mailing_urls": [],
+  "form_na_home": false
+ },
+ "CMIN3": {
+  "mailing_urls": [
+   "https://ri.csnmineracao.com.br/servicos-ri/cadastre-se-no-mailing/"
+  ],
+  "form_na_home": true
+ },
+ "DXCO3": {
+  "mailing_urls": [],
+  "form_na_home": false
+ },
+ "KLBN11": {
+  "mailing_urls": [
+   "https://ri.klabin.com.br/para-o-investidor/e-mail-alerta/",
+   "https://ri.klabin.com.br/para-o-investidor/alerta-de-golpe/"
+  ],
+  "form_na_home": false
+ },
+ "VIVT3": {
+  "mailing_urls": [],
+  "form_na_home": false
+ },
+ "TIMS3": {
+  "mailing_urls": [
+   "https://ri.tim.com.br/servicos/mailing-ri/",
+   ""
+  ],
+  "form_na_home": true
+ },
+ "MOTV3": {
+  "mailing_urls": [
+   "https://ri.motiva.com.br/esg/governanca/formulario-de-referencia-e-cadastral/",
+   "https://ri.motiva.com.br/contato/cadastre-se-no-mailing/"
+  ],
+  "form_na_home": true
+ },
+ "VALE3": {
+  "mailing_urls": [],
+  "form_na_home": false
+ },
+ "BBSE3": {
+  "mailing_urls": [
+   "https://www.bbseguridaderi.com.br/servicos-aos-acionistas/cadastre-se-no-mailing/"
+  ],
+  "form_na_home": true
+ },
+ "ISAE4": {
+  "mailing_urls": [
+   "https://ri.isaenergiabrasil.com.br/pt/atendimento-aos-acionistas/cadastro-no-mailing",
+   "https://ri.isaenergiabrasil.com.br/pt/divulgacao-ao-mercado/formulario-de-referencia-e-cadastral",
+   "https://ri.isaenergiabrasil.com.br/ri/atendimento-aos-acionistas/cadastro-no-mailing"
+  ],
+  "form_na_home": false
+ },
+ "PGMN3": {
+  "mailing_urls": [
+   "",
+   "https://ri.paguemenos.com.br/#"
+  ],
+  "form_na_home": true
+ },
+ "CBAV3": {
+  "mailing_urls": [
+   "https://ri.cba.com.br/publicacoes-cvm/formulario-cadastral/",
+   "https://ri.cba.com.br/servicos-aos-investidores/mailing/",
+   "http://ri-cba2021.mz-sites.com/mailing/"
+  ],
+  "form_na_home": false
+ },
+ "CEAB3": {
+  "mailing_urls": [
+   "https://ri.cea.com.br/servicos-aos-investidores/cadastre-se-no-mailing/"
+  ],
+  "form_na_home": false
+ },
+ "PCAR3": {
+  "mailing_urls": [
+   "https://www.gpari.com.br/informacoes-aos-investidores/mailing/",
+   "https://www.gpari.com.br/servicos-aos-investidores/mailing/"
+  ],
+  "form_na_home": false
+ },
+ "PRIO3": {
+  "mailing_urls": [],
+  "form_na_home": false
+ },
+ "RADL3": {
+  "mailing_urls": [
+   "https://ri.rdsaude.com.br/cadastre-se-no-mailing"
+  ],
+  "form_na_home": false
+ },
+ "VULC3": {
+  "mailing_urls": [
+   "https://www.vulcabrasri.com/a-companhia/dados-cadastrais/",
+   "https://www.vulcabrasri.com/servicos-aos-investidores/cadastre-se-no-mailing/"
+  ],
+  "form_na_home": false
+ },
+ "AXIA3": {
+  "mailing_urls": [
+   "https://ri.axia.com.br/cadastre-se-no-mailing/"
+  ],
+  "form_na_home": true
+ },
+ "BBDC4": {
+  "mailing_urls": [
+   "https://www.bradescori.com.br/servicos/mailing/"
+  ],
+  "form_na_home": false
+ },
+ "CSNA3": {
+  "mailing_urls": [
+   "https://ri.csn.com.br/servicos-ri/cadastre-se-no-mailing/",
+   "https://ri.csn.com.br/?page_id=127"
+  ],
+  "form_na_home": true
+ },
+ "RIAA3": {
+  "erro": "Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://ri.riachuelo.com.br/\nCall log:\n  - navigating to"
+ },
+ "SMFT3": {
+  "mailing_urls": [
+   "https://investor.smartfit.com.br/contato/cadastre-se-no-mailing/"
+  ],
+  "form_na_home": false
+ },
+ "TOTS3": {
+  "mailing_urls": [
+   "https://ri.totvs.com/servicos-aos-investidores/e-mail-alerta/"
+  ],
+  "form_na_home": false
+ },
+ "VIVA3": {
+  "mailing_urls": [
+   "https://ri.vivara.com.br/servicos-aos-investidores/cadastre-se-no-mailing/",
+   "https://api.mziq.com/mzfilemanager/v2/d/61a4df2d-a461-44d6-9128-da74058019db/33df8f9f-6e7d-2d5c-09c6-176d8e3bf436?origin=2"
+  ],
+  "form_na_home": false
+ },
+ "ALPA4": {
+  "mailing_urls": [],
+  "form_na_home": false
+ },
+ "ASAI3": {
+  "mailing_urls": [],
+  "form_na_home": false
+ },
+ "EGIE3": {
+  "mailing_urls": [],
+  "form_na_home": false
+ },
+ "EZTC3": {
+  "mailing_urls": [],
+  "form_na_home": true
+ },
+ "FLRY3": {
+  "mailing_urls": [
+   "https://ri.fleury.com.br/dados-cadastrais/",
+   "https://ri.fleury.com.br/servicos-aos-investidores/cadastre-se-no-mailing/",
+   "https://ri.fleury.com.br/servicos-aos-investidores/formulario-cadastral/"
+  ],
+  "form_na_home": false
+ },
+ "HYPE3": {
+  "mailing_urls": [
+   "https://ri.hypera.com.br/servicos-aos-investidores/cadastre-se-no-mailing/"
+  ],
+  "form_na_home": false
+ },
+ "LREN3": {
+  "mailing_urls": [
+   "https://ri.lojasrenner.com.br/doc-corporativos/formulario-de-referencia-e-cadastral/",
+   "https://ri.lojasrenner.com.br/info-aos-investidores/cadastre-se-no-mailing/"
+  ],
+  "form_na_home": true
+ },
+ "MGLU3": {
+  "mailing_urls": [
+   "javascript:abreBoxMailingMenu()",
+   "javascript:void(0)"
+  ],
+  "form_na_home": false
+ },
+ "PETR4": {
+  "mailing_urls": [
+   "https://www.investidorpetrobras.com.br/servicos-ao-investidor/alertas-de-golpes-e-fraudes-2/",
+   "https://www.investidorpetrobras.com.br/servicos-ao-investidor/informes-ri/"
+  ],
+  "form_na_home": false
+ },
+ "PNVL3": {
+  "mailing_urls": [
+   "https://ri.grupopanvel.com.br/servicos-aos-investidores/mailing/"
+  ],
+  "form_na_home": false
+ },
+ "RECV3": {
+  "mailing_urls": [
+   "https://ri.petroreconcavo.com.br/formulario-de-referencia-e-formulario-cadastral",
+   "https://ri.petroreconcavo.com.br/cadastre-se-no-mailing",
+   "https://petroreconcavo.riprisma.com/cadastre-se-no-mailing"
+  ],
+  "form_na_home": false
+ },
+ "CXSE3": {
+  "mailing_urls": [
+   "https://www.ri.caixaseguridade.com.br/contatos/cadastre-se-no-mailing-list/",
+   "http://www.ri.caixaseguridade.com.br/contatos/cadastre-se-no-mailing-list/"
+  ],
+  "form_na_home": false
+ },
+ "NATU3": {
+  "mailing_urls": [
+   "https://ri.natura.com.br/governanca-corporativa/formulario-de-referencia-e-cadastral/",
+   "https://ri.natura.com.br/informacoes-aos-investidores/cadastre-se-no-mailing/"
+  ],
+  "form_na_home": false
+ },
+ "SBFG3": {
+  "mailing_urls": [
+   "https://ri.gruposbf.com.br/servicos-aos-investidores/cadastre-se-no-mailing/"
+  ],
+  "form_na_home": false
+ },
+ "SMTO3": {
+  "mailing_urls": [
+   "javascript:abreBoxMailingMenu()",
+   "javascript:void(0);",
+   ""
+  ],
+  "form_na_home": false
+ },
+ "B3SA3": {
+  "mailing_urls": [
+   "https://ri.b3.com.br/pt-br/servicos-aos-investidores/e-mail-alerta/",
+   "https://ri.b3.com.br/pt-br/outras-informacoes-para-investidores/e-mail-alerta/"
+  ],
+  "form_na_home": false
+ },
+ "BPAC11": {
+  "mailing_urls": [
+   "https://ri.btgpactual.com/servicos-aos-investidores/cadastre-se-no-mailing"
+  ],
+  "form_na_home": false
+ },
+ "AZUL54": {
+  "mailing_urls": [
+   "https://ri.voeazul.com.br/informacoes-e-relatorios/formulario-de-referencia-e-formulario-cadastral/",
+   "https://ri.voeazul.com.br/servicos/cadastre-se-no-mailing/"
+  ],
+  "form_na_home": true
+ },
+ "AZZA3": {
+  "mailing_urls": [
+   "https://ri.azzas2154.com.br/arquivos-cvm/formulario-de-referencia-e-cadastral/",
+   "https://ri.azzas2154.com.br/informacoes-aos-investidores/cadastre-se-no-mailing-2/"
+  ],
+  "form_na_home": false
+ },
+ "BBAS3": {
+  "mailing_urls": [
+   "https://ri.bb.com.br/publicacoes-e-comunicados/formularios-cadastrais/",
+   "https://ri.bb.com.br/servicos-para-investidores/cadastre-se-no-mailing-2/",
+   "https://ri.bb.com.br/servicos-para-investidores/cadastre-se-no-mailing/"
+  ],
+  "form_na_home": false
+ },
+ "BEEF3": {
+  "mailing_urls": [
+   "https://ri.minervafoods.com/cadastre-se-mailing-list/",
+   "https://ri-minervafoods.mz-sites.com/cadastre-se-mailing-list/"
+  ],
+  "form_na_home": false
+ },
+ "CVCB3": {
+  "mailing_urls": [],
+  "form_na_home": false
+ },
+ "GMAT3": {
+  "mailing_urls": [
+   "https://ri.grupomateus.com.br/contatos/cadastre-se-no-mailing/"
+  ],
+  "form_na_home": false
+ },
+ "HAPV3": {
+  "mailing_urls": [
+   "https://ri.hapvida.com.br/servicos-aos-investidores/mailing/"
+  ],
+  "form_na_home": false
+ },
+ "MRVE3": {
+  "mailing_urls": [
+   "https://ri.mrv.com.br/publicacoes-cvm/formulario-de-referencia/",
+   "https://ri.mrv.com.br/servicos-aos-investidores/cadastre-se-no-mailing/",
+   "https://ri.mrv.com.br/servicos-aos-investidores/cadastre-se-no-mailing-old/"
+  ],
+  "form_na_home": false
+ },
+ "ONCO3": {
+  "mailing_urls": [
+   "https://ri.grupooncoclinicas.com/servicos-aos-investidores/cadastre-se-no-mailing"
+  ],
+  "form_na_home": false
+ },
+ "RDOR3": {
+  "mailing_urls": [
+   "https://ri.rededorsaoluiz.com.br/servicos-aos-investidores/cadastre-se-no-mailing/"
+  ],
+  "form_na_home": false
+ },
+ "SBSP3": {
+  "mailing_urls": [],
+  "form_na_home": false
+ },
+ "SLCE3": {
+  "mailing_urls": [
+   "https://ri.slcagricola.com.br/servicos-aos-investidores/cadastre-se-no-mailing/"
+  ],
+  "form_na_home": true
+ },
+ "UGPA3": {
+  "mailing_urls": [],
+  "form_na_home": false
+ },
+ "AUAU3": {
+  "mailing_urls": [
+   "https://ri.petzcobasi.com.br/cadastre-se-no-mailing/",
+   "https://ri.petzcobasi.com.br/servicos-aos-investidores/cadastre-se-no-mailing/",
+   "https://ri.petzcobasi.com.br/#"
+  ],
+  "form_na_home": true
+ },
+ "CMIG4": {
+  "mailing_urls": [
+   "https://ri.cemig.com.br/servicos-aos-investidores/e-mail-alerta"
+  ],
+  "form_na_home": false
+ },
+ "CPFE3": {
+  "mailing_urls": [
+   "https://ri.cpfl.com.br/show.aspx?idCanal=/DRzOLvBzt3bkm+pTDLkNg==&linguagem=pt",
+   "https://ri.cpfl.com.br/Alertas.aspx?IdCanal=Ocs0ZysRj8B7sYiTAGQ0Nw==&linguagem=pt"
+  ],
+  "form_na_home": false
+ },
+ "CYRE3": {
+  "mailing_urls": [
+   "https://ri.cyrela.com.br/informacoes-adicionais/cadastre-se-no-mailing/",
+   "https://ri.cyrela.com.br/informacoes-adicionais/dados-cadastrais/"
+  ],
+  "form_na_home": false
+ },
+ "LWSA3": {
+  "mailing_urls": [
+   "https://ri.lwsa.tech/servicos-aos-investidores/cadastre-se-no-mailing/",
+   "https://ri.lwsa.tech/informacoes-financeiras/cadastre-se-no-mailing/"
+  ],
+  "form_na_home": false
+ },
+ "MBRF3": {
+  "mailing_urls": [
+   "https://ri.mbrf.com/servicos-aos-investidores/cadastre-se-no-mailing/"
+  ],
+  "form_na_home": false
+ },
+ "MDIA3": {
+  "mailing_urls": [
+   "https://ri.mdiasbranco.com.br/servicos-aos-investidores/mailing-ri/"
+  ],
+  "form_na_home": false
+ },
+ "VAMO3": {
+  "mailing_urls": [
+   "https://ri.grupovamos.com.br/servicos-aos-investidores/cadastre-se-no-mailing/"
+  ],
+  "form_na_home": false
+ },
+ "CSAN3": {
+  "mailing_urls": [
+   "https://www.cosan.com.br/relacoes-com-investidores/outras-informacoes-para-investidores/mailing/"
+  ],
+  "form_na_home": false
+ },
+ "VBBR3": {
+  "mailing_urls": [],
+  "form_na_home": false
+ }
+}
