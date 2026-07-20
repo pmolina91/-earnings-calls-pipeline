@@ -1,0 +1,7 @@
+job=replay file=tests/mailing-urls.json mode=mailurl sha=4f7c3e795e99723bfbe2b5e142e7bc7e4fb37151
+4f7c3e7 descoberta de URLs de mailing (69 empresas)
+defda0c mailing 29615159359
+.github/workflows/tests.yml
+scripts/__pycache__/mailing_urls.cpython-311.pyc
+scripts/mailing_urls.py
+tests/mailing-urls.json
