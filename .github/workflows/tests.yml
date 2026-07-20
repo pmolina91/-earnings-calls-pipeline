@@ -169,6 +169,14 @@ jobs:
       - name: deps
         if: steps.c.outputs.mode == 'mailing'
         run: pip install -q playwright && playwright install --with-deps chromium
+      - name: run mailing url discovery
+        if: steps.c.outputs.mode == 'mailurl'
+        run: |
+          pip install -q playwright && playwright install --with-deps chromium
+          python3 scripts/mailing_urls.py "${{ steps.c.outputs.file }}"
+          mkdir -p logs && cp work/mailing_urls.json logs/MAILURLS_${{ github.run_id }}.json || true
+          git config user.name earnings-bot; git config user.email bot@users.noreply.github.com
+          for i in 1 2 3; do git pull -q --rebase || true; git add logs/; git commit -q -m "mailurls ${{ github.run_id }}" && git push -q && break || sleep $((i*7)); done; true
       - name: run mailing signup
         if: steps.c.outputs.mode == 'mailing'
         env:

@@ -1,0 +1,281 @@
+{
+ "mode": "mailurl",
+ "empresas": [
+  {
+   "ticker": "SANB11",
+   "url": "https://www.santander.com.br/ri/"
+  },
+  {
+   "ticker": "ABEV3",
+   "url": "https://ri.ambev.com.br/"
+  },
+  {
+   "ticker": "ECOR3",
+   "url": "https://ri.ecorodovias.com.br/"
+  },
+  {
+   "ticker": "USIM5",
+   "url": "https://ri.usiminas.com/"
+  },
+  {
+   "ticker": "GGBR4",
+   "url": "https://ri.gerdau.com/"
+  },
+  {
+   "ticker": "ITUB4",
+   "url": "https://www.itau.com.br/relacoes-com-investidores/"
+  },
+  {
+   "ticker": "CMIN3",
+   "url": "https://ri.csnmineracao.com.br/"
+  },
+  {
+   "ticker": "DXCO3",
+   "url": "https://ri.dex.co/"
+  },
+  {
+   "ticker": "KLBN11",
+   "url": "https://ri.klabin.com.br/"
+  },
+  {
+   "ticker": "VIVT3",
+   "url": "https://ri.telefonica.com.br/"
+  },
+  {
+   "ticker": "TIMS3",
+   "url": "https://ri.tim.com.br/"
+  },
+  {
+   "ticker": "MOTV3",
+   "url": "https://ri.motiva.com.br/"
+  },
+  {
+   "ticker": "VALE3",
+   "url": "https://vale.com/pt/investidores"
+  },
+  {
+   "ticker": "BBSE3",
+   "url": "https://www.bbseguridaderi.com.br/"
+  },
+  {
+   "ticker": "ISAE4",
+   "url": "https://ri.isaenergiabrasil.com.br/"
+  },
+  {
+   "ticker": "PGMN3",
+   "url": "https://ri.paguemenos.com.br/"
+  },
+  {
+   "ticker": "CBAV3",
+   "url": "https://ri.cba.com.br/"
+  },
+  {
+   "ticker": "CEAB3",
+   "url": "https://ri.cea.com.br/"
+  },
+  {
+   "ticker": "PCAR3",
+   "url": "https://www.gpari.com.br/"
+  },
+  {
+   "ticker": "PRIO3",
+   "url": "https://ri.prio3.com.br/"
+  },
+  {
+   "ticker": "RADL3",
+   "url": "https://ri.rdsaude.com.br/"
+  },
+  {
+   "ticker": "VULC3",
+   "url": "https://www.vulcabrasri.com/"
+  },
+  {
+   "ticker": "AXIA3",
+   "url": "https://ri.axia.com.br/"
+  },
+  {
+   "ticker": "BBDC4",
+   "url": "https://www.bradescori.com.br/"
+  },
+  {
+   "ticker": "CSNA3",
+   "url": "https://ri.csn.com.br/"
+  },
+  {
+   "ticker": "RIAA3",
+   "url": "https://ri.riachuelo.com.br/"
+  },
+  {
+   "ticker": "SMFT3",
+   "url": "https://investor.smartfit.com.br/"
+  },
+  {
+   "ticker": "TOTS3",
+   "url": "https://ri.totvs.com/"
+  },
+  {
+   "ticker": "VIVA3",
+   "url": "https://ri.vivara.com.br/"
+  },
+  {
+   "ticker": "ALPA4",
+   "url": "https://ri.alpargatas.com.br/"
+  },
+  {
+   "ticker": "ASAI3",
+   "url": "https://ri.assai.com.br/"
+  },
+  {
+   "ticker": "EGIE3",
+   "url": "https://www.engie.com.br/investidores/"
+  },
+  {
+   "ticker": "EZTC3",
+   "url": "https://ri.eztec.com.br/"
+  },
+  {
+   "ticker": "FLRY3",
+   "url": "https://ri.fleury.com.br/"
+  },
+  {
+   "ticker": "HYPE3",
+   "url": "https://ri.hypera.com.br/"
+  },
+  {
+   "ticker": "LREN3",
+   "url": "https://ri.lojasrenner.com.br/"
+  },
+  {
+   "ticker": "MGLU3",
+   "url": "https://ri.magazineluiza.com.br/"
+  },
+  {
+   "ticker": "PETR4",
+   "url": "https://www.investidorpetrobras.com.br/"
+  },
+  {
+   "ticker": "PNVL3",
+   "url": "https://ri.grupopanvel.com.br/"
+  },
+  {
+   "ticker": "RECV3",
+   "url": "https://ri.petroreconcavo.com.br/"
+  },
+  {
+   "ticker": "CXSE3",
+   "url": "https://www.ri.caixaseguridade.com.br/"
+  },
+  {
+   "ticker": "NATU3",
+   "url": "https://ri.natura.com.br/"
+  },
+  {
+   "ticker": "SBFG3",
+   "url": "https://ri.gruposbf.com.br/"
+  },
+  {
+   "ticker": "SMTO3",
+   "url": "https://ri.saomartinho.com.br/"
+  },
+  {
+   "ticker": "B3SA3",
+   "url": "https://ri.b3.com.br/"
+  },
+  {
+   "ticker": "BPAC11",
+   "url": "https://ri.btgpactual.com/"
+  },
+  {
+   "ticker": "AZUL54",
+   "url": "https://ri.voeazul.com.br/"
+  },
+  {
+   "ticker": "AZZA3",
+   "url": "https://ri.azzas2154.com.br/"
+  },
+  {
+   "ticker": "BBAS3",
+   "url": "https://ri.bb.com.br/"
+  },
+  {
+   "ticker": "BEEF3",
+   "url": "https://ri.minervafoods.com/"
+  },
+  {
+   "ticker": "CVCB3",
+   "url": "https://www.cvccorp.com.br/en/ir/"
+  },
+  {
+   "ticker": "GMAT3",
+   "url": "https://ri.grupomateus.com.br/"
+  },
+  {
+   "ticker": "HAPV3",
+   "url": "https://ri.hapvida.com.br/"
+  },
+  {
+   "ticker": "MRVE3",
+   "url": "https://ri.mrv.com.br/"
+  },
+  {
+   "ticker": "ONCO3",
+   "url": "https://ri.grupooncoclinicas.com/"
+  },
+  {
+   "ticker": "RDOR3",
+   "url": "https://ri.rededorsaoluiz.com.br/"
+  },
+  {
+   "ticker": "SBSP3",
+   "url": "https://ri.sabesp.com.br/"
+  },
+  {
+   "ticker": "SLCE3",
+   "url": "https://ri.slcagricola.com.br/"
+  },
+  {
+   "ticker": "UGPA3",
+   "url": "https://ri.ultra.com.br/"
+  },
+  {
+   "ticker": "AUAU3",
+   "url": "https://ri.petzcobasi.com.br/"
+  },
+  {
+   "ticker": "CMIG4",
+   "url": "https://ri.cemig.com.br/"
+  },
+  {
+   "ticker": "CPFE3",
+   "url": "https://ri.cpfl.com.br/"
+  },
+  {
+   "ticker": "CYRE3",
+   "url": "https://ri.cyrela.com.br/"
+  },
+  {
+   "ticker": "LWSA3",
+   "url": "https://ri.lwsa.tech/"
+  },
+  {
+   "ticker": "MBRF3",
+   "url": "https://ri.mbrf.com/"
+  },
+  {
+   "ticker": "MDIA3",
+   "url": "https://ri.mdiasbranco.com.br/"
+  },
+  {
+   "ticker": "VAMO3",
+   "url": "https://ri.grupovamos.com.br/"
+  },
+  {
+   "ticker": "CSAN3",
+   "url": "https://www.cosan.com.br/relacoes-com-investidores/"
+  },
+  {
+   "ticker": "VBBR3",
+   "url": "https://ri.vibraenergia.com.br/"
+  }
+ ]
+}
