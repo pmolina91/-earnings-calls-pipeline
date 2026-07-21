@@ -169,6 +169,16 @@ jobs:
       - name: deps
         if: steps.c.outputs.mode == 'mailing'
         run: pip install -q playwright && playwright install --with-deps chromium
+      - name: run notion test
+        if: steps.c.outputs.mode == 'notion_test'
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+        run: |
+          pip install -q requests
+          python3 scripts/notion_test.py || true
+          mkdir -p logs && cp work/notion_test.json logs/NOTIONTEST_${{ github.run_id }}.json 2>/dev/null || true
+          git config user.name earnings-bot; git config user.email bot@users.noreply.github.com
+          for i in 1 2 3; do git pull -q --rebase || true; git add logs/; git commit -q -m "notiontest ${{ github.run_id }}" && git push -q && break || sleep $((i*7)); done; true
       - name: run mailing url discovery
         if: steps.c.outputs.mode == 'mailurl'
         run: |
