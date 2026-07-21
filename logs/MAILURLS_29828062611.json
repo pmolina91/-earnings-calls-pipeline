@@ -1,0 +1,50 @@
+{
+ "SANB11": {
+  "probe_hits": []
+ },
+ "ITUB4": {
+  "probe_hits": []
+ },
+ "DXCO3": {
+  "probe_hits": []
+ },
+ "VIVT3": {
+  "probe_hits": []
+ },
+ "VALE3": {
+  "probe_hits": []
+ },
+ "PRIO3": {
+  "probe_hits": []
+ },
+ "RIAA3": {
+  "probe_hits": []
+ },
+ "ALPA4": {
+  "probe_hits": []
+ },
+ "ASAI3": {
+  "probe_hits": []
+ },
+ "EGIE3": {
+  "probe_hits": []
+ },
+ "EZTC3": {
+  "probe_hits": []
+ },
+ "SBSP3": {
+  "probe_hits": [
+   "https://ri.sabesp.com.br/mailing/",
+   "https://ri.sabesp.com.br/mailing/"
+  ]
+ },
+ "UGPA3": {
+  "probe_hits": []
+ },
+ "VBBR3": {
+  "probe_hits": []
+ },
+ "CVCB3": {
+  "probe_hits": []
+ }
+}
