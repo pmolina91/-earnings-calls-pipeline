@@ -1,0 +1,5 @@
+job=register file=tests/mailurl_probe.json mode=mailurl sha=73119550ad9d9f1671dfd2c3209c89d6fcc22c58
+7311955 mailurl probe: caminhos padrao nas 15 restantes
+fe79e01 mailurls 29827033687
+scripts/mailing_urls.py
+tests/mailurl_probe.json
