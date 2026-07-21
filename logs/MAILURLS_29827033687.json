@@ -1,0 +1,113 @@
+{
+ "SANB11": {
+  "mailing_urls": [],
+  "form_urls": [],
+  "form_na_home": false
+ },
+ "ITUB4": {
+  "mailing_urls": [],
+  "form_urls": [],
+  "form_na_home": false
+ },
+ "DXCO3": {
+  "mailing_urls": [],
+  "form_urls": [],
+  "form_na_home": false
+ },
+ "VIVT3": {
+  "mailing_urls": [],
+  "form_urls": [],
+  "form_na_home": false
+ },
+ "VALE3": {
+  "mailing_urls": [],
+  "form_urls": [],
+  "form_na_home": false
+ },
+ "PRIO3": {
+  "mailing_urls": [],
+  "form_urls": [],
+  "form_na_home": false
+ },
+ "RIAA3": {
+  "erro": "Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://ri.riachuelo.com.br/\nCall log:\n  - navigating to"
+ },
+ "ALPA4": {
+  "mailing_urls": [],
+  "form_urls": [],
+  "form_na_home": false
+ },
+ "ASAI3": {
+  "mailing_urls": [],
+  "form_urls": [],
+  "form_na_home": false
+ },
+ "EGIE3": {
+  "mailing_urls": [],
+  "form_urls": [],
+  "form_na_home": false
+ },
+ "EZTC3": {
+  "mailing_urls": [],
+  "form_urls": [],
+  "form_na_home": true
+ },
+ "SBSP3": {
+  "mailing_urls": [],
+  "form_urls": [],
+  "form_na_home": false
+ },
+ "UGPA3": {
+  "mailing_urls": [],
+  "form_urls": [],
+  "form_na_home": false
+ },
+ "VBBR3": {
+  "mailing_urls": [],
+  "form_urls": [],
+  "form_na_home": false
+ },
+ "CVCB3": {
+  "mailing_urls": [],
+  "form_urls": [],
+  "form_na_home": false
+ },
+ "PGMN3": {
+  "mailing_urls": [
+   "",
+   "https://ri.paguemenos.com.br/#"
+  ],
+  "form_urls": [
+   "https://ri.paguemenos.com.br/#"
+  ],
+  "form_na_home": true
+ },
+ "GGBR4": {
+  "mailing_urls": [
+   "https://ri.gerdau.com/a-gerdau/dados-cadastrais/",
+   "https://ri.gerdau.com/servicos-de-ri/cadastre-se-no-mailing/",
+   "https://ri.gerdau.com/en/ir-services/email-alert/"
+  ],
+  "form_urls": [
+   "https://ri.gerdau.com/servicos-de-ri/cadastre-se-no-mailing/"
+  ],
+  "form_na_home": false
+ },
+ "MGLU3": {
+  "mailing_urls": [
+   "javascript:abreBoxMailingMenu()",
+   "javascript:void(0)"
+  ],
+  "form_urls": [],
+  "form_na_home": true
+ },
+ "SMTO3": {
+  "mailing_urls": [
+   "javascript:abreBoxMailingMenu()",
+   "javascript:void(0);",
+   ""
+  ],
+  "form_urls": [],
+  "form_na_home": true
+ }
+}
