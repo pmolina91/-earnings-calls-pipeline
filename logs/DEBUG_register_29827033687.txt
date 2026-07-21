@@ -1,0 +1,5 @@
+job=register file=tests/mailurl_semlink.json mode=mailurl sha=3ba83e04910052b0ca2451639df4674f6558d14b
+3ba83e0 mailurl v2: crawl 2 niveis p/ 19 empresas sem link
+ec5e126 mailurls 29752962365
+scripts/mailing_urls.py
+tests/mailurl_semlink.json
