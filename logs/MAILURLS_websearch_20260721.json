@@ -1,0 +1,21 @@
+{
+ "SBSP3": {"mailing_urls": ["https://ri.sabesp.com.br/mailing/"], "fonte": "probe"},
+ "SANB11": {"mailing_urls": ["https://www.santander.com.br/ri/suporte-ao-investidor/cadastre-se-no-mailing/"], "fonte": "websearch", "obs": "302 -> ri-santander.mz-customers.com"},
+ "ITUB4": {"mailing_urls": ["https://www.itau.com.br/relacoes-com-investidores/servicos-ao-investidor/cadastre-se-em-nosso-mailing/"], "fonte": "websearch"},
+ "DXCO3": {"mailing_urls": ["https://ri.dex.co/servicos-aos-investidores/email-alerta/", "https://ri.dex.co/en/investor-services/email-alerta/"], "fonte": "websearch", "obs": "403 no fetch; alt investidores@dex.co"},
+ "VIVT3": {"mailing_urls": ["https://ri.telefonica.com.br/servicos/e-mail-alert/"], "fonte": "websearch"},
+ "VALE3": {"mailing_urls": ["https://ri-vale.mz-sites.com/en/mailer/"], "fonte": "websearch"},
+ "PRIO3": {"mailing_urls": ["https://ri.prio3.com.br/cadastre-se-no-mailing/"], "fonte": "websearch"},
+ "RIAA3": {"mailing_urls": ["https://ri.riachuelo.com.br/servicos-aos-investidores/cadastre-se-no-mailing/"], "fonte": "websearch"},
+ "ALPA4": {"mailing_urls": ["https://ri.alpargatas.com.br/servicos-aos-investidores/alertas-ri/"], "fonte": "websearch"},
+ "ASAI3": {"mailing_urls": ["https://ri.assai.com.br/servicos-aos-investidores/mailing/"], "fonte": "websearch"},
+ "EGIE3": {"mailing_urls": ["https://www.engie.com.br/investidores/#cadastroMailInvestidores"], "fonte": "websearch"},
+ "EZTC3": {"mailing_urls": ["https://ri.eztec.com.br/receba-nossas-comunicacoes/"], "fonte": "websearch"},
+ "UGPA3": {"mailing_urls": ["https://ri.ultra.com.br/servicos-ao-investidor/cadastre-se-no-mailing/"], "fonte": "websearch"},
+ "VBBR3": {"mailing_urls": ["https://ri.vibraenergia.com.br/servicos-aos-investidores/cadastre-se-no-mailing/"], "fonte": "websearch"},
+ "CVCB3": {"mailing_urls": ["https://www.cvccorp.com.br/ri/cadastre-se-no-mailing/"], "fonte": "websearch"},
+ "MGLU3": {"mailing_urls": ["https://ri.magazineluiza.com.br/ + abreBoxMailingMenu()"], "fonte": "runner"},
+ "SMTO3": {"mailing_urls": ["https://ri.saomartinho.com.br/ + abreBoxMailingMenu()"], "fonte": "runner"},
+ "GGBR4": {"mailing_urls": ["https://ri.gerdau.com/servicos-de-ri/cadastre-se-no-mailing/"], "fonte": "runner"},
+ "PGMN3": {"mailing_urls": ["https://ri.paguemenos.com.br/ (form na home)"], "fonte": "runner"}
+}
