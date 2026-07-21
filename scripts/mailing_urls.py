@@ -7,6 +7,34 @@ from playwright.sync_api import sync_playwright
 spec = json.load(open(sys.argv[1]))
 out = {}
 
+if spec.get('probe_paths'):
+    PATHS = spec['probe_paths']
+    with sync_playwright() as pw:
+        b = pw.chromium.launch(args=['--no-sandbox'])
+        ctx = b.new_context(locale='pt-BR', ignore_https_errors=True)
+        for emp in spec['empresas']:
+            t = emp['ticker']; base = emp['url'].rstrip('/')
+            hits = []
+            p = ctx.new_page()
+            for path in PATHS:
+                if len(hits) >= 2: break
+                u = base + path
+                try:
+                    r = p.goto(u, timeout=25000, wait_until='domcontentloaded'); time.sleep(3)
+                    if r and r.status < 400 and 'nao-encontrada' not in p.url and 'not-found' not in p.url:
+                        f = p.evaluate('() => ({email: !!document.querySelector("input[type=email], input[name*=mail i], input[id*=mail i]"), t: document.title})')
+                        if f['email'] and not re.search(r'não encontrada|nao encontrada|not found|404', f['t'], re.I):
+                            hits.append(p.url)
+                except Exception:
+                    pass
+            out[t] = {'probe_hits': hits}
+            print(t, hits, flush=True)
+            p.close()
+        b.close()
+    os.makedirs('work', exist_ok=True)
+    json.dump(out, open('work/mailing_urls.json','w'), indent=1, ensure_ascii=False)
+    sys.exit(0)
+
 FIND_LINKS = '''() => [...new Set([...document.querySelectorAll('a')]
     .filter(a=>/mailing|cadastr|newsletter|e-?mail.?alert|alerta/i.test(a.href + ' ' + (a.innerText||'')))
     .map(a=>a.href))].slice(0,5)'''
@@ -58,3 +86,5 @@ with sync_playwright() as pw:
     b.close()
 os.makedirs('work', exist_ok=True)
 json.dump(out, open('work/mailing_urls.json','w'), indent=1, ensure_ascii=False)
+
+# --- modo probe: testa caminhos padrao por dominio (spec['probe_paths']) ---
