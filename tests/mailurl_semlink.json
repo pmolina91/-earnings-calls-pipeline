@@ -1,0 +1,24 @@
+{
+ "mode": "mailurl",
+ "empresas": [
+  {"ticker": "SANB11", "url": "https://www.santander.com.br/ri/"},
+  {"ticker": "ITUB4", "url": "https://www.itau.com.br/relacoes-com-investidores/"},
+  {"ticker": "DXCO3", "url": "https://ri.dex.co/"},
+  {"ticker": "VIVT3", "url": "https://ri.telefonica.com.br/"},
+  {"ticker": "VALE3", "url": "https://vale.com/pt/investidores"},
+  {"ticker": "PRIO3", "url": "https://ri.prio3.com.br/"},
+  {"ticker": "RIAA3", "url": "https://ri.riachuelo.com.br/"},
+  {"ticker": "ALPA4", "url": "https://ri.alpargatas.com.br/"},
+  {"ticker": "ASAI3", "url": "https://ri.assai.com.br/"},
+  {"ticker": "EGIE3", "url": "https://www.engie.com.br/investidores/"},
+  {"ticker": "EZTC3", "url": "https://ri.eztec.com.br/"},
+  {"ticker": "SBSP3", "url": "https://ri.sabesp.com.br/"},
+  {"ticker": "UGPA3", "url": "https://ri.ultra.com.br/"},
+  {"ticker": "VBBR3", "url": "https://ri.vibraenergia.com.br/"},
+  {"ticker": "CVCB3", "url": "https://www.cvccorp.com.br/en/ir"},
+  {"ticker": "PGMN3", "url": "https://ri.paguemenos.com.br/"},
+  {"ticker": "GGBR4", "url": "https://ri.gerdau.com/"},
+  {"ticker": "MGLU3", "url": "https://ri.magazineluiza.com.br/"},
+  {"ticker": "SMTO3", "url": "https://ri.saomartinho.com.br/"}
+ ]
+}
