@@ -1,0 +1,5 @@
+job=register file=tests/replay-axia-notion-live.json mode=replay sha=404a1a7d4777ba56bf1c2ea7eb5bfd69bc87e566
+404a1a7 notion_api tolerante a esquema (Ano/Trimestre select); ensaio live aponta p/ database WEGE
+e5b7550 log de erro replay
+scripts/notion_api.py
+tests/replay-axia-notion-live.json
