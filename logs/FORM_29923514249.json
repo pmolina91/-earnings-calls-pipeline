@@ -1,0 +1,982 @@
+[
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "data_pwd",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "data_uname",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "data_wtk",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "data_uid",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "data_stype",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "data_token",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "BUTTON",
+  "type": "button",
+  "id": "",
+  "name": "",
+  "placeholder": "",
+  "aria": "Fuso horário Horário Universal (UTC)",
+  "role": "button",
+  "text": "Horário Universal (UTC)"
+ },
+ {
+  "tag": "INPUT",
+  "type": "text",
+  "id": "question_first_name",
+  "name": "",
+  "placeholder": "Nome",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "text",
+  "id": "question_last_name",
+  "name": "",
+  "placeholder": "Sobrenome",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "text",
+  "id": "question_email",
+  "name": "",
+  "placeholder": "join@company.com",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "text",
+  "id": "question_org",
+  "name": "",
+  "placeholder": "Sua organização",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "DIV",
+  "type": "",
+  "id": "",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "radio",
+  "text": ""
+ },
+ {
+  "tag": "DIV",
+  "type": "",
+  "id": "",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "radio",
+  "text": ""
+ },
+ {
+  "tag": "DIV",
+  "type": "",
+  "id": "",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "radio",
+  "text": ""
+ },
+ {
+  "tag": "DIV",
+  "type": "",
+  "id": "",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "radio",
+  "text": ""
+ },
+ {
+  "tag": "DIV",
+  "type": "",
+  "id": "",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "radio",
+  "text": ""
+ },
+ {
+  "tag": "DIV",
+  "type": "",
+  "id": "",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "radio",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "",
+  "name": "ZOOM-CSRFTOKEN",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "BUTTON",
+  "type": "button",
+  "id": "",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": "Inscrição"
+ },
+ {
+  "tag": "BUTTON",
+  "type": "button",
+  "id": "",
+  "name": "",
+  "placeholder": "",
+  "aria": "Share on Facebook",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "BUTTON",
+  "type": "button",
+  "id": "",
+  "name": "",
+  "placeholder": "",
+  "aria": "Share on Twitter",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "BUTTON",
+  "type": "button",
+  "id": "",
+  "name": "",
+  "placeholder": "",
+  "aria": "Share on LinkedIn",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "BUTTON",
+  "type": "button",
+  "id": "",
+  "name": "",
+  "placeholder": "",
+  "aria": "Share via Email",
+  "role": "button",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_pageName",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_pageLanguage",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_userCountry",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_userStatus",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_productUserType",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_userRole",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_accountType",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_accountPlanType",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_accountChannel",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_domainType",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_billingCycle",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_expirationDate",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_autoRenew",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_rateMrr",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_chargeType",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_licenseCount",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_paidStartDate",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_licenseDiscount",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_addOns",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_trackingGuid",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_visitorGuid",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_salesChannel",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_verticalSegment",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_salesSegment",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_salesDivision",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_billingCountry",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_employeeCount",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_webClusterId",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_segmentValue",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_couponType",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_discountType",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_pageType",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_pageVersion",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_accountHealthScore",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_phonePropensityScore",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_winbackPropensityScore",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_meetingsUpsellScore",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_meetingsUpsellProduct",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_meetingsUpsellChannel",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_proToBizPropensityScore",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_webinarPropensityScore",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_largeMeetingPropensityScore",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_webinarChurnRiskFlag",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_isSensitiveReferrer",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_fromOP",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_billingIsIncreasePriceForPHPABVariant",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_vertical",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "hidden",
+  "id": "gtm_experimentDecisions",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "BUTTON",
+  "type": "submit",
+  "id": "close-pc-btn-handler",
+  "name": "",
+  "placeholder": "",
+  "aria": "Fechar centro de preferências",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "BUTTON",
+  "type": "submit",
+  "id": "accept-recommended-btn-handler",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": "Aceitar todos os cookies"
+ },
+ {
+  "tag": "BUTTON",
+  "type": "submit",
+  "id": "",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "checkbox",
+  "id": "ot-group-id-C0004",
+  "name": "ot-group-id-C0004",
+  "placeholder": "",
+  "aria": "",
+  "role": "switch",
+  "text": ""
+ },
+ {
+  "tag": "BUTTON",
+  "type": "submit",
+  "id": "",
+  "name": "",
+  "placeholder": "",
+  "aria": "Cookies de terceiros O botão Detalhes de Cookies abre o menu Lista de Cookies",
+  "role": "",
+  "text": "Cookies de terceiros‎"
+ },
+ {
+  "tag": "BUTTON",
+  "type": "submit",
+  "id": "",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "checkbox",
+  "id": "ot-group-id-C0003",
+  "name": "ot-group-id-C0003",
+  "placeholder": "",
+  "aria": "",
+  "role": "switch",
+  "text": ""
+ },
+ {
+  "tag": "BUTTON",
+  "type": "submit",
+  "id": "",
+  "name": "",
+  "placeholder": "",
+  "aria": "Cookies de terceiros O botão Detalhes de Cookies abre o menu Lista de Cookies",
+  "role": "",
+  "text": "Cookies de terceiros‎"
+ },
+ {
+  "tag": "BUTTON",
+  "type": "submit",
+  "id": "",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "checkbox",
+  "id": "ot-group-id-C0002",
+  "name": "ot-group-id-C0002",
+  "placeholder": "",
+  "aria": "",
+  "role": "switch",
+  "text": ""
+ },
+ {
+  "tag": "BUTTON",
+  "type": "submit",
+  "id": "",
+  "name": "",
+  "placeholder": "",
+  "aria": "Cookies de terceiros O botão Detalhes de Cookies abre o menu Lista de Cookies",
+  "role": "",
+  "text": "Cookies de terceiros‎"
+ },
+ {
+  "tag": "BUTTON",
+  "type": "submit",
+  "id": "",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "BUTTON",
+  "type": "submit",
+  "id": "",
+  "name": "",
+  "placeholder": "",
+  "aria": "Cookies de terceiros O botão Detalhes de Cookies abre o menu Lista de Cookies",
+  "role": "",
+  "text": "Cookies de terceiros‎"
+ },
+ {
+  "tag": "BUTTON",
+  "type": "submit",
+  "id": "",
+  "name": "",
+  "placeholder": "",
+  "aria": "Back",
+  "role": "",
+  "text": "Back Button"
+ },
+ {
+  "tag": "INPUT",
+  "type": "text",
+  "id": "vendor-search-handler",
+  "name": "vendor-search-handler",
+  "placeholder": "Search...",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "BUTTON",
+  "type": "submit",
+  "id": "filter-btn-handler",
+  "name": "",
+  "placeholder": "",
+  "aria": "Filter",
+  "role": "",
+  "text": "Filter Icon"
+ },
+ {
+  "tag": "BUTTON",
+  "type": "submit",
+  "id": "clear-filters-handler",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": "Clear"
+ },
+ {
+  "tag": "INPUT",
+  "type": "checkbox",
+  "id": "chkbox-id",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "BUTTON",
+  "type": "submit",
+  "id": "filter-apply-handler",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": "Apply"
+ },
+ {
+  "tag": "BUTTON",
+  "type": "submit",
+  "id": "filter-cancel-handler",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": "Cancel"
+ },
+ {
+  "tag": "INPUT",
+  "type": "checkbox",
+  "id": "select-all-hosts-groups-handler",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "checkbox",
+  "id": "select-all-vendor-groups-handler",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "INPUT",
+  "type": "checkbox",
+  "id": "select-all-vendor-leg-handler",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "BUTTON",
+  "type": "submit",
+  "id": "",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "BUTTON",
+  "type": "submit",
+  "id": "",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": "Confirmar as minhas escolhas"
+ },
+ {
+  "tag": "BUTTON",
+  "type": "submit",
+  "id": "",
+  "name": "",
+  "placeholder": "",
+  "aria": "Fechar",
+  "role": "",
+  "text": ""
+ },
+ {
+  "tag": "BUTTON",
+  "type": "submit",
+  "id": "onetrust-pc-btn-handler",
+  "name": "",
+  "placeholder": "",
+  "aria": "",
+  "role": "",
+  "text": "Configurações de Cookie"
+ }
+]
