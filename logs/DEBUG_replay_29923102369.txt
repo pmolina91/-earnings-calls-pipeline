@@ -1,0 +1,4 @@
+job=replay file=tests/register-sanb11-2t26.json mode=register sha=be8b9c7cb5a8073b3ae55185c34f259e728b7dc0
+be8b9c7 registro robo Santander 2T26 (29/07 10:00)
+fb76ddd staging: job WEG 2T26 (23/07 11:00 BRT, Zoom WN_cxsFU5) - ativar amanha de manha
+tests/register-sanb11-2t26.json
