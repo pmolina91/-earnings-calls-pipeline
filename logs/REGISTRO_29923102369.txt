@@ -1,0 +1,34 @@
+ACOES: adapter:zoom, fill:first, fill:last, fill:email, categoria:Buy side:None, lgpd:True, submit
+CONFIRMACAO_DETECTADA: False
+URL_FINAL: https://us05web.zoom.us/webinar/register/WN_VAExS6tSQIG4WDEIVP6B-Q#/registration
+
+PAGINA FINAL (sanitizada):
+Ir para o conteúdo principal
+Visão geral da acessibilidade
+Suporte
+Português 
+Santander Brasil | Teleconferência de resultados do 2T26
+Data e hora
+29 jul. 2026 01:00 da tarde em 
+Horário Universal (UTC)
+Inscrição no Webinar
+Nome*
+Sobrenome*
+Endereço de E-mail*
+Organização*
+Este campo é obrigatório.
+Perfil*
+Buy-Side
+Sell-Side
+Profissional RI
+Investidor PF
+Jornalista
+Outros
+Este campo é obrigatório.
+
+As informações fornecidas durante a inscrição serão compartilhadas com o proprietário da conta e o anfitrião e podem ser usadas e compartilhadas por eles de acordo com a Termos e os Política de Privacidade deles.
+
+Inscrição
+
+Copyright ©2026 Zoom Video Communications, Inc. Todos os direitos reservados.
+Políticas legais e de privacidade Do Not Sell My Personal Information Preferências de cookies
