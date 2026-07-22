@@ -27,13 +27,24 @@ def register_zoom(page, name, email, company, phone='', title_category='Buy side
     try:
         picked = page.evaluate('''(cat) => {
             const alvo = cat.toLowerCase().replace(/[^a-z]/g, '');
-            const radios = [...document.querySelectorAll('[role=radio]')];
+            const rotulo = (el) => {
+                let txt = (el.getAttribute('aria-label')||'') + ' ' + (el.innerText||'');
+                const lb = el.getAttribute('aria-labelledby');
+                if (lb) for (const id of lb.split(/\\s+/)) { const t = document.getElementById(id); if (t) txt += ' ' + t.innerText; }
+                let p = el; for (let i=0;i<3 && p;i++){ p = p.parentElement; if (p) txt += ' ' + (p.innerText||'').slice(0,80); }
+                return txt.toLowerCase().replace(/[^a-z]/g,'');
+            };
+            const radios = [...document.querySelectorAll('[role=radio], input[type=radio]')];
+            const vistos = radios.map(r => rotulo(r).slice(0,60));
             for (const r of radios) {
-                const t = ((r.getAttribute('aria-label')||'') + ' ' + (r.innerText||'') + ' ' +
-                           ((r.closest('label,li,div')||{}).innerText||'')).toLowerCase().replace(/[^a-z]/g,'');
-                if (t.includes(alvo)) { r.click(); return r.getAttribute('aria-checked'); }
+                if (rotulo(r).includes(alvo)) {
+                    r.click();
+                    const inp = r.querySelector('input') || r;
+                    if (inp.click && r !== inp) inp.click();
+                    return {ok: r.getAttribute('aria-checked') || inp.checked || 'clicado', vistos};
+                }
             }
-            return null;
+            return {ok: null, vistos};
         }''', title_category)
         log.append(f'perfil_radio:{title_category}:{picked}')
     except Exception as e:
