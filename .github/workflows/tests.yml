@@ -84,6 +84,8 @@ jobs:
           python3 scripts/get_model.py
       - name: run replay test
         if: steps.c.outputs.mode == 'replay'
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
         run: python3 scripts/test_replay.py "${{ steps.c.outputs.file }}"
       - name: publicar erro no repo
         if: failure() && steps.c.outputs.mode == 'replay'

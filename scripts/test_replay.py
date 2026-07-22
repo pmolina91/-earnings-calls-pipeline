@@ -53,12 +53,37 @@ def main():
         hot = spec.get('hotwords','') or None
         lang = spec.get('language','pt') or None
         if lang == 'auto': lang = None
+        # publicacao incremental no Notion (ensaio do fluxo do live_loop)
+        notion_page = None
+        db = spec.get('notion_database_id','')
+        if os.environ.get('NOTION_TOKEN') and db:
+            import notion_api
+            notion_page = notion_api.create_call_page(db,
+                f"ENSAIO LIVE {spec['label']} [transcrição automática em andamento]",
+                spec.get('quarter','TESTE'), time.strftime('%Y-%m-%d'))
+            notion_api.append_text(notion_page, 'Ensaio de transcrição ao vivo (replay). Pode apagar.',
+                                   heading='Transcrição (ao vivo)')
+            print('notion page criada:', notion_page, flush=True)
         for i, ck in enumerate(chunks):
             prev = textos[-1][-200:] if textos else None
             segs, _ = m.transcribe(ck, language=lang, vad_filter=True, beam_size=5,
                                    hotwords=hot, initial_prompt=prev)
-            textos.append(' '.join(s.text.strip() for s in segs).strip())
+            txt = ' '.join(s.text.strip() for s in segs).strip()
+            textos.append(txt)
+            if notion_page and txt:
+                try:
+                    import notion_api
+                    notion_api.append_text(notion_page, txt)
+                except Exception as e:
+                    print(f'[notion][ERRO] chunk {i}: {e}', flush=True)
             if i % 5 == 0: print(f'chunk {i}/{len(chunks)} em {time.time()-t0:.0f}s', flush=True)
+        if notion_page:
+            try:
+                import notion_api, requests as _rq
+                _rq.patch(f'https://api.notion.com/v1/pages/{notion_page}', headers=notion_api.H(),
+                    json={'properties': {'Name': {'title':[{'text':{'content': f"ENSAIO LIVE {spec['label']} [CONCLUÍDO]"}}]}}})
+            except Exception as e:
+                print(f'[notion][ERRO] titulo final: {e}', flush=True)
         out = f"transcripts/LIVE_{spec['label']}.txt"
         open(out,'w').write('\n\n'.join(textos) + '\n')
         print(f'live-style: {len(chunks)} chunks em {(time.time()-t0)/60:.1f}min | {out}')
