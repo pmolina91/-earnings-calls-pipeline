@@ -1,0 +1,5 @@
+job=register file=tests/register-sanb11-2t26.json mode=register sha=ca155b784a220b451648738ee33c51c583209d73
+ca155b7 perfil radio: rotulo via aria-labelledby+pais, log de opcoes vistas; retry SANB11
+0627efb registro 29923514249
+scripts/registration.py
+tests/register-sanb11-2t26.json
