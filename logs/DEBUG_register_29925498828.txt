@@ -1,0 +1,6 @@
+job=register file=tests/replay-axia-notion-live.json mode=replay sha=c11ab5bb676c41178ea69d0c8bf252b32e7007b8
+c11ab5b ensaio: replay Axia 12min transcrito ao vivo e publicado incrementalmente no Notion (db EXPL)
+f0389d6 registro 29923795686
+.github/workflows/tests.yml
+scripts/test_replay.py
+tests/replay-axia-notion-live.json
