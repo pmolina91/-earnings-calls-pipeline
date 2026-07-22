@@ -22,6 +22,22 @@ def register_zoom(page, name, email, company, phone='', title_category='Buy side
     fill('#question_email', email, 'email')
     if phone: fill('#question_Phone', phone, 'phone')
     fill('#question_Company', company, 'company')
+    fill('#question_org', company, 'org')  # Zoom novo (us05web): campo "Organizacao"
+    # Zoom novo: "Perfil" como radios customizados (div[role=radio]) — Buy-Side etc.
+    try:
+        picked = page.evaluate('''(cat) => {
+            const alvo = cat.toLowerCase().replace(/[^a-z]/g, '');
+            const radios = [...document.querySelectorAll('[role=radio]')];
+            for (const r of radios) {
+                const t = ((r.getAttribute('aria-label')||'') + ' ' + (r.innerText||'') + ' ' +
+                           ((r.closest('label,li,div')||{}).innerText||'')).toLowerCase().replace(/[^a-z]/g,'');
+                if (t.includes(alvo)) { r.click(); return r.getAttribute('aria-checked'); }
+            }
+            return null;
+        }''', title_category)
+        log.append(f'perfil_radio:{title_category}:{picked}')
+    except Exception as e:
+        log.append(f'ERRO:perfil_radio:{e}')
     # categoria (checkboxes "Title"): JS-click no input correto + verificação
     try:
         ordem = ['Sell side','Buy side','Investor','Student','Journalist','Individual','Others']
@@ -38,9 +54,9 @@ def register_zoom(page, name, email, company, phone='', title_category='Buy side
     # consentimento LGPD (Lei 13.709/2018) — autorizado pelo usuário em 16/07/2026
     try:
         checked = page.evaluate('''() => {
-            const cbs = [...document.querySelectorAll('input[type=checkbox]')];
+            const cbs = [...document.querySelectorAll('input[type=checkbox]')].filter(e => !((e.id||'')+(e.name||'')).startsWith('ot-') && !/select-all|chkbox-id/.test(e.id||''));
             let el = cbs.find(e => (e.name||'').includes('13.709') || (e.name||'').toLowerCase().includes('compliance') || (e.name||'').includes('Law'));
-            if (!el) el = cbs[cbs.length - 1];
+            if (!el && cbs.length) el = cbs[cbs.length - 1];
             if (!el) return null;
             if (!el.checked) el.click();
             if (!el.checked) { // custom component: tentar o wrapper
