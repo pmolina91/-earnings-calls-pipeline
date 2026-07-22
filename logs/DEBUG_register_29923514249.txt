@@ -1,0 +1,5 @@
+job=register file=tests/register-sanb11-2t26.json mode=register sha=6b149b3f4b3ba1006bde1ff9939f02cce5159fba
+6b149b3 adapter zoom novo (us05web): question_org + perfil role=radio; lgpd ignora cookies; retry registro SANB11
+c35f68a registro 29923102369
+scripts/registration.py
+tests/register-sanb11-2t26.json
