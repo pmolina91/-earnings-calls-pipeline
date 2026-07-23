@@ -1,0 +1,21 @@
+SUCESSO
+== 1_registro ==
+url: https://mzgroup.zoom.us/webinar/register/WN_0povELVgTfaspPYt2I56sQ#/registration
+texto: Loading | Ir para o conteúdo principal | Visão geral da acessibilidade | Suporte | Português  | TIM | 2Q26 Results Conference | Data e hora | 28 jul. 2026 14:00 em  | Horário Universal (UTC) | Descrição | 2Q26 Earnings Results Conference | Inscrição no Webinar | Nome* | Sobrenome* | Endereço de E-mail* | Phone* | Company* | Title* | Pressione Tab para obter mais informações | Sell side | Buy side | Investor | Student | Journalist | Individual | Others | In compliance with Law 13.709/2018 (LGPD), we inform you that the data collected in this onlin
+
+acoes_registro: adapter:zoom, fill:first, fill:last, fill:email, fill:phone, fill:company, perfil_radio:Buy side:{'ok': None, 'vistos': []}, categoria:Buy side:True, lgpd:True, submit
+== 2_pos_registro ==
+url: https://mzgroup.zoom.us/rest/webinar/registrant/WN_0povELVgTfaspPYt2I56sQ/info?tk=RCQTBRMMA8riEzVdZD_tK17z14owxzk8zLPayfxhap6CyH6j0YcyhWw.Ut2jyYmro4Go
+texto: Ir para o conteúdo principal | Visão geral da acessibilidade | Suporte | Português  | Você se inscreveu com sucesso |  | Verifique o e-mail de confirmação enviado para philippemolina.i**@gmail.com |  | Tópico | TIM | 2Q26 Results Conference | Data e hora |  | 28 jul. 2026 14:00 |  | Descrição | 2Q26 Earnings Results Conference |  | Não recebeu um e-mail? Clique em  | aqui |  para reenviá-lo |  | Copyright ©2026 Zoom Video Communications, Inc. Todos os direitos reservados. | Políticas legais e de privacidade Do Not Sell My Personal Informa
+
+usando join_url do spec (token de ingresso do email)
+extraidos: tk=sim wid=85646097518 pwd=sim join_link=NAO
+== 3_join_wc_montado ==
+url: https://app.zoom.us/wc/85646097518/join?tk=cSDq9zwo3PXyniTzfTHpyXtpPnUdn6_bBi-mTQFUHNU.DQkAAAAT8Oe8bhZKZUotaWpIRFJXRzltZThMdzRXc0RnAAAAAAAAAAAAAAAAAAA
+texto: TIM | 2Q26 Results Conference | Scheduled: 28 de jul. de 2026, 02:00 PM | Waiting for host to start the webinar | Host Sign in | Exit | © 2026 Zoom Communications, Inc. All rights reserved. Privacy & Legal Policies|Send Report
+
+== 5_final_wc_montado ==
+url: https://app.zoom.us/wc/85646097518/join?tk=cSDq9zwo3PXyniTzfTHpyXtpPnUdn6_bBi-mTQFUHNU.DQkAAAAT8Oe8bhZKZUotaWpIRFJXRzltZThMdzRXc0RnAAAAAAAAAAAAAAAAAAA
+texto: TIM | 2Q26 Results Conference | Scheduled: 28 de jul. de 2026, 02:00 PM | Waiting for host to start the webinar | Host Sign in | Exit | © 2026 Zoom Communications, Inc. All rights reserved. Privacy & Legal Policies|Send Report
+
+veredito_wc_montado: em_sala=True em_registro=False url=https://app.zoom.us/wc/85646097518/join?tk=cSDq9zwo3PXyniTzfTHpyXtpPnUdn6_bBi-mTQFUHNU.DQkAAAAT8Oe8bhZKZUotaWpIRFJXRzltZ
