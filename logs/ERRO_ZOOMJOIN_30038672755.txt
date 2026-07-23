@@ -1,0 +1,57 @@
+Traceback (most recent call last):
+  File "/home/runner/work/-earnings-calls-pipeline/-earnings-calls-pipeline/scripts/test_zoomjoin.py", line 110, in <module>
+    b.close()
+    ^^^^^^^
+AttributeError: 'Locator' object has no attribute 'close'
+
+
+PASSOS:
+== 1_registro ==
+url: https://mzgroup.zoom.us/webinar/register/WN_0povELVgTfaspPYt2I56sQ#/registration
+texto: Loading | Ir para o conteúdo principal | Visão geral da acessibilidade | Suporte | Português  | TIM | 2Q26 Results Conference | Data e hora | 28 jul. 2026 14:00 em  | Horário Universal (UTC) | Descrição | 2Q26 Earnings Results Conference | Inscrição no Webinar | Nome* | Sobrenome* | Endereço de E-mail* | Phone* | Company* | Title* | Pressione Tab para obter mais informações | Sell side | Buy side | Investor | Student | Journalist | Individual | Others | In compliance with Law 13.709/2018 (LGPD), we inform you that the data collected in this onlin
+
+acoes_registro: adapter:zoom, fill:first, fill:last, fill:email, fill:phone, fill:company, perfil_radio:Buy side:{'ok': None, 'vistos': []}, categoria:Buy side:True, lgpd:True, submit
+== 2_pos_registro ==
+url: https://mzgroup.zoom.us/rest/webinar/registrant/WN_0povELVgTfaspPYt2I56sQ/info?tk=Qd_O4SmOVnfDjjGST8d1GYSZAVc-bv0UowuRheg6fd3oy5cKe60U1Uo.ROGtUNWYFHPZ
+texto: Ir para o conteúdo principal | Visão geral da acessibilidade | Suporte | Português  | Você se inscreveu com sucesso |  | Verifique o e-mail de confirmação enviado para philippemolina.i**@gmail.com |  | Tópico | TIM | 2Q26 Results Conference | Data e hora |  | 28 jul. 2026 14:00 |  | Descrição | 2Q26 Earnings Results Conference |  | Não recebeu um e-mail? Clique em  | aqui |  para reenviá-lo |  | Copyright ©2026 Zoom Video Communications, Inc. Todos os direitos reservados. | Políticas legais e de privacidade Do Not Sell My Personal Informa
+
+extraidos: tk=sim wid=85646097518 pwd=sim join_link=NAO
+== 3_join_wc_montado ==
+url: https://app.zoom.us/wc/85646097518/join?tk=Qd_O4SmOVnfDjjGST8d1GYSZAVc-bv0UowuRheg6fd3oy5cKe60U1Uo.ROGtUNWYFHPZkcjK&_x_zm_rtaid=umHPN1pmRvqYxa03NM2C_g
+texto: Ir para o conteúdo principal | Visão geral da acessibilidade | Suporte | 1.888.799.9666 | Solicitar uma demonstração | Acessar | Organizar  | Entrar | Alternar navegação | Entrar em contato com a equipe de vendas | Inscreva-se gratuitamente | Unsupported token type: 68 (124) | Sobre | Blog do Zoom | Clientes | Nossa Equipe | Carreiras | Programa de indicações | Integrações | Parceiros | Investidores | Imprensa | Sustentabilidade e ESG | Kit de mídia | Dicas de vídeos | Plataforma do desenvolvedor | 	 | Fazer download | Aplicativo Zoom Workplace | Clien
+
+== 4_wc_wc_montado_0 ==
+url: https://app.zoom.us/pt/download#chrome_ext
+texto: Ir para o conteúdo principal | Visão geral da acessibilidade | Suporte | 1.888.799.9666 | Solicitar uma demonstração | Acessar | Organizar  | Entrar | Alternar navegação | Entrar em contato com a equipe de vendas | Inscreva-se gratuitamente | Central de Downloads | Aproveite ao máximo o Zoom baixando nossos aplicativos | Zoom Workplace para Windows | Versão 7.1.5 (43453) | Desbloqueie o conjunto completo de colaboração com o Chat em equipe, Quadro de compartilhamento, Notas e muito mais — incluído na sua conta do Zoom Meetin
+
+== 5_final_wc_montado ==
+url: https://app.zoom.us/pt/download#chrome_ext
+texto: Ir para o conteúdo principal | Visão geral da acessibilidade | Suporte | 1.888.799.9666 | Solicitar uma demonstração | Acessar | Organizar  | Entrar | Alternar navegação | Entrar em contato com a equipe de vendas | Inscreva-se gratuitamente | Central de Downloads | Aproveite ao máximo o Zoom baixando nossos aplicativos | Zoom Workplace para Windows | Versão 7.1.5 (43453) | Desbloqueie o conjunto completo de colaboração com o Chat em equipe, Quadro de compartilhamento, Notas e muito mais — incluído na sua conta do Zoom Meetin
+
+veredito_wc_montado: em_sala=False em_registro=False url=https://app.zoom.us/pt/download#chrome_ext
+== 3_join_wc_join_alt ==
+url: https://app.zoom.us/wc/join/85646097518?tk=Qd_O4SmOVnfDjjGST8d1GYSZAVc-bv0UowuRheg6fd3oy5cKe60U1Uo.ROGtUNWYFHPZkcjK&_x_zm_rtaid=umHPN1pmRvqYxa03NM2C_g
+texto: Ir para o conteúdo principal | Visão geral da acessibilidade | Suporte | 1.888.799.9666 | Solicitar uma demonstração | Acessar | Organizar  | Entrar | Alternar navegação | Entrar em contato com a equipe de vendas | Inscreva-se gratuitamente | Unsupported token type: 68 (124) | Sobre | Blog do Zoom | Clientes | Nossa Equipe | Carreiras | Programa de indicações | Integrações | Parceiros | Investidores | Imprensa | Sustentabilidade e ESG | Kit de mídia | Dicas de vídeos | Plataforma do desenvolvedor | 	 | Fazer download | Aplicativo Zoom Workplace | Clien
+
+== 4_wc_wc_join_alt_0 ==
+url: https://app.zoom.us/pt/download#chrome_ext
+texto: Ir para o conteúdo principal | Visão geral da acessibilidade | Suporte | 1.888.799.9666 | Solicitar uma demonstração | Acessar | Organizar  | Entrar | Alternar navegação | Entrar em contato com a equipe de vendas | Inscreva-se gratuitamente | Central de Downloads | Aproveite ao máximo o Zoom baixando nossos aplicativos | Zoom Workplace para Windows | Versão 7.1.5 (43453) | Desbloqueie o conjunto completo de colaboração com o Chat em equipe, Quadro de compartilhamento, Notas e muito mais — incluído na sua conta do Zoom Meetin
+
+== 5_final_wc_join_alt ==
+url: https://app.zoom.us/pt/download#chrome_ext
+texto: Ir para o conteúdo principal | Visão geral da acessibilidade | Suporte | 1.888.799.9666 | Solicitar uma demonstração | Acessar | Organizar  | Entrar | Alternar navegação | Entrar em contato com a equipe de vendas | Inscreva-se gratuitamente | Central de Downloads | Aproveite ao máximo o Zoom baixando nossos aplicativos | Zoom Workplace para Windows | Versão 7.1.5 (43453) | Desbloqueie o conjunto completo de colaboração com o Chat em equipe, Quadro de compartilhamento, Notas e muito mais — incluído na sua conta do Zoom Meetin
+
+veredito_wc_join_alt: em_sala=False em_registro=False url=https://app.zoom.us/pt/download#chrome_ext
+== 3_join_w_launch ==
+url: https://mzgroup.zoom.us/w/85646097518?tk=Qd_O4SmOVnfDjjGST8d1GYSZAVc-bv0UowuRheg6fd3oy5cKe60U1Uo.ROGtUNWYFHPZkcjK&pwd=394837
+texto: Ir para o conteúdo principal | Visão geral da acessibilidade | Suporte | 1.888.799.9666 | Solicitar uma demonstração | Acessar | Organizar  | Entrar | Alternar navegação | Entrar em contato com a equipe de vendas | Inscreva-se gratuitamente | Entrar em uma reunião | ID da reunião | ID da reunião inválido. |  | O ID da sua reunião é um número de 9, 10 ou 11 dígitos |  | Entrar | Sobre | Blog do Zoom | Clientes | Nossa Equipe | Carreiras | Programa de indicações | Integrações | Parceiros | Investidores | Imprensa | Sustentabilidade e ESG | Kit de mídia | D
+
+== 4_wc_w_launch_0 ==
+url: https://mzgroup.zoom.us/pt/download#chrome_ext
+texto: Ir para o conteúdo principal | Visão geral da acessibilidade | Suporte | 1.888.799.9666 | Solicitar uma demonstração | Acessar | Organizar  | Entrar | Alternar navegação | Entrar em contato com a equipe de vendas | Inscreva-se gratuitamente | Central de Downloads | Aproveite ao máximo o Zoom baixando nossos aplicativos | Zoom Workplace para Windows | Versão 7.1.5 (43453) | Desbloqueie o conjunto completo de colaboração com o Chat em equipe, Quadro de compartilhamento, Notas e muito mais — incluído na sua conta do Zoom Meetin
+
+== 5_final_w_launch ==
+url: https://mzgroup.zoom.us/pt/download#chrome_ext
+texto: Ir para o conteúdo principal | Visão geral da acessibilidade | Suporte | 1.888.799.9666 | Solicitar uma demonstração | Acessar | Organizar  | Entrar | Alternar navegação | Entrar em contato com a equipe de vendas | Inscreva-se gratuitamente | Central de Downloads | Aproveite ao máximo o Zoom baixando nossos aplicativos | Zoom Workplace para Windows | Versão 7.1.5 (43453) | Desbloqueie o conjunto completo de colaboração com o Chat em equipe, Quadro de compartilhamento, Notas e muito mais — incluído na sua conta do Zoom Meetin
+
+veredito_w_launch: em_sala=False em_registro=False url=https://mzgroup.zoom.us/pt/download#chrome_ext
