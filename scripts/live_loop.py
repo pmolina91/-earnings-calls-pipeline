@@ -42,6 +42,16 @@ while True:
                 empty_streak = 0
             else:
                 empty_streak += 1
+                if empty_streak == 3:  # ~6 min sem fala = alerta de silencio auto-reportado
+                    try:
+                        import subprocess as sp
+                        rid = os.environ.get('GITHUB_RUN_ID','local')
+                        open(f'logs/ALERTA_SILENCIO_{rid}.txt','w').write(f"3 chunks vazios seguidos — possivel captura de silencio. ticker={spec.get('ticker')}\n")
+                        sp.run(['git','config','user.name','earnings-bot']); sp.run(['git','config','user.email','bot@users.noreply.github.com'])
+                        sp.run(['git','pull','-q','--rebase']); sp.run(['git','add','logs/'])
+                        sp.run(['git','commit','-q','-m',f'ALERTA_SILENCIO {spec.get("ticker")}']); sp.run(['git','push','-q'])
+                    except Exception as e:
+                        print(f'[live] erro alerta silencio: {e}')
             with open('work/transcript_live.txt','a') as f: f.write(text+'\n')
             print(f'[live] {os.path.basename(c)}: {len(text)} chars')
         except Exception as e:

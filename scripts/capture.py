@@ -142,6 +142,14 @@ with sync_playwright() as pw:
     else:
         record_pulse()
         modo = 'pulse'  # Zoom web client = WebRTC; sniff pega asset errado (mp3 de notificacao) — sempre pulse
+    # VERIFICACAO DE SALA: so declara conectado se a pagina parecer a sala do webinar
+    em_sala = False
+    try:
+        _body = (page.evaluate('() => document.body.innerText') or '').lower()
+        em_sala = (('registration' not in page.url and 'register' not in page.url) and
+                   any(s in _body for s in ['aguardando','waiting for','has not started','leave','sair','audio','áudio','webinar em andamento']))
+    except Exception:
+        pass
     # CONFIRMACAO DE CONEXAO auto-reportada (pedido do usuario 23/07):
     # commita marcador no repo assim que a gravacao comeca
     try:
@@ -149,13 +157,14 @@ with sync_playwright() as pw:
         ts = time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime())
         os.makedirs('logs', exist_ok=True)
         rid = os.environ.get('GITHUB_RUN_ID', 'local')
-        with open(f'logs/CONECTADO_{rid}.txt', 'w') as f:
-            f.write(f"CONECTADO {ts}\nticker={spec.get('ticker')} evento={spec.get('quarter')}\nmodo={modo}\nurl_pagina={page.url[:120]}\n")
+        marcador = 'CONECTADO' if em_sala else 'FALHA_CONEXAO'
+        with open(f'logs/{marcador}_{rid}.txt', 'w') as f:
+            f.write(f"{marcador} {ts}\nticker={spec.get('ticker')} evento={spec.get('quarter')}\nmodo={modo}\nem_sala={em_sala}\nurl_pagina={page.url[:120]}\n")
         sp.run(['git','config','user.name','earnings-bot']); sp.run(['git','config','user.email','bot@users.noreply.github.com'])
         for i in (1,2,3):
             sp.run(['git','pull','-q','--rebase'])
             sp.run(['git','add','logs/'])
-            ok = sp.run(['git','commit','-q','-m',f'CONECTADO {spec.get("ticker")} {ts}']).returncode == 0
+            ok = sp.run(['git','commit','-q','-m',f'{marcador} {spec.get("ticker")} {ts}']).returncode == 0
             if ok and sp.run(['git','push','-q']).returncode == 0: break
             time.sleep(i*7)
         print('[capture] confirmacao CONECTADO commitada')
