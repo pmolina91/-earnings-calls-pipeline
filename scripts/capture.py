@@ -47,7 +47,50 @@ with sync_playwright() as pw:
     page.goto(spec['webcast_url'], timeout=90000, wait_until='domcontentloaded')
     time.sleep(5)
     try_register(page)
-    time.sleep(20)  # dar tempo do player iniciar
+    time.sleep(15)
+    # ZOOM: depois de registrar, ENTRAR NA SALA (web client) — sem isso grava silencio da pagina de confirmacao
+    try:
+        import re as _re
+        if 'zoom.us' in page.url:
+            tk = None
+            m = _re.search(r'[?&]tk=([^&#]+)', page.url)
+            if m: tk = m.group(1)
+            # procura link de join /w/ ou /wc/ na pagina de confirmacao
+            join = page.evaluate('''() => { const a=[...document.querySelectorAll('a')].find(x=>/zoom.us\/(w|wc)\//.test(x.href)); return a?a.href:null }''')
+            wid = None
+            m2 = _re.search(r'/w/(\d+)', join or '')
+            if m2: wid = m2.group(1)
+            if not wid:
+                body = page.evaluate('() => document.body.innerText') or ''
+                m3 = _re.search(r'(\d{3})[ .-]?(\d{4})[ .-]?(\d{4})', body)
+                if m3: wid = ''.join(m3.groups())
+            if not wid and spec.get('zoom_webinar_id'): wid = str(spec['zoom_webinar_id']).replace(' ','')
+            host = _re.match(r'https://[^/]+', page.url).group(0)
+            alvo = join or (f"{host}/wc/{wid}/join" + (f"?tk={tk}" if tk else '') if wid else None)
+            if alvo:
+                print(f'[capture] entrando na sala: {alvo[:80]}...')
+                page.goto(alvo, timeout=90000, wait_until='domcontentloaded')
+                time.sleep(12)
+                # web client: preencher nome/email se pedir e clicar em entrar
+                try:
+                    for sel, val in [('input[type=text]', os.environ.get('REG_NAME','Philippe Molina')),
+                                     ('input[type=email]', os.environ.get('REG_EMAIL',''))]:
+                        el = page.locator(sel).first
+                        if el.is_visible(timeout=2000): el.fill(val)
+                except Exception: pass
+                try:
+                    page.locator('button:has-text("Entrar"), button:has-text("Join"), button:has-text("Ingressar")').first.click(timeout=4000)
+                except Exception: pass
+                time.sleep(15)
+                # alguns clients pedem "ingressar por audio do computador"
+                try:
+                    page.locator('button:has-text("udio do computador"), button:has-text("Computer Audio"), button:has-text("Join Audio")').first.click(timeout=4000)
+                except Exception: pass
+            else:
+                print('[capture] AVISO: nao achei link/ID para entrar na sala')
+    except Exception as e:
+        print(f'[capture] erro ao entrar na sala: {e}')
+    time.sleep(10)
     if 'u' in stream_url:
         threading.Thread(target=record_hls, args=(stream_url['u'],), daemon=True).start()
         modo = 'hls'
