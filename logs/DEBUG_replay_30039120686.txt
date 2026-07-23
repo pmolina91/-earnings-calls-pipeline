@@ -1,0 +1,5 @@
+job=replay file=tests/zoomjoin-tim.json mode=zoomjoin sha=969708670600d109b83f3cf4859649c4543b090c
+9697086 zoomjoin v5: token de ingresso do email + fix shadowing; retry TIM
+b3c0634 zoomjoin 30038672755
+scripts/test_zoomjoin.py
+tests/zoomjoin-tim.json
