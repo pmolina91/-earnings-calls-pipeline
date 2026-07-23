@@ -168,6 +168,9 @@ with sync_playwright() as pw:
             if ok and sp.run(['git','push','-q']).returncode == 0: break
             time.sleep(i*7)
         print('[capture] confirmacao CONECTADO commitada')
+        # watchdog de audio (SOM_OK/ALERTA_SILENCIO em ~1 min; re-alerta a cada 5 min)
+        import subprocess as sp2
+        sp2.Popen(['python3','scripts/audio_watchdog.py', modo, str(spec.get('ticker'))])
     except Exception as e:
         print(f'[capture] erro ao commitar CONECTADO: {e}')
     # duração máxima de gravação: 3h; fim antecipado por silêncio é tratado no live_loop
