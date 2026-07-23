@@ -1,0 +1,5 @@
+job=register file=tests/zoomjoin-tim.json mode=zoomjoin sha=16f31e80dbd17df110d881a446966e29a6308d57
+16f31e8 zoomjoin v3: danca Launch->navegador + variantes wc/join e /w/; retry TIM
+37bb3cf zoomjoin 30034232849
+scripts/test_zoomjoin.py
+tests/zoomjoin-tim.json
