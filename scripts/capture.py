@@ -62,15 +62,24 @@ with sync_playwright() as pw:
             if a.is_visible(timeout=3000): a.click(); time.sleep(12)
         except Exception: pass
         try:
-            for sel, val in [('input[type=text]', os.environ.get('REG_NAME','Philippe Molina')),
+            for sel, val in [('#input-for-name', os.environ.get('REG_NAME','Philippe Molina')),
+                             ('input[type=text]', os.environ.get('REG_NAME','Philippe Molina')),
+                             ('#input-for-email', os.environ.get('REG_EMAIL','')),
                              ('input[type=email]', os.environ.get('REG_EMAIL',''))]:
                 el = page.locator(sel).first
                 if el.is_visible(timeout=2500): el.fill(val)
         except Exception: pass
+        for _tent in range(3):
+            try:
+                page.locator('button:has-text("Entrar"), button:has-text("Join"), button:has-text("Ingressar")').first.click(timeout=5000)
+                time.sleep(10)
+            except Exception:
+                break
+        time.sleep(10)
         try:
-            page.locator('button:has-text("Entrar"), button:has-text("Join"), button:has-text("Ingressar")').first.click(timeout=5000)
+            body = (page.evaluate('() => document.body.innerText') or '')[:300].replace('\n',' | ')
+            print(f'[capture] estado sala: {page.url[:90]} :: {body[:200]}')
         except Exception: pass
-        time.sleep(15)
         try:
             page.locator('button:has-text("udio do computador"), button:has-text("Computer Audio"), button:has-text("Join Audio"), button:has-text("Ingressar por")').first.click(timeout=5000)
         except Exception: pass
@@ -126,12 +135,13 @@ with sync_playwright() as pw:
     except Exception as e:
         print(f'[capture] erro ao entrar na sala: {e}')
     time.sleep(10)
-    if 'u' in stream_url:
+    forca_pulse = 'zoom.us' in (spec.get('join_url','') + spec.get('webcast_url','')) or spec.get('force_pulse')
+    if 'u' in stream_url and not forca_pulse:
         threading.Thread(target=record_hls, args=(stream_url['u'],), daemon=True).start()
         modo = 'hls'
     else:
         record_pulse()
-        modo = 'pulse'
+        modo = 'pulse'  # Zoom web client = WebRTC; sniff pega asset errado (mp3 de notificacao) — sempre pulse
     # CONFIRMACAO DE CONEXAO auto-reportada (pedido do usuario 23/07):
     # commita marcador no repo assim que a gravacao comeca
     try:
