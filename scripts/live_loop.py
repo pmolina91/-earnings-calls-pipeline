@@ -16,8 +16,13 @@ print('[live] modelo ok')
 page_id = None
 if NOTION_ON:
     title = f"Call {spec['quarter']} - {spec['ticker_short']} [LIVE - transcrição automática em andamento]"
-    page_id = notion_api.create_call_page(spec['notion_database_id'], title,
-                                          spec['quarter'], spec['call_datetime_utc'][:10])
+    chave = f"Call {spec['quarter']} - {spec['ticker_short']}"
+    page_id = notion_api.find_call_page(spec['notion_database_id'], chave)
+    if page_id:
+        notion_api.append_text(page_id, f"Nova sessão de transcrição ao vivo iniciada.", heading='───────────')
+    else:
+        page_id = notion_api.create_call_page(spec['notion_database_id'], title,
+                                              spec['quarter'], spec['call_datetime_utc'][:10])
     open(page_id_file,'w').write(page_id)
     notion_api.append_text(page_id, f"Transcrição ao vivo iniciada. Fonte: {spec['webcast_url']}",
                            heading='Transcrição (ao vivo)')

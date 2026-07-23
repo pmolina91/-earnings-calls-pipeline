@@ -58,9 +58,14 @@ def main():
         db = spec.get('notion_database_id','')
         if os.environ.get('NOTION_TOKEN') and db:
             import notion_api
-            notion_page = notion_api.create_call_page(db,
-                f"ENSAIO LIVE {spec['label']} [transcrição automática em andamento]",
-                spec.get('quarter','TESTE'), time.strftime('%Y-%m-%d'))
+            titulo = spec.get('notion_title') or f"ENSAIO LIVE {spec['label']}"
+            chave = f"Call {spec.get('quarter','')} - " if spec.get('quarter') else titulo
+            notion_page = notion_api.find_call_page(db, chave) if spec.get('quarter') else None
+            if notion_page:
+                notion_api.append_text(notion_page, 'Transcrição do replay (nova sessão).', heading='───────────')
+            else:
+                notion_page = notion_api.create_call_page(db, titulo,
+                    spec.get('quarter','TESTE'), time.strftime('%Y-%m-%d'))
             notion_api.append_text(notion_page, 'Ensaio de transcrição ao vivo (replay). Pode apagar.',
                                    heading='Transcrição (ao vivo)')
             print('notion page criada:', notion_page, flush=True)
