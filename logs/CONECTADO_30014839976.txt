@@ -1,0 +1,4 @@
+CONECTADO 2026-07-23T14:16:18Z
+ticker=WEGE3 evento=2T26
+modo=hls
+url_pagina=https://app.zoom.us/wc/83584749605/join?tk=OP1Z44mcAbSzOVSzFtbfnC71lhneRWpdD9mUicJ4dCg.DQkAAAATdgoQJRYzd2dsdzFmclJmS0RDN
