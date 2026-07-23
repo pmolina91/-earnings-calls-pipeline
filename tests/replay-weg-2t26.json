@@ -1,0 +1,12 @@
+{
+ "mode": "replay",
+ "label": "WEG_2T26_REPLAY",
+ "direct_audio_url": "https://api.mziq.com/mzfilemanager/v2/d/50c1bd3e-8ac6-42d9-884f-b9d69f690602/a3057a1a-2767-648b-eb06-a2d57b7883bd?origin=2",
+ "live_style": true,
+ "chunk_seconds": 120,
+ "quarter": "2T26",
+ "notion_database_id": "7974f9d3-b356-82a5-a990-01ce8fad8386",
+ "language": "pt",
+ "hotwords": "WEG, Harry Schmelzer, Alberto Kuba, André Luís Rodrigues, motores elétricos, eólica, GTD, T&D, automação, tintas, capex, aerogeradores, transformadores",
+ "rev": 1
+}
