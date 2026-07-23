@@ -50,8 +50,29 @@ with sync_playwright() as pw:
     time.sleep(20)  # dar tempo do player iniciar
     if 'u' in stream_url:
         threading.Thread(target=record_hls, args=(stream_url['u'],), daemon=True).start()
+        modo = 'hls'
     else:
         record_pulse()
+        modo = 'pulse'
+    # CONFIRMACAO DE CONEXAO auto-reportada (pedido do usuario 23/07):
+    # commita marcador no repo assim que a gravacao comeca
+    try:
+        import subprocess as sp
+        ts = time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime())
+        os.makedirs('logs', exist_ok=True)
+        rid = os.environ.get('GITHUB_RUN_ID', 'local')
+        with open(f'logs/CONECTADO_{rid}.txt', 'w') as f:
+            f.write(f"CONECTADO {ts}\nticker={spec.get('ticker')} evento={spec.get('quarter')}\nmodo={modo}\nurl_pagina={page.url[:120]}\n")
+        sp.run(['git','config','user.name','earnings-bot']); sp.run(['git','config','user.email','bot@users.noreply.github.com'])
+        for i in (1,2,3):
+            sp.run(['git','pull','-q','--rebase'])
+            sp.run(['git','add','logs/'])
+            ok = sp.run(['git','commit','-q','-m',f'CONECTADO {spec.get("ticker")} {ts}']).returncode == 0
+            if ok and sp.run(['git','push','-q']).returncode == 0: break
+            time.sleep(i*7)
+        print('[capture] confirmacao CONECTADO commitada')
+    except Exception as e:
+        print(f'[capture] erro ao commitar CONECTADO: {e}')
     # duração máxima de gravação: 3h; fim antecipado por silêncio é tratado no live_loop
     t_end = time.time() + 3*3600
     while time.time() < t_end and not os.path.exists('work/audio/END'):

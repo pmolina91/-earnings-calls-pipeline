@@ -59,13 +59,18 @@ jobs:
           REG_COMPANY: ${{ secrets.REG_COMPANY }}
           REG_PHONE: ${{ secrets.REG_PHONE }}
           REG_TITLE_CATEGORY: Buy side
-        run: python3 scripts/capture.py "${{ steps.spec.outputs.file }}"
+        run: |
+          mkdir -p work
+          nohup python3 scripts/capture.py "${{ steps.spec.outputs.file }}" > work/capture.log 2>&1 &
+          echo "captura em background (pid $!)"
 
       - name: Transcrição ao vivo + publicação incremental no Notion
         if: steps.gate.outputs.run == 'yes'
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
-        run: python3 scripts/live_loop.py "${{ steps.spec.outputs.file }}" &
+        run: |
+          nohup python3 scripts/live_loop.py "${{ steps.spec.outputs.file }}" > work/live.log 2>&1 &
+          echo "live_loop em background (pid $!)"
 
       - name: Aguardar fim da gravação
         if: steps.gate.outputs.run == 'yes'
