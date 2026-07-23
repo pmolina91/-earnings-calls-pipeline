@@ -44,9 +44,44 @@ with sync_playwright() as pw:
     ctx = browser.new_context(locale='pt-BR')
     page = ctx.new_page()
     page.on('request', lambda r: stream_url.setdefault('u', r.url) if MEDIA_RE.search(r.url) else None)
-    page.goto(spec['webcast_url'], timeout=90000, wait_until='domcontentloaded')
-    time.sleep(5)
-    try_register(page)
+    if spec.get('join_url'):
+        # ingresso DIRETO com link pessoal (emergencia): /w/ -> web client /wc/
+        import re as _re
+        ju = spec['join_url']
+        m = _re.search(r'zoom.us/w/(\d+)\?(.*)', ju)
+        if m:
+            host = _re.match(r'https://[^/]+', ju).group(0)
+            ju_wc = f"{host}/wc/{m.group(1)}/join?{m.group(2)}"
+        else:
+            ju_wc = ju
+        print(f'[capture] JOIN DIRETO: {ju_wc[:70]}...')
+        page.goto(ju_wc, timeout=90000, wait_until='domcontentloaded')
+        time.sleep(15)
+        try:
+            a = page.locator('a:has-text("browser"), a:has-text("navegador")').first
+            if a.is_visible(timeout=3000): a.click(); time.sleep(12)
+        except Exception: pass
+        try:
+            for sel, val in [('input[type=text]', os.environ.get('REG_NAME','Philippe Molina')),
+                             ('input[type=email]', os.environ.get('REG_EMAIL',''))]:
+                el = page.locator(sel).first
+                if el.is_visible(timeout=2500): el.fill(val)
+        except Exception: pass
+        try:
+            page.locator('button:has-text("Entrar"), button:has-text("Join"), button:has-text("Ingressar")').first.click(timeout=5000)
+        except Exception: pass
+        time.sleep(15)
+        try:
+            page.locator('button:has-text("udio do computador"), button:has-text("Computer Audio"), button:has-text("Join Audio"), button:has-text("Ingressar por")').first.click(timeout=5000)
+        except Exception: pass
+        try:
+            body = (page.evaluate('() => document.body.innerText') or '')[:400].replace('\n',' | ')
+            print(f'[capture] pagina pos-join: {page.url[:90]} :: {body[:200]}')
+        except Exception: pass
+    else:
+        page.goto(spec['webcast_url'], timeout=90000, wait_until='domcontentloaded')
+        time.sleep(5)
+        try_register(page)
     time.sleep(15)
     # ZOOM: depois de registrar, ENTRAR NA SALA (web client) — sem isso grava silencio da pagina de confirmacao
     try:
