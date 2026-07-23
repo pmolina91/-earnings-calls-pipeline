@@ -64,17 +64,24 @@ with sync_playwright() as pw:
     if wid:
         q = '&'.join([p for p in [f'tk={tk}' if tk else '', f'pwd={pwd}' if pwd else ''] if p])
         candidatos.append(('wc_montado', f"{host}/wc/{wid}/join" + (f"?{q}" if q else '')))
+        candidatos.append(('wc_join_alt', f"{host}/wc/join/{wid}" + (f"?{q}" if q else '')))
+        candidatos.append(('w_launch', f"{host}/w/{wid}" + (f"?{q}" if q else '')))
     sucesso = False
     for rotulo, alvo in candidatos:
         try:
             page.goto(alvo, timeout=90000, wait_until='domcontentloaded'); time.sleep(12)
             snap(page, f'3_join_{rotulo}')
-            # se caiu em pagina "Launch Meeting", clicar em "join from browser"
-            try:
-                a = page.locator('a:has-text("browser"), a:has-text("navegador")').first
-                if a.is_visible(timeout=3000):
-                    a.click(); time.sleep(12); snap(page, f'4_wc_{rotulo}')
-            except Exception: pass
+            # danca do Zoom: 1) clicar Launch/Iniciar (faz aparecer o link do navegador) 2) clicar "Entrar pelo navegador"
+            for tentativa in range(2):
+                try:
+                    b = page.locator('button:has-text("Iniciar"), a:has-text("Iniciar"), button:has-text("Launch"), a:has-text("Launch Meeting"), a:has-text("Abrir")').first
+                    if b.is_visible(timeout=3000): b.click(); time.sleep(6)
+                except Exception: pass
+                try:
+                    a = page.locator('a:has-text("navegador"), a:has-text("browser"), a[href*="/wc/"]').first
+                    if a.is_visible(timeout=4000):
+                        a.click(); time.sleep(12); snap(page, f'4_wc_{rotulo}_{tentativa}'); break
+                except Exception: pass
             # preencher nome/email se o web client pedir
             try:
                 for sel, val in [('#input-for-name', NAME), ('input[type=text]', NAME), ('#input-for-email', EMAIL), ('input[type=email]', EMAIL)]:
