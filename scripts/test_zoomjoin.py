@@ -14,6 +14,14 @@ RID = os.environ.get('GITHUB_RUN_ID','local')
 os.makedirs('logs', exist_ok=True); os.makedirs('work/shots', exist_ok=True)
 passos = []
 
+import traceback as _tb
+def _excepthook(t, v, tb):
+    os.makedirs('logs', exist_ok=True)
+    open(f'logs/ERRO_ZOOMJOIN_{RID}.txt','w').write(''.join(_tb.format_exception(t, v, tb))[:3000] + '\n\nPASSOS:\n' + '\n'.join(passos))
+    print('ERRO GLOBAL gravado em logs/ERRO_ZOOMJOIN')
+sys.excepthook = _excepthook
+
+
 def snap(page, nome):
     try:
         page.screenshot(path=f'work/shots/{nome}.png', full_page=False)
