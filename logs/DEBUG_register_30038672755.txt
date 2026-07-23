@@ -1,0 +1,5 @@
+job=register file=tests/zoomjoin-tim.json mode=zoomjoin sha=aa683300c1ea5c9882e1bc69de0f610698915392
+aa68330 zoomjoin v4: excepthook grava traceback; retry TIM
+f0bde55 watchdog de audio: SOM_OK/ALERTA_SILENCIO no 1o minuto, sonda a cada 30s
+scripts/test_zoomjoin.py
+tests/zoomjoin-tim.json
