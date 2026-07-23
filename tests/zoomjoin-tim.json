@@ -2,5 +2,7 @@
  "mode": "zoomjoin",
  "label": "TIM_2T26_join_sala",
  "register_url": "https://mzgroup.zoom.us/webinar/register/WN_0povELVgTfaspPYt2I56sQ#/registration",
- "rev": 1
+ "rev": 2,
+ "zoom_webinar_id": "85646097518",
+ "zoom_pwd": "394837"
 }

@@ -45,17 +45,25 @@ with sync_playwright() as pw:
     m = re.search(r'[?&]tk=([^&#]+)', page.url)
     if m: tk = m.group(1)
     join = page.evaluate('''() => { const a=[...document.querySelectorAll('a')].find(x=>/zoom.us\\/(w|wc)\\//.test(x.href)); return a?a.href:null }''')
-    m2 = re.search(r'/w/(\d+)', join or '')
+    html = page.evaluate('() => document.documentElement.outerHTML') or ''
+    pwd = None
+    m2 = re.search(r'/w/(\d+)', (join or '') + html)
     if m2: wid = m2.group(1)
+    mp = re.search(r'[?&]pwd=([\w.\-]+)', (join or '') + html)
+    if mp: pwd = mp.group(1)
     if not wid:
         body = page.evaluate('() => document.body.innerText') or ''
         m3 = re.search(r'(\d{3})[ .-]?(\d{4})[ .-]?(\d{4})', body)
         if m3: wid = ''.join(m3.groups())
-    passos.append(f'extraidos: tk={"sim" if tk else "NAO"} wid={wid} join_link={join[:100] if join else "NAO"}')
+    if not wid and spec.get('zoom_webinar_id'): wid = str(spec['zoom_webinar_id']).replace(' ','')
+    if not pwd and spec.get('zoom_pwd'): pwd = str(spec['zoom_pwd'])
+    passos.append(f'extraidos: tk={"sim" if tk else "NAO"} wid={wid} pwd={"sim" if pwd else "NAO"} join_link={join[:100] if join else "NAO"}')
     host = re.match(r'https://[^/]+', page.url).group(0)
     candidatos = []
     if join: candidatos.append(('link_pagina', join))
-    if wid: candidatos.append(('wc_montado', f"{host}/wc/{wid}/join" + (f"?tk={tk}" if tk else '')))
+    if wid:
+        q = '&'.join([p for p in [f'tk={tk}' if tk else '', f'pwd={pwd}' if pwd else ''] if p])
+        candidatos.append(('wc_montado', f"{host}/wc/{wid}/join" + (f"?{q}" if q else '')))
     sucesso = False
     for rotulo, alvo in candidatos:
         try:
