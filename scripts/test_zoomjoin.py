@@ -65,6 +65,16 @@ with sync_playwright() as pw:
         if m3: wid = ''.join(m3.groups())
     if not wid and spec.get('zoom_webinar_id'): wid = str(spec['zoom_webinar_id']).replace(' ','')
     if not pwd and spec.get('zoom_pwd'): pwd = str(spec['zoom_pwd'])
+    if spec.get('join_url'):
+        import re as _re2
+        ju = spec['join_url']
+        mj = _re2.search(r'zoom.us/w/(\d+)', ju)
+        if mj: wid = mj.group(1)
+        mt = _re2.search(r'[?&]tk=([^&#]+)', ju)
+        if mt: tk = mt.group(1)
+        mw = _re2.search(r'[?&]pwd=([\w.\-]+)', ju)
+        if mw: pwd = mw.group(1)
+        passos.append('usando join_url do spec (token de ingresso do email)')
     passos.append(f'extraidos: tk={"sim" if tk else "NAO"} wid={wid} pwd={"sim" if pwd else "NAO"} join_link={join[:100] if join else "NAO"}')
     host = re.match(r'https://[^/]+', page.url).group(0)
     candidatos = []
@@ -82,8 +92,8 @@ with sync_playwright() as pw:
             # danca do Zoom: 1) clicar Launch/Iniciar (faz aparecer o link do navegador) 2) clicar "Entrar pelo navegador"
             for tentativa in range(2):
                 try:
-                    b = page.locator('button:has-text("Iniciar"), a:has-text("Iniciar"), button:has-text("Launch"), a:has-text("Launch Meeting"), a:has-text("Abrir")').first
-                    if b.is_visible(timeout=3000): b.click(); time.sleep(6)
+                    btn = page.locator('button:has-text("Iniciar"), a:has-text("Iniciar"), button:has-text("Launch"), a:has-text("Launch Meeting"), a:has-text("Abrir")').first
+                    if btn.is_visible(timeout=3000): btn.click(); time.sleep(6)
                 except Exception: pass
                 try:
                     a = page.locator('a:has-text("navegador"), a:has-text("browser"), a[href*="/wc/"]').first
