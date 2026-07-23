@@ -1,0 +1,6 @@
+job=replay file=tests/zoomjoin-tim.json mode=zoomjoin sha=7ab32392178c10a973cab0328cebc67ae22af10c
+7ab3239 teste zoomjoin: registrar+ENTRAR NA SALA (TIM 2T26), diagnostico com screenshots
+9b41ff9 CONECTADO WEGE3 2026-07-23T14:16:18Z
+.github/workflows/tests.yml
+scripts/test_zoomjoin.py
+tests/zoomjoin-tim.json
