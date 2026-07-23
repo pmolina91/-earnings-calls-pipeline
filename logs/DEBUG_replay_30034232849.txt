@@ -1,0 +1,5 @@
+job=replay file=tests/zoomjoin-tim.json mode=zoomjoin sha=17814814990d5cdd88e9f792e12cb0dfc56bc9c2
+1781481 zoomjoin v2: extrai wid+pwd do HTML; fallback no spec; retry TIM
+36a88e6 v5 URGENTE: forca pulse no Zoom + name input wc + cliques persistentes
+scripts/test_zoomjoin.py
+tests/zoomjoin-tim.json
