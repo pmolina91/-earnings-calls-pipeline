@@ -1,0 +1,4 @@
+CONECTADO 2026-07-23T14:01:51Z
+ticker=WEGE3 evento=2T26
+modo=pulse
+url_pagina=https://us06web.zoom.us/webinar/register/WN_cxsFU5-oRUGAtaO5doTxZA#/registration
