@@ -1,0 +1,21 @@
+SUCESSO
+== 1_registro ==
+url: https://mzgroup.zoom.us/webinar/register/WN_3_S7Qea2Td20e9lW_U6MCg#/registration
+texto: Loading | Ir para o conteúdo principal | Visão geral da acessibilidade | Suporte | Português  | Telefônica Brasil | 2Q26 Results Conference | Data e hora | 28 jul. 2026 13:00 em  | Horário Universal (UTC) | Descrição |  Telefônica Brasil | 2Q26 Results Conference | Inscrição no Webinar | Nome* | Sobrenome* | Endereço de E-mail* | Phone* | Company* | Title* | Pressione Tab para obter mais informações | Sell side | Buy side | Investor | Student | Journalist | Individual | Others | In compliance with Law 13.709/2018 (LGPD), we inform you that the da
+
+acoes_registro: adapter:zoom, fill:first, fill:last, fill:email, fill:phone, fill:company, perfil_radio:Buy side:{'ok': None, 'vistos': []}, categoria:Buy side:True, lgpd:True, submit
+== 2_pos_registro ==
+url: https://mzgroup.zoom.us/rest/webinar/registrant/WN_3_S7Qea2Td20e9lW_U6MCg/info?tk=Lf3mlemkl51It_zbGPlLBkA2pW3MsG_eUGGAiP6ob-iUUZNeUCrmnsc.5jZPzwnxSSO-
+texto: Ir para o conteúdo principal | Visão geral da acessibilidade | Suporte | Português  | Você se inscreveu com sucesso |  | Verifique o e-mail de confirmação enviado para philippemolina.i**@gmail.com |  | Tópico | Telefônica Brasil | 2Q26 Results Conference | Data e hora |  | 28 jul. 2026 13:00 |  | Descrição |  Telefônica Brasil | 2Q26 Results Conference |  | Não recebeu um e-mail? Clique em  | aqui |  para reenviá-lo |  | Copyright ©2026 Zoom Video Communications, Inc. Todos os direitos reservados. | Políticas legais e de privacidade Do No
+
+usando join_url do spec (token de ingresso do email)
+extraidos: tk=sim wid=83437842974 pwd=sim join_link=NAO
+== 3_join_wc_montado ==
+url: https://app.zoom.us/wc/83437842974/join?tk=YQA_IEWUawNd73zvdB31wbiOUq0Bd0oORmX3VRjbLwE.DQkAAAATbUhyHhY3YWlMRFhqVFRKS1MtMmtJMmMzczNRAAAAAAAAAAAAAAAAAAA
+texto: Telefônica Brasil | 2Q26 Results Conference | Scheduled: 28 de jul. de 2026, 01:00 PM | Waiting for host to start the webinar | Host Sign in | Exit | © 2026 Zoom Communications, Inc. All rights reserved. Privacy & Legal Policies|Send Report
+
+== 5_final_wc_montado ==
+url: https://app.zoom.us/wc/83437842974/join?tk=YQA_IEWUawNd73zvdB31wbiOUq0Bd0oORmX3VRjbLwE.DQkAAAATbUhyHhY3YWlMRFhqVFRKS1MtMmtJMmMzczNRAAAAAAAAAAAAAAAAAAA
+texto: Telefônica Brasil | 2Q26 Results Conference | Scheduled: 28 de jul. de 2026, 01:00 PM | Waiting for host to start the webinar | Host Sign in | Exit | © 2026 Zoom Communications, Inc. All rights reserved. Privacy & Legal Policies|Send Report
+
+veredito_wc_montado: em_sala=True em_registro=False url=https://app.zoom.us/wc/83437842974/join?tk=YQA_IEWUawNd73zvdB31wbiOUq0Bd0oORmX3VRjbLwE.DQkAAAATbUhyHhY3YWlMRFhqVFRKS1MtM
