@@ -1,0 +1,13 @@
+{
+ "ticker": "VIVT3",
+ "ticker_short": "VIVT",
+ "company": "Telefonica Brasil (Vivo)",
+ "quarter": "2T26",
+ "call_datetime_utc": "2026-07-28T13:00:00Z",
+ "webcast_url": "https://mzgroup.zoom.us/webinar/register/WN_3_S7Qea2Td20e9lW_U6MCg#/registration",
+ "join_url": "https://mzgroup.zoom.us/w/83437842974?tk=YQA_IEWUawNd73zvdB31wbiOUq0Bd0oORmX3VRjbLwE.DQkAAAATbUhyHhY3YWlMRFhqVFRKS1MtMmtJMmMzczNRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=cto4jo6lc33SuGB2CQfIzGkQBIsvOj.1&uuid=WN_3_S7Qea2Td20e9lW_U6MCg",
+ "zoom_webinar_id": "83437842974",
+ "notion_database_id": "93e36ce639554db6943eca37ee22f420",
+ "language": "en",
+ "hotwords": "Telefonica Brasil, Vivo, Christian Gebara, David Melcon, ARPU, postpaid, prepaid, FTTH, fiber, homes passed, churn, EBITDA, capex, B2B, mobile service revenue"
+}
