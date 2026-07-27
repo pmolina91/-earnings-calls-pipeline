@@ -1,0 +1,4 @@
+job=register file=tests/register-vivo-2t26.json mode=register sha=72ff52310901ac3a3c53de01b05f5b7cb976988d
+72ff523 registro robo Vivo 2T26 (Zoom via modal do RI)
+b8bb926 debug replay 30268571140
+tests/register-vivo-2t26.json
