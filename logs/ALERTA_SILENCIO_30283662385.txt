@@ -1,1 +1,1 @@
-16:16:21Z SEM SOM no 1o minuto (mean_volume=-91.0dB) — captura provavelmente na pagina errada
+3 chunks vazios seguidos — possivel captura de silencio. ticker=TESTE_E2E
