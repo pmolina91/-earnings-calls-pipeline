@@ -1,0 +1,4 @@
+job=replay file=tests/zoomjoin-tim.json mode=zoomjoin sha=433ad78a20f4c3d029975a1bfa42f4bf6cc8b504
+433ad78 ensaio D-1: reconfirmar zoomjoin TIM
+3d602c3 regra: UMA pagina por call — live/replay anexam com separador se pagina existir
+tests/zoomjoin-tim.json
