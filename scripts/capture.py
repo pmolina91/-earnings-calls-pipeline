@@ -40,7 +40,9 @@ def record_pulse():
         '-f','segment','-segment_time','120','-reset_timestamps','1','work/audio/chunk_%04d.wav'])
 
 with sync_playwright() as pw:
-    browser = pw.chromium.launch(args=['--autoplay-policy=no-user-gesture-required'])
+    browser = pw.chromium.launch(headless=False,
+        ignore_default_args=['--mute-audio'],
+        args=['--autoplay-policy=no-user-gesture-required', '--no-sandbox', '--disable-dev-shm-usage'])
     ctx = browser.new_context(locale='pt-BR')
     page = ctx.new_page()
     page.on('request', lambda r: stream_url.setdefault('u', r.url) if MEDIA_RE.search(r.url) else None)

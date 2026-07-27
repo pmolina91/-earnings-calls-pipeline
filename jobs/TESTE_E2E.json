@@ -3,12 +3,12 @@
  "ticker_short": "EXPL",
  "company": "Ensaio Geral",
  "quarter": "2T26",
- "call_datetime_utc": "2026-07-27T16:44:00Z",
+ "call_datetime_utc": "2026-07-27T16:55:00Z",
  "webcast_url": "https://npr-ice.streamguys1.com/live.mp3",
  "force_pulse": true,
  "max_capture_minutes": 10,
  "notion_database_id": "f734f9d3-b356-8268-a777-81ee3d939b11",
  "language": "en",
  "hotwords": "",
- "rev": 3
+ "rev": 4
 }

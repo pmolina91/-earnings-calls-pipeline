@@ -45,7 +45,7 @@ jobs:
       - name: Instalar dependências
         if: steps.gate.outputs.run == 'yes'
         run: |
-          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg pulseaudio
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg pulseaudio xvfb
           pip install -q faster-whisper playwright requests
           playwright install --with-deps chromium
           # modelo whisper small int8 (fonte git, ~460MB, rápida)
@@ -61,7 +61,7 @@ jobs:
           REG_TITLE_CATEGORY: Buy side
         run: |
           mkdir -p work
-          nohup python3 scripts/capture.py "${{ steps.spec.outputs.file }}" > work/capture.log 2>&1 &
+          nohup xvfb-run -a python3 scripts/capture.py "${{ steps.spec.outputs.file }}" > work/capture.log 2>&1 &
           echo "captura em background (pid $!)"
 
       - name: Transcrição ao vivo + publicação incremental no Notion
