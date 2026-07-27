@@ -1,0 +1,5 @@
+CONECTADO 2026-07-27T16:15:03Z
+ticker=TESTE_E2E evento=2T26
+modo=pulse
+em_sala=True
+url_pagina=https://radionacional.ebc.com.br/
