@@ -135,6 +135,16 @@ with sync_playwright() as pw:
     except Exception as e:
         print(f'[capture] erro ao entrar na sala: {e}')
     time.sleep(10)
+    # players de webcast/radio exigem clique no play (Zoom nao); tentar generico
+    try:
+        for s in ['button[aria-label*=play i]', 'button[title*=play i]', '.play', '.vjs-big-play-button', 'button:has-text("Play")', 'button:has-text("Ouvir")']:
+            try:
+                el = page.locator(s).first
+                if el.is_visible(timeout=1500): el.click(); print(f'[capture] play clicado: {s}'); break
+            except Exception: pass
+        page.evaluate('() => { for (const m of document.querySelectorAll("audio,video")) { try { m.muted=false; m.play(); } catch(e){} } }')
+    except Exception as e:
+        print(f'[capture] play generico: {e}')
     forca_pulse = 'zoom.us' in (spec.get('join_url','') + spec.get('webcast_url','')) or spec.get('force_pulse')
     if 'u' in stream_url and not forca_pulse:
         threading.Thread(target=record_hls, args=(stream_url['u'],), daemon=True).start()
