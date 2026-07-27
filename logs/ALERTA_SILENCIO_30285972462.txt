@@ -1,1 +1,2 @@
 3 chunks vazios seguidos — possivel captura de silencio. ticker=TESTE_E2E
+16:51:57Z silencio ha 305s (mean_volume=-91.0dB)
