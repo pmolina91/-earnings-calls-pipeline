@@ -33,11 +33,13 @@ def record_hls(url):
 
 def record_pulse():
     print('gravando via PulseAudio (áudio da aba)')
-    subprocess.run(['pulseaudio','--start','--exit-idle-time=-1'])
-    subprocess.run(['pactl','load-module','module-null-sink','sink_name=cap'])
-    os.environ['PULSE_SINK']='cap'
     subprocess.Popen(['ffmpeg','-loglevel','warning','-f','pulse','-i','cap.monitor','-ac','1','-ar','16000',
         '-f','segment','-segment_time','120','-reset_timestamps','1','work/audio/chunk_%04d.wav'])
+
+# PulseAudio ANTES do navegador (senao o Chromium nasce sem sink correto)
+subprocess.run(['pulseaudio','--start','--exit-idle-time=-1'], check=False)
+subprocess.run(['pactl','load-module','module-null-sink','sink_name=cap','sink_properties=device.description=cap'], check=False)
+subprocess.run(['pactl','set-default-sink','cap'], check=False)
 
 with sync_playwright() as pw:
     browser = pw.chromium.launch(headless=False,
