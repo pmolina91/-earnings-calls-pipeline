@@ -1,0 +1,7 @@
+job=replay file=tests/scan-vivo-webcast.json mode=scan sha=2f56cb00c136063a071b6a3b904ae97552d8ba3c
+2f56cb0 D-1: jobs TIM A/B + Santander (join_url do email); scan webcast Vivo
+cd009a0 zoomjoin 30268453372
+staging/SANB11_2T26.json
+staging/TIMS3_2T26_A.json
+staging/TIMS3_2T26_B.json
+tests/scan-vivo-webcast.json
