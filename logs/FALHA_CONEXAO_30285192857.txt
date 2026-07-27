@@ -1,0 +1,5 @@
+FALHA_CONEXAO 2026-07-27T16:34:34Z
+ticker=TESTE_E2E evento=2T26
+modo=pulse
+em_sala=False
+url_pagina=https://npr-ice.streamguys1.com/live.mp3
