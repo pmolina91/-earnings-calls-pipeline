@@ -174,7 +174,7 @@ with sync_playwright() as pw:
     except Exception as e:
         print(f'[capture] erro ao commitar CONECTADO: {e}')
     # duração máxima de gravação: 3h; fim antecipado por silêncio é tratado no live_loop
-    t_end = time.time() + 3*3600
+    t_end = time.time() + float(spec.get('max_capture_minutes', 180))*60
     while time.time() < t_end and not os.path.exists('work/audio/END'):
         time.sleep(30)
     open('work/audio/END','w').close()
