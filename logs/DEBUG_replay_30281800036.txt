@@ -1,0 +1,5 @@
+job=replay file=tests/zoomjoin-vivo.json mode=zoomjoin sha=0ead7b9bb54059441382e8cab3fc4d113207659e
+0ead7b9 D-1 Vivo: spec com join_url do email + prova de sala
+80b75ea registro 30281328345
+staging/VIVT3_2T26.json
+tests/zoomjoin-vivo.json
