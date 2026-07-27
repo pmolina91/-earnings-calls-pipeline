@@ -1,0 +1,6 @@
+{
+ "mode": "scan",
+ "empresas": [
+  {"ticker": "VIVT3", "url": "https://ri.telefonica.com.br/"}
+ ]
+}

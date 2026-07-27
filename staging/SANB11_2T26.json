@@ -1,0 +1,13 @@
+{
+ "ticker": "SANB11",
+ "ticker_short": "SANB",
+ "company": "Santander Brasil",
+ "quarter": "2T26",
+ "call_datetime_utc": "2026-07-29T13:00:00Z",
+ "webcast_url": "https://us05web.zoom.us/webinar/register/WN_VAExS6tSQIG4WDEIVP6B-Q#/registration",
+ "join_url": "https://us06web.zoom.us/w/81778167223?tk=5sUK_aunoX0qpEaesqDny_5MX2wAuZeMsEOkaZfamJ4.DQkAAAATClvNtxZtb2txUDdJLVRHZXZWelRVNjNRWnJ3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&uuid=WN_VAExS6tSQIG4WDEIVP6B-Q",
+ "zoom_webinar_id": "81778167223",
+ "notion_database_id": "be982e1e79b04eb9a9722e85675fe1ac",
+ "language": "pt",
+ "hotwords": "Santander, Mario Leão, carteira de crédito, inadimplência, NII, ROE, provisões, Selic, cartões, consignado"
+}
