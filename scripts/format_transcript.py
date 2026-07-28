@@ -17,9 +17,12 @@ OPERADOR_CUES = [
     'questions and answers section is over', 'questions and answers session',
     'we will now begin the', 'we will now take', 'hand the floor', 'hand it back',
     'conference is now closed', 'that concludes', 'star one',
-    'pergunta vem de', 'a palavra esta com', 'passo a palavra', 'devolvo a palavra',
-    'seu microfone esta', 'sessao de perguntas e respostas', 'esta encerrada',
-    'agradecemos a participacao', 'a proxima pergunta e de',
+    # portugues (operador de teleconferencia BR)
+    'pergunta vem d', 'pergunta, vem d', 'primeira pergunta vem', 'proxima pergunta vem',
+    'a palavra esta com', 'a palavra ao', 'a palavra para o', 'a palavra para a',
+    'a palavra a ', 'passo a palavra', 'devolvo a palavra', 'seu microfone esta',
+    'sessao de perguntas e respostas', 'esta encerrada', 'agradecemos a participacao',
+    'consideracoes finais', 'nossa primeira pergunta',
 ]
 
 # executivo assumindo a resposta (inicio de resposta)
@@ -79,17 +82,22 @@ def _self_id(txt):
     return None
 
 def _extrai_analista(txt):
-    """De uma fala do operador, extrai (nome, banco) quando possivel."""
+    """De uma fala do operador, extrai (nome, banco) quando possivel (EN e PT)."""
     t = re.sub(r'\s+', ' ', txt)
-    m = re.search(r'(?:from|de) (?:Mr\.?|Mrs\.?|Ms\.?|Dr\.?|Sr\.?|Sra\.?)?\s*'
-                  r'([A-Z][\wçãáéíóâêõà]+(?:[ -][A-Z][\wçãáéíóâêõà]+){0,2})'
-                  r'(?:[,\s]+(?:from|by|de|da|do)\s+([A-Z][\w&\.\- ]{1,28}?))?(?:[\.\,]|$)', t)
+    _N = r'([A-Z][\wçãáéíóâêõà]+(?:[ -][A-Z][\wçãáéíóâêõà]+){0,2})'
+    _B = r'([A-ZÀ-Ú][\w&\.\- ]{1,28}?)'
+    # PT: "pergunta vem do Lucas Lag, XP Investimentos" / "vem da Luisa Musse, Safra"
+    m = re.search(r'vem d[oaei]s?\s+' + _N + r'\s*,\s*' + _B + r'(?:[\.\,]|$)', t)
+    if not m:
+        # EN: "from Mr X from/by Bank"
+        m = re.search(r'(?:from|de) (?:Mr\.?|Mrs\.?|Ms\.?|Dr\.?|Sr\.?|Sra\.?)?\s*' + _N +
+                      r'(?:[,\s]+(?:from|by|de|da|do)\s+' + _B + r')?(?:[\.\,]|$)', t)
     if not m:
         return None, None
     nome = (m.group(1) or '').strip()
-    banco = (m.group(2) or '').strip() if m.group(2) else None
+    banco = (m.group(2) or '').strip() if m.lastindex and m.group(2) else None
     if banco:
-        banco = re.sub(r'\s+(please|the floor|you may|your|good).*$', '', banco, flags=re.I).strip(' .,')
+        banco = re.sub(r'\s+(please|the floor|you may|your|good|para|com|obrigad).*$', '', banco, flags=re.I).strip(' .,')
     return (nome or None), (banco or None)
 
 def _sentencas(segments, glossario=None):
