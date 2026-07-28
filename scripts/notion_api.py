@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Cliente mínimo da API do Notion (token de integração interna via NOTION_TOKEN)."""
-import os, requests
+import os, re, requests
 H = lambda: {'Authorization': f"Bearer {os.environ['NOTION_TOKEN']}",
              'Notion-Version': '2022-06-28', 'Content-Type': 'application/json'}
 BASE='https://api.notion.com/v1'
@@ -49,6 +49,76 @@ def append_text(page_id, text, heading=None):
                            json={'children': blocks[i:i+90]})
         r.raise_for_status()
 
+
+def _plain(block):
+    t = block.get('type')
+    rt = (block.get(t) or {}).get('rich_text', []) if t else []
+    return ''.join(x.get('plain_text', '') for x in rt)
+
+def list_children(block_id):
+    out, cursor = [], None
+    while True:
+        params = {'page_size': 100}
+        if cursor: params['start_cursor'] = cursor
+        r = requests.get(f'{BASE}/blocks/{block_id}/children', headers=H(), params=params, timeout=30)
+        r.raise_for_status(); j = r.json()
+        out += j.get('results', [])
+        if not j.get('has_more'): break
+        cursor = j.get('next_cursor')
+    return out
+
+def delete_block(block_id):
+    try:
+        requests.delete(f'{BASE}/blocks/{block_id}', headers=H(), timeout=30)
+        return True
+    except Exception:
+        return False
+
+_LIVE_MARKERS = ['transcrição (ao vivo)', 'transcricao (ao vivo)', 'transcrição ao vivo',
+                 'transcricao ao vivo', 'transcrição automática', 'transcricao automatica',
+                 'nova sessão de transcrição', 'nova sessao de transcricao']
+_KEEP_MARKERS = ['📌', '🔁', '📋', '📊', 'resumo do call', 'q&a formatado',
+                 'vs. call anterior', 'transcrição final', 'transcricao final']
+
+def delete_live_blocks(page_id):
+    """Apaga a transcricao AO VIVO (do primeiro marcador ao fim), preservando as secoes
+    do cerebro (Resumo/Q&A) caso ja existam. Retorna nº de blocos apagados."""
+    filhos = list_children(page_id)
+    start = None
+    for i, b in enumerate(filhos):
+        low = _plain(b).lower()
+        if any(mk in low for mk in _LIVE_MARKERS):
+            start = i; break
+    if start is None:
+        return 0
+    apagados = 0
+    for b in filhos[start:]:
+        low = _plain(b).lower()
+        if any(mk in low for mk in _KEEP_MARKERS):
+            break
+        if delete_block(b['id']): apagados += 1
+    return apagados
+
+def append_markdown(page_id, md, heading=None):
+    """Anexa markdown simples: cada paragrafo (\\n\\n) vira um bloco; **Rótulo:** vira bold no inicio."""
+    blocks = []
+    if heading:
+        blocks.append({'object':'block','type':'heading_2',
+            'heading_2':{'rich_text':[{'text':{'content':heading}}]}})
+    for par in [p for p in md.split('\n\n') if p.strip()]:
+        rich = []
+        m = re.match(r'^\*\*(.+?):\*\*\s*(.*)$', par, re.S)
+        resto = m.group(2) if m else par
+        if m:
+            rich.append({'type':'text','text':{'content':(m.group(1)+': ')[:1900]},
+                         'annotations':{'bold':True}})
+        for i in range(0, max(len(resto),1), 1900):
+            rich.append({'type':'text','text':{'content':resto[i:i+1900]}})
+        blocks.append({'object':'block','type':'paragraph','paragraph':{'rich_text':rich[:100]}})
+    for i in range(0, len(blocks), 90):
+        r = requests.patch(f'{BASE}/blocks/{page_id}/children', headers=H(),
+                           json={'children': blocks[i:i+90]})
+        r.raise_for_status()
 
 def find_call_page(database_id, title_contains):
     """Procura pagina existente no database cujo titulo contenha o texto (regra: UMA pagina por call)."""
