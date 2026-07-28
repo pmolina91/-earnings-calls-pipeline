@@ -1,0 +1,5 @@
+CONECTADO 2026-07-28T13:04:44Z
+ticker=VIVT3 evento=2T26
+modo=pulse
+em_sala=True
+url_pagina=https://app.zoom.us/wc/83437842974/join?tk=YQA_IEWUawNd73zvdB31wbiOUq0Bd0oORmX3VRjbLwE.DQkAAAATbUhyHhY3YWlMRFhqVFRKS1MtM
