@@ -98,7 +98,7 @@ def _extrai_analista(txt):
     _B = r'([A-ZÀ-Ú][\w&\.\- ]{1,28}?)'
     _Bl = r'([A-Za-zÀ-ú][\w&\.\- ]{1,28}?)'   # banco tolerante a minuscula ("banco safra")
     # PT: "pergunta vem do Lucas Lag, XP Investimentos" / "vem da Luisa Musse, banco safra"
-    m = re.search(r'vem d[oaei]s?\s+' + _N + r'(?:\s*,\s*' + _Bl + r')?(?:[\.\,]|$)', t)
+    m = re.search(r'vem d[oaei]s?\s+' + _N + r'(?:\s*,\s*' + _Bl + r'(?:[\.\,]|$))?', t)
     if not m:
         # EN: "from Mr X from/by Bank"
         m = re.search(r'(?:from|de) (?:Mr\.?|Mrs\.?|Ms\.?|Dr\.?|Sr\.?|Sra\.?)?\s*' + _N +
