@@ -1,0 +1,5 @@
+CONECTADO 2026-07-28T14:08:22Z
+ticker=TIMS3 evento=2T26
+modo=pulse
+em_sala=True
+url_pagina=https://app.zoom.us/wc/85646097518/join?tk=cSDq9zwo3PXyniTzfTHpyXtpPnUdn6_bBi-mTQFUHNU.DQkAAAAT8Oe8bhZKZUotaWpIRFJXRzltZ
