@@ -1,1 +1,2 @@
 3 chunks vazios seguidos — possivel captura de silencio. ticker=TIMS3
+13:52:54Z SEM SOM no 1o minuto (mean_volume=-91.0dB) — captura provavelmente na pagina errada
