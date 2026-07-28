@@ -161,7 +161,7 @@ with sync_playwright() as pw:
     try:
         _body = (page.evaluate('() => document.body.innerText') or '').lower()
         em_sala = (('registration' not in page.url and 'register' not in page.url) and
-                   any(s in _body for s in ['aguardando','waiting for','has not started','leave','sair','audio','áudio','webinar em andamento']))
+                   ('/wc/' in page.url or any(s in _body for s in ['aguardando','aguarde','wait for','waiting for','has not started','não começou','nao comecou','leave','sair','audio','áudio','webinar em andamento','host to start','organizador'])))
     except Exception:
         pass
     # CONFIRMACAO DE CONEXAO auto-reportada (pedido do usuario 23/07):
