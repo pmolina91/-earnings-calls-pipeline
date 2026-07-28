@@ -44,10 +44,20 @@ _SELFID = [
     re.compile(r"\bthat'?s " + _NAME),
     re.compile(_NAME + r" here[\.,\b]"),
     re.compile(r"\bcan " + _NAME + r" (?:have an answer|answer|take)", re.I),
-    re.compile(r"\baqui (?:e|eh) o " + _NAME),
+    re.compile(r"\baqui (?:e|eh|é) o " + _NAME),
+    # PT: "André Rodrigues falando aqui" — exige nome+sobrenome (evita "Estamos falando")
+    re.compile(r"\b([A-Z][a-zà-ú]+ [A-Z][a-zà-ú]+) falando"),
 ]
 
 _norm = lambda s: re.sub(r'[^a-z ]', '', (s or '').lower())
+
+# subconjunto: pistas que iniciam uma PERGUNTA (vs. hand-off entre executivos na apresentacao)
+QUESTION_CUES = [
+    'question comes from', 'next question comes', 'question is from', 'floor is now yours',
+    'floor is yours', 'you may now speak', 'you may speak', 'your microphone is',
+    'pergunta vem d', 'pergunta, vem d', 'primeira pergunta vem', 'proxima pergunta vem',
+    'nossa primeira pergunta', 'a palavra esta com',
+]
 
 # correcoes de termos claramente errados (nao-palavras). O grosso da correcao
 # contextual e' do 'cerebro' (skill); aqui so' o obvio e seguro.
@@ -86,8 +96,9 @@ def _extrai_analista(txt):
     t = re.sub(r'\s+', ' ', txt)
     _N = r'([A-Z][\wçãáéíóâêõà]+(?:[ -][A-Z][\wçãáéíóâêõà]+){0,2})'
     _B = r'([A-ZÀ-Ú][\w&\.\- ]{1,28}?)'
-    # PT: "pergunta vem do Lucas Lag, XP Investimentos" / "vem da Luisa Musse, Safra"
-    m = re.search(r'vem d[oaei]s?\s+' + _N + r'\s*,\s*' + _B + r'(?:[\.\,]|$)', t)
+    _Bl = r'([A-Za-zÀ-ú][\w&\.\- ]{1,28}?)'   # banco tolerante a minuscula ("banco safra")
+    # PT: "pergunta vem do Lucas Lag, XP Investimentos" / "vem da Luisa Musse, banco safra"
+    m = re.search(r'vem d[oaei]s?\s+' + _N + r'(?:\s*,\s*' + _Bl + r')?(?:[\.\,]|$)', t)
     if not m:
         # EN: "from Mr X from/by Bank"
         m = re.search(r'(?:from|de) (?:Mr\.?|Mrs\.?|Ms\.?|Dr\.?|Sr\.?|Sra\.?)?\s*' + _N +
@@ -97,7 +108,9 @@ def _extrai_analista(txt):
     nome = (m.group(1) or '').strip()
     banco = (m.group(2) or '').strip() if m.lastindex and m.group(2) else None
     if banco:
-        banco = re.sub(r'\s+(please|the floor|you may|your|good|para|com|obrigad).*$', '', banco, flags=re.I).strip(' .,')
+        banco = re.sub(r'\s+(please|the floor|you may|your|good|para|com|obrigad|por gentileza).*$', '', banco, flags=re.I).strip(' .,')
+        banco = re.sub(r'^banco\s+', '', banco, flags=re.I)      # "banco safra" -> "safra"
+        banco = ' '.join(w if w.isupper() else w.capitalize() for w in banco.split())  # title-case
     return (nome or None), (banco or None)
 
 def _sentencas(segments, glossario=None):
@@ -152,6 +165,11 @@ def to_speaker_text(segments, lang='pt', glossario=None):
         n = _norm(txt)
 
         if any(c in n for c in OPERADOR_CUES):
+            eh_pergunta = any(c in n for c in QUESTION_CUES)
+            # hand-off entre executivos durante a apresentacao NAO inicia Q&A
+            if estado == 'apresentacao' and not eh_pergunta:
+                push('🎙️ Operador', txt)
+                continue
             nome, banco = _extrai_analista(txt)
             if nome:
                 analista_atual = (nome, banco)
