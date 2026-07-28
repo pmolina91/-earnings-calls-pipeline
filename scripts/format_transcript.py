@@ -82,7 +82,7 @@ def _extrai_analista(txt):
     t = re.sub(r'\s+', ' ', txt)
     m = re.search(r'(?:from|de) (?:Mr\.?|Mrs\.?|Ms\.?|Dr\.?|Sr\.?|Sra\.?)?\s*'
                   r'([A-Z][\wçãáéíóâêõà]+(?:[ -][A-Z][\wçãáéíóâêõà]+){0,2})'
-                  r'(?:\s+(?:from|by|de|da|do)\s+([A-Z][\w&\.\- ]{1,28}?))?(?:[\.\,]|$)', t)
+                  r'(?:[,\s]+(?:from|by|de|da|do)\s+([A-Z][\w&\.\- ]{1,28}?))?(?:[\.\,]|$)', t)
     if not m:
         return None, None
     nome = (m.group(1) or '').strip()
@@ -91,15 +91,37 @@ def _extrai_analista(txt):
         banco = re.sub(r'\s+(please|the floor|you may|your|good).*$', '', banco, flags=re.I).strip(' .,')
     return (nome or None), (banco or None)
 
+def _sentencas(segments, glossario=None):
+    """Junta os segmentos (conserta frase quebrada no meio), limpa/corrige e re-quebra em FRASES.
+    Trabalhar por frase e' essencial: o Whisper corta frases no meio dos chunks."""
+    txt = ' '.join(limpa(s) for s in segments if s and s.strip())
+    txt = corrige_termos(txt, glossario)
+    txt = re.sub(r'\s+', ' ', txt).strip()
+    # nao quebrar frase em abreviacoes (Mr. Mrs. Dr. etc.) nem em iniciais
+    txt = re.sub(r'\b(Mr|Mrs|Ms|Dr|Sr|Sra|St|vs|Inc|Ltd|Co|Jr|no|No)\.', r'\1<DOT>', txt)
+    partes = re.split(r'(?<=[.?!])\s+', txt)
+    return [p.strip().replace('<DOT>', '.') for p in partes if p.strip()]
+
 def to_speaker_text(segments, lang='pt', glossario=None):
     """segments: lista de strings (texto por segmento do whisper, em ordem).
     Retorna markdown com turnos rotulados, sem timestamps."""
-    segments = [corrige_termos(limpa(s), glossario) for s in segments]
-    segments = [s for s in segments if s]
+    segments = _sentencas(segments, glossario)   # agora cada item e' uma FRASE inteira
     turnos = []
     estado = 'apresentacao'  # apresentacao | operador | pos_intro | analista | executivo
     analista_atual = None
     exec_atual = None
+    ana_seg = 0              # nº de segmentos ja' ditos pelo analista no turno atual
+    OPENERS = ('let me go', 'let me start', 'let me take', 'let me address', 'let me answer')
+
+    def _exec_cumprimenta(txt):
+        """executivo abrindo a resposta cumprimentando o analista pelo 1o nome, ou opener classico."""
+        if not (analista_atual and analista_atual[0]):
+            return False
+        first = re.escape(analista_atual[0].split()[0])
+        n2 = _norm(txt)
+        if re.match(r'^(hi|hello|hey|ola|ok|okay|so ok|thank you)?[, ]*' + _norm(first) + r'\b', n2):
+            return True
+        return any(n2.startswith(o) for o in OPENERS)
     rot_apres = '🗣️ Prepared remarks (company)' if lang == 'en' else '🗣️ Apresentação (companhia)'
 
     def push(rotulo, txt):
@@ -141,16 +163,17 @@ def to_speaker_text(segments, lang='pt', glossario=None):
                 estado = 'executivo'
                 push('💬 ' + (exec_atual or 'Executivo'), txt)
             else:
-                estado = 'analista'
+                estado = 'analista'; ana_seg = 0
                 push(rot_analista(), txt)
             continue
 
         if estado == 'analista':
-            if virou_exec:
+            if virou_exec or (ana_seg >= 1 and _exec_cumprimenta(txt)):
                 exec_atual = nome_exec or exec_atual
                 estado = 'executivo'
                 push('💬 ' + (exec_atual or 'Executivo'), txt)
             else:
+                ana_seg += 1
                 push(rot_analista(), txt)
             continue
 
