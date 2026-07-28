@@ -1,0 +1,17 @@
+{
+ "ticker": "TIMS3",
+ "ticker_short": "TIM",
+ "company": "TIM",
+ "quarter": "2T26",
+ "call_datetime_utc": "2026-07-28T14:00:00Z",
+ "webcast_url": "https://mzgroup.zoom.us/webinar/register/WN_0povELVgTfaspPYt2I56sQ#/registration",
+ "join_url": "https://mzgroup.zoom.us/w/85646097518?tk=cSDq9zwo3PXyniTzfTHpyXtpPnUdn6_bBi-mTQFUHNU.DQkAAAAT8Oe8bhZKZUotaWpIRFJXRzltZThMdzRXc0RnAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&pwd=n3xdFHf3GsHWicmi0VG0cXfh5a0OIP.1&uuid=WN_0povELVgTfaspPYt2I56sQ",
+ "zoom_webinar_id": "85646097518",
+ "notion_database_id": "a4639564ee8a4a5e9d5f628a677dbdbd",
+ "language": "pt",
+ "hotwords": "TIM, Alberto Griselli, Andrea Viegas, ARPU, pós-pago, pré-pago, 5G, FTTH, churn, EBITDA, capex, IoT, agro",
+ "runner": "A",
+ "chunk_seconds": 30,
+ "rev": 99,
+ "label": "TIM_RESGATE"
+}
