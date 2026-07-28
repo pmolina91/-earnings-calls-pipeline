@@ -1,1 +1,1 @@
-14:51:12Z silencio ha 0s (mean_volume=-91.0dB)
+3 chunks vazios seguidos — possivel captura de silencio. ticker=TIMS3
