@@ -28,13 +28,13 @@ def try_register(page):
 def record_hls(url):
     print('gravando via ffmpeg (stream direto):', url[:100])
     subprocess.run(['ffmpeg','-loglevel','warning','-i',url,'-vn','-ac','1','-ar','16000',
-        '-f','segment','-segment_time','120','-reset_timestamps','1',
+        '-f','segment','-segment_time', str(spec.get('chunk_seconds', 45)),'-reset_timestamps','1',
         'work/audio/chunk_%04d.wav'])
 
 def record_pulse():
     print('gravando via PulseAudio (áudio da aba)')
     subprocess.Popen(['ffmpeg','-loglevel','warning','-f','pulse','-i','cap.monitor','-ac','1','-ar','16000',
-        '-f','segment','-segment_time','120','-reset_timestamps','1','work/audio/chunk_%04d.wav'])
+        '-f','segment','-segment_time', str(spec.get('chunk_seconds', 45)),'-reset_timestamps','1','work/audio/chunk_%04d.wav'])
 
 # PulseAudio ANTES do navegador (senao o Chromium nasce sem sink correto)
 subprocess.run(['pulseaudio','--start','--exit-idle-time=-1'], check=False)

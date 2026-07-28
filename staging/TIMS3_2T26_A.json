@@ -10,5 +10,7 @@
  "notion_database_id": "a4639564ee8a4a5e9d5f628a677dbdbd",
  "language": "pt",
  "hotwords": "TIM, Alberto Griselli, Andrea Viegas, ARPU, pós-pago, pré-pago, 5G, FTTH, churn, EBITDA, capex, IoT, agro",
- "runner": "A"
+ "runner": "A",
+ "chunk_seconds": 30,
+ "rev": 2
 }

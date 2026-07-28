@@ -35,7 +35,7 @@ ultimo_texto = ''
 while True:
     chunks = sorted(glob.glob('work/audio/chunk_*.wav'))
     new = [c for c in chunks if c not in done and os.path.getsize(c) > 60000
-           and time.time()-os.path.getmtime(c) > 5]
+           and time.time()-os.path.getmtime(c) > 2]
     for c in new:
         try:
             segs,_ = model.transcribe(c, language=LANG, vad_filter=True, beam_size=5,
