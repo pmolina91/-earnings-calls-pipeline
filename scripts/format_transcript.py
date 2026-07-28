@@ -53,6 +53,7 @@ GLOSSARIO = {
     r'\bvekt?or\b': 'vetor',
     r'\bcres[cç][ãa]o\b': 'geração', r'\bcre[cç][ãa]o\b': 'geração',
     r'\bprofila[cç][ãa]o\b': 'perfil',
+    r'\b(?:Shispei|Chispe|Xispe|Chispei)\b': 'XP',   # XP mal transcrita foneticamente
 }
 
 def limpa(txt):
