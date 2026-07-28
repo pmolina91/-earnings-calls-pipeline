@@ -1,0 +1,84 @@
+name: capture-SANB11-2T26
+# Captura dedicada e agendada do call do Santander (SANB11) 2T26.
+# Call: 2026-07-29 13:00Z (10:00 BRT). Dispara por cron (redundante) e valida a janela
+# de tempo com gate.py; o spec fica FIXO aqui (jobs/SANB11_2T26.json), sem depender de
+# deteccao de arquivo alterado nem de sessao do Claude. Removivel apos 29/07/2026.
+on:
+  schedule:
+    - cron: '30 10 29 7 *'   # 2026-07-29 10:30Z = 07:30 BRT (T-2h30, tolera atraso do scheduler)
+    - cron: '0 11 29 7 *'    # 2026-07-29 11:00Z = 08:00 BRT (T-2h, redundancia se um tick cair)
+  workflow_dispatch: {}
+
+concurrency:
+  group: capture-sanb11-2t26   # ticks/dispatch nao rodam em paralelo; o 1o que passar no gate vence
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+env:
+  SPEC: jobs/SANB11_2T26.json
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355  # < 6h (teto do GitHub)
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validar janela de tempo (call nas proximas ~5h30)
+        id: gate
+        run: python3 scripts/gate.py "$SPEC"
+
+      - name: Instalar dependencias
+        if: steps.gate.outputs.run == 'yes'
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg pulseaudio xvfb
+          pip install -q faster-whisper playwright requests
+          playwright install --with-deps chromium
+          python3 scripts/get_model.py
+
+      - name: Esperar ate T-10min, entrar no webcast e gravar
+        if: steps.gate.outputs.run == 'yes'
+        env:
+          REG_NAME: ${{ secrets.REG_NAME }}
+          REG_EMAIL: ${{ secrets.REG_EMAIL }}
+          REG_COMPANY: ${{ secrets.REG_COMPANY }}
+          REG_PHONE: ${{ secrets.REG_PHONE }}
+          REG_TITLE_CATEGORY: Buy side
+        run: |
+          mkdir -p work
+          nohup xvfb-run -a python3 scripts/capture.py "$SPEC" > work/capture.log 2>&1 &
+          echo "captura em background (pid $!)"
+
+      - name: Transcricao ao vivo + publicacao incremental no Notion
+        if: steps.gate.outputs.run == 'yes'
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+        run: |
+          nohup python3 scripts/live_loop.py "$SPEC" > work/live.log 2>&1 &
+          echo "live_loop em background (pid $!)"
+
+      - name: Aguardar fim da gravacao
+        if: steps.gate.outputs.run == 'yes'
+        run: python3 scripts/wait_end.py
+
+      - name: Transcricao final + publicacao no Notion
+        if: steps.gate.outputs.run == 'yes'
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+        run: python3 scripts/finalize.py "$SPEC"
+
+      - name: Commit da transcricao no repo
+        if: steps.gate.outputs.run == 'yes'
+        run: |
+          git config user.name "earnings-bot"; git config user.email "bot@users.noreply.github.com"
+          git add transcripts/ && git commit -m "transcript: SANB11_2T26" && git pull -q --rebase && git push || echo "nada a commitar"
+
+      - name: Upload do audio (artifact, 90 dias)
+        if: always() && steps.gate.outputs.run == 'yes'
+        uses: actions/upload-artifact@v4
+        with:
+          name: audio-sanb11-${{ github.run_id }}
+          path: work/audio/
+          retention-days: 90
