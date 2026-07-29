@@ -4,16 +4,20 @@ em chunks de 2min em work/audio/. Estratégia dupla:
  A) sniffing de rede: se o player expõe stream HLS/DASH (m3u8/mpd/mp3/aac), grava via ffmpeg direto.
  B) fallback: áudio da aba via PulseAudio virtual sink + ffmpeg (funciona p/ Zoom web client etc).
 Sentinela work/audio/END criada ao detectar fim (silêncio prolongado pós-início ou stream fechado)."""
-import json, sys, os, time, re, subprocess, threading
+import json, sys, os, time, re, subprocess, threading, glob
 from datetime import datetime, timezone
 from playwright.sync_api import sync_playwright
 
 spec = json.load(open(sys.argv[1]))
 os.makedirs('work/audio', exist_ok=True)
 call = datetime.fromisoformat(spec['call_datetime_utc'].replace('Z','+00:00'))
-wait = (call - datetime.now(timezone.utc)).total_seconds() - 600
+# join_offset_seconds: quando ENTRAR na sala, relativo ao horario do call.
+#  -600 (default) = T-10min (runner "cedo"); +120 = T+2min (runner "ao vivo", ja entra live e
+#  nunca cai na sala de espera). Permite dois runners escalonados (ver docs/PROCESSO-captura.md).
+offset = float(spec.get('join_offset_seconds', -600))
+wait = (call - datetime.now(timezone.utc)).total_seconds() + offset
 if wait > 0:
-    print(f'esperando {wait/60:.0f}min até T-10min...'); time.sleep(wait)
+    print(f'esperando {wait/60:.0f}min ate o horario de entrada (offset={offset}s)...'); time.sleep(wait)
 
 NAME, EMAIL, COMPANY = os.environ['REG_NAME'], os.environ['REG_EMAIL'], os.environ['REG_COMPANY']
 PHONE, TITLECAT = os.environ.get('REG_PHONE',''), os.environ.get('REG_TITLE_CATEGORY','Buy side')
@@ -31,10 +35,14 @@ def record_hls(url):
         '-f','segment','-segment_time', str(spec.get('chunk_seconds', 45)),'-reset_timestamps','1',
         'work/audio/chunk_%04d.wav'])
 
+_ff = {'p': None, 'idx': 0}
 def record_pulse():
     print('gravando via PulseAudio (áudio da aba)')
-    subprocess.Popen(['ffmpeg','-loglevel','warning','-f','pulse','-i','cap.monitor','-ac','1','-ar','16000',
-        '-f','segment','-segment_time', str(spec.get('chunk_seconds', 45)),'-reset_timestamps','1','work/audio/chunk_%04d.wav'])
+    subprocess.run(['pactl','set-default-sink','cap'], check=False)  # re-arma roteamento antes de gravar
+    # -segment_start_number preserva a numeracao ao reiniciar (nao sobrescreve chunks ja gravados)
+    _ff['p'] = subprocess.Popen(['ffmpeg','-loglevel','warning','-f','pulse','-i','cap.monitor','-ac','1','-ar','16000',
+        '-f','segment','-segment_time', str(spec.get('chunk_seconds', 45)),'-reset_timestamps','1',
+        '-segment_start_number', str(_ff['idx']),'work/audio/chunk_%04d.wav'])
 
 # PulseAudio ANTES do navegador (senao o Chromium nasce sem sink correto)
 subprocess.run(['pulseaudio','--start','--exit-idle-time=-1'], check=False)
@@ -184,13 +192,39 @@ with sync_playwright() as pw:
         print('[capture] confirmacao CONECTADO commitada')
         # watchdog de audio (SOM_OK/ALERTA_SILENCIO em ~1 min; re-alerta a cada 5 min)
         import subprocess as sp2
-        sp2.Popen(['python3','scripts/audio_watchdog.py', modo, str(spec.get('ticker'))])
+        sp2.Popen(['python3','scripts/audio_watchdog.py', modo, str(spec.get('ticker')), spec.get('call_datetime_utc','')])
     except Exception as e:
         print(f'[capture] erro ao commitar CONECTADO: {e}')
-    # duração máxima de gravação: 3h; fim antecipado por silêncio é tratado no live_loop
+    # duração máxima de gravação. NUNCA encerra por silêncio — só no t_end ou sinal END externo.
+    # A cada ciclo: re-arma o áudio (sobrevive à transição sala-de-espera→ao vivo) e reinicia o
+    # ffmpeg se ele travar (sem chunk novo). Isso ataca a causa da perda do começo dos calls.
     t_end = time.time() + float(spec.get('max_capture_minutes', 180))*60
+    last_n, last_grow = -1, time.time()
     while time.time() < t_end and not os.path.exists('work/audio/END'):
-        time.sleep(30)
+        time.sleep(20)
+        try:
+            subprocess.run(['pactl','set-default-sink','cap'], check=False)  # mantém roteamento do áudio
+            # re-clica "entrar por áudio do computador" / play e desmuta (main thread = seguro p/ Playwright)
+            try:
+                page.locator('button:has-text("udio do computador"), button:has-text("Computer Audio"), button:has-text("Join Audio")').first.click(timeout=1500)
+            except Exception: pass
+            try:
+                page.evaluate('() => { for (const m of document.querySelectorAll("audio,video")) { try{m.muted=false;m.play();}catch(e){} } }')
+            except Exception: pass
+            # detecta ffmpeg travado (sem chunk novo por ~100s) e reinicia sem perder a numeração
+            n = len(glob.glob('work/audio/chunk_*.wav'))
+            if n > last_n:
+                last_n, last_grow = n, time.time()
+            elif modo == 'pulse' and time.time() - last_grow > 100:
+                print('[capture] ffmpeg sem chunk novo — reiniciando gravação')
+                _ff['idx'] = n
+                try:
+                    if _ff['p']: _ff['p'].kill()
+                except Exception: pass
+                record_pulse(); last_grow = time.time()
+        except Exception as e:
+            print(f'[capture] manutenção: {e}')
     open('work/audio/END','w').close()
-    browser.close()
+    try: browser.close()
+    except Exception: pass
 print('captura encerrada')

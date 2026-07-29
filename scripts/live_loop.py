@@ -5,7 +5,8 @@ from faster_whisper import WhisperModel
 import notion_api
 
 spec = json.load(open(sys.argv[1]))
-NOTION_ON = bool(os.environ.get('NOTION_TOKEN')) and spec.get('notion_database_id','').lower() not in ('', 'sera_preenchido', 'none', 'skip')
+NOTION_ON = (bool(os.environ.get('NOTION_TOKEN')) and spec.get('notion', True)
+             and spec.get('notion_database_id','').lower() not in ('', 'sera_preenchido', 'none', 'skip'))
 if not NOTION_ON:
     print('[live] NOTION desativado (sem token ou database) — transcrevendo sem publicar')
 page_id_file = 'work/notion_page_id'
