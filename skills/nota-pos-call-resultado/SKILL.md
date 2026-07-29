@@ -35,6 +35,19 @@ Resultado final, numa **única** página por call, nesta ordem de cima para baix
 
 ## Passo 2 — Produzir a transcrição da APRESENTAÇÃO INICIAL (por interlocutor)
 Esta seção contém **só a fala inicial da empresa (prepared remarks)** — a transcrição corrida do Q&A NÃO entra aqui (o Q&A vai só no bloco formatado do Passo 5). Se a captura misturou apresentação + Q&A num bloco só, **recorte**: mantenha apenas até o operador abrir a sessão de perguntas ("vamos para a sessão de Q&A" / "the floor is now open"); o resto (Q&A) é descartado desta seção.
+
+**Cabeçalho e nota padrão da seção** (sempre este título e sempre esta nota fechando o intro):
+```markdown
+# Transcrição — apresentação inicial da companhia
+> Call em {idioma} (idioma original), por interlocutor, sem timestamps. {estado da abertura — ver os três casos}. **O Q&A aparece uma única vez, no bloco formatado abaixo (não é repetido aqui).**
+```
+
+**Os três casos (decida por qual a captura caiu):**
+1. **Abertura capturada** (ex.: WEGE): mantenha os turnos de apresentação (🗣️ da companhia + turnos do operador que passam a palavra entre executivos), cortando exatamente quando o operador abre o Q&A. A seção fica com a apresentação real; o Q&A sai só no bloco formatado.
+2. **Abertura NÃO capturada** — o runner entrou já no Q&A (ex.: VIVT, SANB): **não deixe nenhuma transcrição corrida aqui**. A seção vira apenas o cabeçalho + a nota padrão, com o estado da abertura = "A apresentação inicial (prepared remarks) da companhia será completada via **replay oficial do RI** — a captura ao vivo entrou já na sessão de perguntas." Todo o texto corrido do Q&A que a captura tenha deixado aqui é **apagado** (ele já está, formatado, no Passo 5).
+3. **Captura ruidosa / idioma estrangeiro misturado** (ex.: SANB — executivo espanhol, texto sem separação de interlocutor): **nunca publique o texto bruto**. Marque o Resumo e o Q&A como *preliminares*, remova o bloco bruto da seção de transcrição e deixe a nota padrão apontando o replay oficial como fonte da versão limpa e por interlocutor.
+
+> **Regra de ouro:** se você não tem prepared remarks limpos e por interlocutor, a seção de transcrição é **só a nota** — nunca o despejo bruto da captura. É melhor uma nota honesta ("virá do replay") do que texto ruidoso/duplicado na página.
 O `finalize.py` entrega uma primeira versão via `scripts/format_transcript.py` (heurística operador→analista→executivo + glossário). O seu papel de cérebro é **revisar e corrigir**:
 1. **Conferir a atribuição de fala** contra o conteúdo — a heurística erra transições. Corrija quem está falando (o operador anuncia "pergunta de {Analista} do {Banco}"; o executivo costuma se auto-identificar "aqui é o {Nome}", "that's {Name}").
 2. **Corrigir termos** que a heurística não pega (contextual): números, nomes de produto, jargão. Use o release oficial para casar números.
@@ -98,7 +111,8 @@ No fim, `💬 **Encerramento — {Executivo} ({cargo})**` com os pontos de fecha
 - Ajuste o título para a versão final (sem "[LIVE …]").
 
 ## Passo 7 — Verificação final
-- Ordem na página: Resumo → vs. anterior → transcrição final (por interlocutor, sem timestamps) → Q&A formatado.
+- Ordem na página: Resumo → vs. anterior → transcrição (só apresentação inicial, por interlocutor, sem timestamps) → Q&A formatado.
+- **Seção de transcrição = só apresentação inicial (ou só a nota-padrão apontando o replay).** Nenhum turno de Q&A aqui — o Q&A aparece uma única vez, no bloco formatado. Sem despejo bruto/ruidoso.
 - Nenhum bloco da transcrição ao vivo sobrou; nenhuma frase cortada no meio.
 - Termos de jargão corrigidos; números batem com o release.
 - Contagem de perguntas do cabeçalho bate com os blocos; **não há segunda página** para o call.
