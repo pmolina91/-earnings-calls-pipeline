@@ -1,0 +1,5 @@
+CONECTADO 2026-07-29T12:51:40Z
+ticker=SANB11 evento=2T26
+modo=pulse
+em_sala=True
+url_pagina=https://app.zoom.us/wc/81778167223/join?tk=5sUK_aunoX0qpEaesqDny_5MX2wAuZeMsEOkaZfamJ4.DQkAAAATClvNtxZtb2txUDdJLVRHZXZWe
