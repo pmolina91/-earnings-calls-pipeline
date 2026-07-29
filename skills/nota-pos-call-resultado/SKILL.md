@@ -12,9 +12,11 @@ Resultado final, numa **única** página por call, nesta ordem de cima para baix
 1. `📌 Resumo do Call — principais pontos do Q&A` (bullets dos destaques)
 2. `🔁 vs. call anterior (NT{AA})` (o que mudou e o que ficou constante)
 3. `---`
-4. `Transcrição final (por interlocutor)` — **legível, sem timestamps, fala separada por pessoa, termos corrigidos** (ver Passo 2). A versão **ao vivo** deve ter sido **apagada**.
+4. `Transcrição — apresentação inicial da companhia` — **APENAS a fala inicial/prepared remarks da empresa**, por interlocutor, legível, sem timestamps, termos corrigidos (ver Passo 2). A versão **ao vivo** deve ter sido **apagada**.
 5. `---`
 6. `📋 Q&A formatado — N perguntas` (pergunta por analista/banco + resposta por executivo)
+
+> **NÃO repetir o Q&A.** O Q&A aparece **uma única vez**, no bloco formatado (item 6). A seção de transcrição (item 4) contém **só a apresentação inicial da empresa** — nunca a transcrição corrida do Q&A. (Antes o Q&A saía duas vezes: na transcrição por interlocutor e no formatado — isso está errado.)
 
 ## Princípios invioláveis
 - **UMA página por call.** Nunca crie uma segunda nota para o mesmo call. Se a página já existe (o normal, pois a captura ao vivo já criou), edite-a. Use `notion-search`/`find_call_page` pelo título (`Call {N}T{AA} - {TICKER}`).
@@ -31,8 +33,9 @@ Resultado final, numa **única** página por call, nesta ordem de cima para baix
 2. `notion-fetch` a página. Se estiver grande, o fetch vem paginado — leia por partes até cobrir todo o Q&A e saber o que já existe (não duplicar Resumo/Q&A).
 3. Fontes possíveis da transcrição, em ordem de preferência: (a) `transcripts/{TICKER}_{Q}.md` do repo (já vem final, por interlocutor — pode só precisar de revisão); (b) o raw com timestamps em `transcripts/raw/`; (c) o áudio oficial do RI publicado depois (melhor qualidade — reprocessar via replay quando disponível).
 
-## Passo 2 — Produzir a transcrição FINAL legível (por interlocutor)
-O `finalize.py` já entrega uma primeira versão via `scripts/format_transcript.py` (heurística operador→analista→executivo + glossário). O seu papel de cérebro é **revisar e corrigir**:
+## Passo 2 — Produzir a transcrição da APRESENTAÇÃO INICIAL (por interlocutor)
+Esta seção contém **só a fala inicial da empresa (prepared remarks)** — a transcrição corrida do Q&A NÃO entra aqui (o Q&A vai só no bloco formatado do Passo 5). Se a captura misturou apresentação + Q&A num bloco só, **recorte**: mantenha apenas até o operador abrir a sessão de perguntas ("vamos para a sessão de Q&A" / "the floor is now open"); o resto (Q&A) é descartado desta seção.
+O `finalize.py` entrega uma primeira versão via `scripts/format_transcript.py` (heurística operador→analista→executivo + glossário). O seu papel de cérebro é **revisar e corrigir**:
 1. **Conferir a atribuição de fala** contra o conteúdo — a heurística erra transições. Corrija quem está falando (o operador anuncia "pergunta de {Analista} do {Banco}"; o executivo costuma se auto-identificar "aqui é o {Nome}", "that's {Name}").
 2. **Corrigir termos** que a heurística não pega (contextual): números, nomes de produto, jargão. Use o release oficial para casar números.
 3. **Garantir frases inteiras**: nada de corte no meio.
