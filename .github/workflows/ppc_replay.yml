@@ -1,0 +1,76 @@
+name: capture-PPC-REPLAY
+# Captura do REPLAY OFICIAL (on-demand) do call da Pilgrim's Pride 2T26.
+# O replay fica no MESMO webcast ChorusCall, on-demand, ~2h apos o call. Registro com job title
+# (fix validado) libera o player, que toca a gravacao do INICIO -> captura o call inteiro.
+# SEM gate (joina imediato; spec em staging/, fora do gatilho jobs/*.json). Removivel apos 30/07.
+on:
+  schedule:
+    - cron: '45 16 30 7 *'    # 2026-07-30 16:45Z = 13:45 BRT (replay ja disponivel)
+    - cron: '30 17 30 7 *'    # 17:30Z = 14:30 BRT (backup, se o 1o nao rodar)
+  workflow_dispatch: {}
+
+concurrency:
+  group: capture-ppc-replay
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+env:
+  SPEC: staging/PPC_REPLAY.json
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Instalar dependencias
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg pulseaudio xvfb
+          pip install -q faster-whisper playwright requests
+          playwright install --with-deps chromium
+          python3 scripts/get_model.py
+
+      - name: Entrar no replay (on-demand) e gravar
+        env:
+          REG_NAME: ${{ secrets.REG_NAME }}
+          REG_EMAIL: ${{ secrets.REG_EMAIL }}
+          REG_COMPANY: ${{ secrets.REG_COMPANY }}
+          REG_PHONE: ${{ secrets.REG_PHONE }}
+          REG_TITLE_CATEGORY: Buy side
+        run: |
+          mkdir -p work
+          nohup xvfb-run -a python3 scripts/capture.py "$SPEC" > work/capture.log 2>&1 &
+          echo "captura em background (pid $!)"
+
+      - name: Transcricao ao vivo + publicacao incremental no Notion
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+        run: |
+          nohup python3 scripts/live_loop.py "$SPEC" > work/live.log 2>&1 &
+          echo "live_loop em background (pid $!)"
+
+      - name: Aguardar fim da gravacao
+        run: python3 scripts/wait_end.py
+
+      - name: Transcricao final + publicacao no Notion
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+        run: python3 scripts/finalize.py "$SPEC"
+
+      - name: Commit da transcricao + logs no repo
+        if: always()
+        run: |
+          git config user.name "earnings-bot"; git config user.email "bot@users.noreply.github.com"
+          cp work/capture.log logs/REPLAY_capturelog_${{ github.run_id }}.txt 2>/dev/null || true
+          git add transcripts/ logs/ && git commit -m "transcript replay: PPC_2T26" && git pull -q --rebase && git push || echo "nada a commitar"
+
+      - name: Upload do audio (artifact)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: audio-ppc-replay-${{ github.run_id }}
+          path: work/audio/
+          retention-days: 90
