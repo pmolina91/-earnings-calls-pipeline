@@ -1,3 +1,1 @@
-22:34:24Z silencio ha 0s (mean_volume=-34.8dB)
-22:57:24Z silencio ha 0s (mean_volume=-34.6dB)
-23:03:09Z silencio ha 0s (mean_volume=-91.0dB)
+3 chunks vazios seguidos — possivel captura de silencio. ticker=PPC
