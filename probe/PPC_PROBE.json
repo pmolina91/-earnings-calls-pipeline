@@ -1,0 +1,11 @@
+{
+ "ticker": "PPCPROBE",
+ "ticker_short": "PPCPROBE",
+ "company": "Pilgrim's Pride (PROBE)",
+ "quarter": "PROBE",
+ "call_datetime_utc": "2026-07-30T11:44:00Z",
+ "join_offset_seconds": 0,
+ "webcast_url": "https://event.choruscall.com/mediaframe/webcast.html?webcastid=Zpb9nyac",
+ "language": "en",
+ "max_capture_minutes": 3
+}
