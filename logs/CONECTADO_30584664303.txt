@@ -1,0 +1,5 @@
+CONECTADO 2026-07-30T22:03:43Z
+ticker=PPC evento=2T26
+modo=pulse
+em_sala=True
+url_pagina=https://event.choruscall.com/mediaframe/webcast.html?webcastid=Zpb9nyac
