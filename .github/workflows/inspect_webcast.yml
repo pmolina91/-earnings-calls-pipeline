@@ -1,0 +1,32 @@
+name: inspect-webcast
+# Inspetor de estrutura de webcast (diagnostico). Dispara por push em inspect/**.
+on:
+  push:
+    paths: ['inspect/**']
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Instalar deps
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq xvfb
+          pip install -q playwright
+          playwright install --with-deps chromium
+      - name: Inspecionar
+        run: |
+          mkdir -p logs
+          URL="https://event.choruscall.com/mediaframe/webcast.html?webcastid=Zpb9nyac"
+          xvfb-run -a python3 scripts/inspect_webcast.py "$URL" > "logs/INSPECT_${{ github.run_id }}.json" 2>&1 || true
+      - name: Commitar
+        if: always()
+        run: |
+          git config user.name earnings-bot; git config user.email bot@users.noreply.github.com
+          git add logs/ ; git commit -q -m "inspect ${{ github.run_id }}" || echo nada
+          git pull -q --rebase || true ; git push -q || echo pushfail
