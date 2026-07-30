@@ -1,0 +1,5 @@
+FALHA_CONEXAO 2026-07-30T11:44:34Z
+ticker=PPCPROBE evento=PROBE
+modo=pulse
+em_sala=False
+url_pagina=https://event.choruscall.com/mediaframe/webcast.html?webcastid=Zpb9nyac
