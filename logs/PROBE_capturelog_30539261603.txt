@@ -1,0 +1,13 @@
+/home/runner/work/-earnings-calls-pipeline/-earnings-calls-pipeline/scripts/capture.py:115: SyntaxWarning: invalid escape sequence '\/'
+  join = page.evaluate('''() => { const a=[...document.querySelectorAll('a')].find(x=>/zoom.us\/(w|wc)\//.test(x.href)); return a?a.href:null }''')
+19
+[aist#0:0/pcm_s16le @ 0x556b415aa9c0] Guessed Channel Layout: stereo
+[watchdog] 11:45:13Z mean_volume=-91.0 som=False fala_real=False apos_inicio=True
+[watchdog] 11:45:52Z mean_volume=-91.0 som=False fala_real=False apos_inicio=True
+[watchdog] 11:46:30Z mean_volume=-91.0 som=False fala_real=False apos_inicio=True
+[watchdog] 11:47:08Z mean_volume=-91.0 som=False fala_real=False apos_inicio=True
+[watchdog] 11:47:47Z mean_volume=-91.0 som=False fala_real=False apos_inicio=True
+esperando 6min ate o horario de entrada (offset=0.0s)...
+gravando via PulseAudio (áudio da aba)
+[capture] confirmacao CONECTADO commitada
+captura encerrada

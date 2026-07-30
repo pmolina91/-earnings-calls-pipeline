@@ -1,0 +1,21 @@
+== ls work/audio ==
+total 5876
+drwxr-xr-x 2 runner runner    4096 Jul 30 11:47 .
+drwxr-xr-x 3 runner runner    4096 Jul 30 11:45 ..
+-rw-r--r-- 1 runner runner       0 Jul 30 11:47 END
+-rw-r--r-- 1 runner runner 1417646 Jul 30 11:45 chunk_0000.wav
+-rw-r--r-- 1 runner runner 1440078 Jul 30 11:46 chunk_0001.wav
+-rw-r--r-- 1 runner runner 1440078 Jul 30 11:46 chunk_0002.wav
+-rw-r--r-- 1 runner runner 1440078 Jul 30 11:47 chunk_0003.wav
+-rw-r--r-- 1 runner runner  262144 Jul 30 11:47 chunk_0004.wav
+
+== dB dos ultimos chunks ==
+-- work/audio/chunk_0002.wav --
+[Parsed_volumedetect_0 @ 0x55ee12c8a240] mean_volume: -91.0 dB
+[Parsed_volumedetect_0 @ 0x55ee12c8a240] max_volume: -91.0 dB
+-- work/audio/chunk_0003.wav --
+[Parsed_volumedetect_0 @ 0x560bbc72f240] mean_volume: -91.0 dB
+[Parsed_volumedetect_0 @ 0x560bbc72f240] max_volume: -91.0 dB
+-- work/audio/chunk_0004.wav --
+[Parsed_volumedetect_0 @ 0x55ec969bc240] mean_volume: -91.0 dB
+[Parsed_volumedetect_0 @ 0x55ec969bc240] max_volume: -91.0 dB
