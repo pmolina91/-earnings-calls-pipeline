@@ -10,5 +10,6 @@
  "language": "en",
  "hotwords": "Pilgrim's Pride, Fabio Sandri, Matt Galvanoni, JBS, broiler, chicken, prepared foods, Just Bare, grain costs, corn, soybean meal, USDA, Mexico, Europe, exports, EBITDA margin, live operations, big bird, case ready",
  "max_capture_minutes": 90,
- "_rescue": "call ao vivo — entra imediato; codigo com registro no reload (fix ChorusCall live form)"
+ "force_pulse": true,
+ "_rescue": "call ao vivo — entra imediato; registro com job title (fix validado); pulse (player toca na aba)"
 }
