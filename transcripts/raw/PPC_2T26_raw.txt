@@ -1,444 +1,539 @@
-[00:00:00] from the investor section of the company's website at www.pilgrims.com.
-[00:00:07] After today's presentation, there will be an opportunity to ask questions.
-[00:00:11] I would now like to turn the conference call over to Andrew Rajeski, head of strategy, investor
-[00:00:15] relations, and sustainability for Pilgrim's Pride.
+[00:00:00] investor section of the company's website at www.pilgrims.com.
+[00:00:06] After today's presentation, there will be an opportunity to ask questions.
+[00:00:11] I would now like to turn the conference call over to Andrew Rajeski, Head of Strategy, Investor
+[00:00:15] Relations, and Sustainability for Pilgrims Pride.
 [00:00:18] Good morning and thank you for joining us today as we review our operating and financial
-[00:00:25] results for the second quarter ended on June 28, 2026.
+[00:00:24] results for the second quarter ended on June 28, 2026.
 [00:00:30] Yesterday afternoon, we issued a press release providing an overview of our financial performance
 [00:00:34] for the quarter, including a reconciliation of any non-gap measures we may discuss.
-[00:00:40] A copy of the release is available on our website at ir.pilgrims.com along with slides for reference.
-[00:00:47] These items also have been filed as form AKs and are available online at sec.gov.
+[00:00:39] A copy of the release is available on our website at ir.pilgrims.com along with slides for reference.
+[00:00:46] These items also have been filed as form AKs and are available online at sec.gov.
 [00:00:53] Fabio Sandri, President and Chief Executive Officer, and Matt Galvanoni, Chief Financial
-[00:00:59] Officer, will present on today's call.
-[00:01:03] Before we begin our preparatory remarks, I would like to remind everyone of our Safe
-[00:01:07] Harbor disclaimer.
+[00:00:58] Officer, will present on today's call.
+[00:01:02] Before we begin our prepared remarks, I would like to remind everyone of our Safe Harbor disclaimer.
 [00:01:08] Today's call may contain certain forward-looking statements that represent our outlook and
 [00:01:12] current expectations as of the day of this release.
-[00:01:16] Other additional factors not anticipated by management may cause actual results
-[00:01:21] to differ materially from those projected in these forward-looking statements.
+[00:01:16] Other additional factors not anticipated by management may cause actual results to
+[00:01:20] differ materially from those projected in these forward-looking statements.
 [00:01:25] Other information concerning these factors have been provided in yesterday's press release,
-[00:01:31] our form 10K, and our regular filings with the SEC.
+[00:01:30] our form 10K, and our regular filings with the SEC.
 [00:01:34] I would now like to turn the call over to Fabio Sandri.
 [00:01:39] Thank you, Randy.
 [00:01:40] Good morning.
-[00:01:41] Good morning, everyone, and thank you for joining us today.
-[00:01:44] For the second quarter of 2026, we reported net revenues of $4.6 billion with an
-[00:01:50] adjusted EBITDA of $360 million.
-[00:01:53] Our adjusted EBITDA margin was 7.8% compared to 14.4% last year.
-[00:02:21] Operations improved compared to previous quarter given the completion of our plant
-[00:02:25] upgrades and progress in the efficiency for our live operations.
-[00:02:30] Volumes to keep customers in fresh remain steady, whereas prepare grew double digits
-[00:02:36] as Just Bare continued to lead growth and velocity in the frozen
-[00:02:40] follicle category.
-[00:02:42] In Europe, poultry and red meals drove overall sales growth as their affordability
+[00:01:41] Good morning, everyone.
+[00:01:42] And thank you for joining us today.
+[00:01:43] For the second quarter of 2026, we reported net revenues of $4.6 billion with an
+[00:01:49] adjusted EBITDA of $360 million.
+[00:01:52] Our adjusted EBITDA margin was 7.8% compared to 14.4% last year.
+[00:01:58] During the quarter, chicken demand remained firm across all regions, leading the growth
+[00:02:03] in meat protein consumption.
+[00:02:05] Equally important, we continue to drive growth projects to strengthen our portfolio,
+[00:02:11] drive sales growth, and enhance margins.
+[00:02:15] In the U.S., demand for chicken continued to grow in both retail and food service.
+[00:02:21] Consumers improved compared to previous quarter given the completion of our plant upgrades and
+[00:02:26] progress in the efficiency for our live operations.
+[00:02:30] Values to keep customers in fresh remain steady, whereas prepare grew double digits
+[00:02:35] as Just Bare continued to lead growth and velocity in the frozen-foolical category.
+[00:02:41] In Europe, poultry and red meals drove overall sales growth as their affordability
 [00:02:47] and convenience resonated with value-conscious consumers.
-[00:02:51] Margins were compressed, giving competition from imported pork into UK, and increased
-[00:02:56] costs driven by the Middle East conflict.
-[00:02:59] Mexico also increased volumes compared to last year, driven by exceptional growing
-[00:03:03] environment for birds.
-[00:03:06] We continue to grow our branded offerings in both fresh and prepared, and the
-[00:03:10] previously announced growth and diversification projects all remain on schedule.
-[00:03:15] We continue to focus all aspects in the environment, social and government
-[00:03:19] matters within sustainability.
-[00:03:22] Our approach to team member development and retention were recently recognized
-[00:03:26] across regions for the workplace satisfaction, including America's greatest
-[00:03:31] workplace by Newsweek in the US, Employer of the Year by the Grocery
-[00:03:36] in Europe, and exceptional companies award by the Institute for the
-[00:03:40] Promotion of Quality in Mexico.
-[00:03:43] According to Supply in the US, the USDA reported ready-to-cook production
-[00:03:48] increased 4.5% over the same period last year from higher
-[00:03:52] headcounts and modestly higher live weights.
-[00:03:55] ExxSets rose 2% from improved layer flock productivity, where
-[00:04:00] chic placements grew 2.4% from moderate improvements in hatchability.
-[00:04:05] A significant part of the growth came from much better liveability
-[00:04:08] than previous years.
-[00:04:10] Given the size of the layer flock, recent bullet placements, and production
-[00:04:14] environment, the USDA anticipates chicken production growth to slow down
-[00:04:20] in the second half of the year to around 2.5%, closing the year at 3.3%.
-[00:04:27] As for other proteins, the USDA expected limited growth in pork, along
-[00:04:31] with minor increase in beef availability, as higher imports partially
-[00:04:36] offset domestic production headwinds.
-[00:04:39] When these factors are combined with increased chicken supply, the USDA
-[00:04:43] estimates overall net protein availability will increase by 2.2%
-[00:04:47] compared to last year.
-[00:04:50] Within the US, the affordability of chicken provided a great option
-[00:04:53] to household budgets, pressured by persistent inflation and
-[00:04:57] elevated energy prices.
-[00:04:59] As a result, chicken continued to be resilient, as volumes
-[00:05:02] increased across both retail and food service channels.
-[00:05:06] In retail, the Fresh Meat Department posted dollar sales growth
-[00:05:10] across all major proteins.
-[00:05:12] From a value standpoint, chicken delivered the highest growth
-[00:05:14] among all proteins compared to the same period last year.
-[00:05:18] Boneless, skinless breast volumes increased year over year,
-[00:05:22] as pricing remained steady, and the spread versus ground beef
-[00:05:25] remained at record levels.
-[00:05:28] Boneless, skinless dark meat continued to deliver strong growth
+[00:02:51] Margins were compressed, giving competition from imported pork into U.K.
+[00:02:55] and increased costs driven by the Middle East conflict.
+[00:02:59] Mexico also increased volumes compared to last year, driven by
+[00:03:02] exceptional growing environment for birds.
+[00:03:05] We continue to grow our branded offerings in both fresh and prepared,
+[00:03:09] and the previously announced growth and diversification projects all remain on schedule.
+[00:03:14] We continue to focus all aspects in the environment, social, and
+[00:03:18] government's matters within sustainability.
+[00:03:21] Our approach to team member development and retention were recently recognized across
+[00:03:26] regions for the workplace satisfaction, including America's greatest workplace by
+[00:03:32] Newsweek in the U.S., employer of the year by The Grocer in Europe,
+[00:03:36] and exceptional companies award by the Institute for the Promotion of Quality in Mexico.
+[00:03:43] Turning to supply in the U.S., the USDA reported ready-to-cook production increased 4.5%
+[00:03:49] over the same period last year from higher headcounts and modestly higher liveweights.
+[00:03:55] Ex-Sets rose 2% from improved layer flock productivity,
+[00:03:59] where chic placements grew 2.4% from moderate improvements in hatchability.
+[00:04:04] A significant part of the growth came from much better livability than previous years.
+[00:04:10] Given the size of the layer flock, recent bullet placements, and production environment,
+[00:04:16] the USDA anticipates chicken production growth to slow down in the second half
+[00:04:20] of the year to around 2.5%, closing the year at 3.3%.
+[00:04:26] As for other proteins, the USDA expected limited growth in pork,
+[00:04:31] along with minor increase in beef availability,
+[00:04:33] as higher imports partially offset domestic production headwinds.
+[00:04:38] When these factors are combined with increased chicken supply,
+[00:04:41] the USDA estimates overall net protein availability will increase by 2.2% compared to last year.
+[00:04:49] Within the U.S., the affordability of chicken provided a great option
+[00:04:53] to household budgets, pressured by persistent inflation and elevated energy prices.
+[00:04:59] As a result, chicken continued to be resilient,
+[00:05:01] as volumes increased across both retail and food service channels.
+[00:05:05] In retail, the Fresh Meat Department posted dollar sales growth across all major proteins.
+[00:05:11] From a value standpoint, chicken delivered the highest growth among all proteins compared
+[00:05:16] to the same period last year.
+[00:05:18] Boneless, skinless breast volumes increase year over year,
+[00:05:21] as pricing remains steady, and the spread
+[00:05:24] versus ground beef remain at record levels.
+[00:05:28] Boneless, skinless dark meat continued to deliver strong growth,
 [00:05:31] as volumes rose compared to the first quarter of 2026.
-[00:05:36] In Delhi, consumer demand for convenience, ready-to-eat options,
-[00:05:40] drove growth in rotisserie walks and cut up portions.
-[00:05:44] Sales and volumes for appetizers,
-[00:05:46] including popcorn, chicken, and wings,
+[00:05:35] In Delhi, consumer demand for convenience ready-to-eat options drove growth
+[00:05:40] in rotisserie walks and cut-up portions.
+[00:05:43] Sales and volumes for appetizers, including popcorn, chicken and wings,
 [00:05:48] also rose compared to the same period last year.
-[00:05:51] Demand for convenience and value
-[00:05:53] also permeated the frozen prepared category,
+[00:05:51] Demand for convenience and value also permeated the frozen prepared category,
 [00:05:56] as chicken grew compared to last year.
-[00:05:59] Within food service, chicken values remained positive
-[00:06:02] despite mixed industry performance and traffic trends,
-[00:06:05] as operators continued to expand chicken as a value-oriented protein offering.
-[00:06:27] Despite continued healthy growth in chicken across all channels,
+[00:05:58] Within food service, chicken values remained positive despite mixed industry performance
+[00:06:03] and traffic trends, as operators continued to expand chicken
+[00:06:07] as a value-oriented protein offering.
+[00:06:10] Overall, food service volumes increased despite continuous concern about food traffic,
+[00:06:15] with chicken gaining menu penetration.
+[00:06:18] QSR and non-commercial channels presented the largest growth,
+[00:06:21] with chicken-focused chains lead growth in QSR.
+[00:06:26] Despite continuous healthy growth in chicken across all channels,
 [00:06:30] demand was more than offset by the increase in supply.
-[00:06:34] As a result, counter seasonal movements emerged
-[00:06:36] in the commodity chicken market,
-[00:06:38] lowering cut-out values compared to previous quarter.
-[00:06:42] In exports, overall poultry exports remained steady,
-[00:06:46] compared to last year, as trade flows continued to navigate
-[00:06:49] through a variety of circumstances.
-[00:06:52] Our volume growth was strong,
-[00:06:56] and we outpaced the channel through an increased presence
-[00:06:59] in several key markets.
+[00:06:33] As a result, counter-seasonal movements emerged in the commodity chicken market,
+[00:06:37] lowering cut-out values compared to previous quarter.
+[00:06:42] In exports, overall poultry exports remained steady compared to last year
+[00:06:47] as trade flows continued to navigate through a variety of circumstances.
+[00:06:52] Our volume growth was strong, and we outpaced the channel
+[00:06:57] through an increased presence in several key markets.
 [00:07:01] Within the Middle East, trade to GCC countries continued to flow through alternative courts,
-[00:07:30] Additional opportunities exist as other states that are currently free of high-pat even influenza
+[00:07:07] giving a comprehensive inland transportation network,
+[00:07:10] enabling a resilient supply chain.
+[00:07:13] For Asia, recent meetings between government officials from the United States
+[00:07:17] and China created a favorable outcome for the US poultry exports.
+[00:07:21] As such, China released 17 states from its even influenza ban,
+[00:07:26] allowing shipments of raw products to resume.
+[00:07:29] Additional opportunities exist, as other states that are currently free of high-pat even influenza
 [00:07:35] have yet to be fully recognized.
-[00:07:38] Further meetings scheduled later in the year
-[00:07:40] may result in the release of these states
+[00:07:38] Further meetings scheduled later in the year may result in the release of these states
 [00:07:42] and resumption by China to follow the phase one agreement.
-[00:07:47] Turning to feed, corn was volatile throughout the quarter.
-[00:07:51] Early in the period, concerns about disrupted fertilizer supply
+[00:07:46] Turning to feed, corn was volatile throughout the quarter.
+[00:07:50] Early in the period, concerns about disrupted fertilizer supply
 [00:07:55] and higher energy costs associated with the Middle East conflict elevated prices.
-[00:08:01] Corn markets eventually fell, giving favorable U.S. planting weather,
-[00:08:06] higher level of U.S. planting acreage relative to the forecasted expectations,
+[00:08:00] Corn markets eventually fell, giving favorable US planting weather,
+[00:08:05] higher level of US planting acreage relative to the forecasted expectations
 [00:08:11] and better than expected production in South America.
 [00:08:14] Looking ahead, higher risk premiums for corn may emerge,
-[00:08:18] pending outcomes in the Middle East,
-[00:08:20] and reactions by China to potential trade policies changes by the U.S.
-[00:08:25] Nonetheless, use for the U.S. crop, along with weather in the Midwest,
+[00:08:17] pending outcomes in the Middle East and reactions by China
+[00:08:21] to potential trade policies changes by the US.
+[00:08:25] Nonetheless, yields for the US crop, along with weather in the Midwest,
 [00:08:30] will be the key drivers for corn pricing in the short term.
 [00:08:34] The soy complex shows similar volatility given the Middle East conflict,
-[00:08:38] along with additional uncertainty from the pace and volume of Chinese purchases of U.S. soybeans.
-[00:08:45] Another year of record soybean production in South America,
-[00:08:48] along with increased soybean acreage in the U.S. versus last year,
-[00:08:52] reinforced healthy stock levels.
-[00:08:55] Given the potential of increment buys of U.S. soybeans by China,
+[00:08:38] along with additional uncertainty from the pace and volume of Chinese purchases of US soybeans.
+[00:08:44] Another year of record soybean production in South America,
+[00:08:48] along with increased soybean acreage in the US versus last year, reinforced healthy stock levels.
+[00:08:54] Given the potential of increment buys of US soybeans by China,
 [00:08:59] a rich premium will continue to exist within the soy market.
 [00:09:03] Soybean oil continues to be the stronger leg of the soy complex,
 [00:09:07] keeping the soybean meal price relatively lower.
-[00:09:11] In wheat, global stocks remain at comfortable levels,
+[00:09:10] In wheat, global stocks remain at comfortable levels,
 [00:09:14] despite a decline in production from all time high last year.
-[00:09:19] Availability may be further enhanced later this year,
-[00:09:22] as U.K. anticipates a production increase of 25% versus prior year.
+[00:09:18] Availability may be further enhanced later this year,
+[00:09:22] as the UK anticipates a production increase of 25% versus prior year.
 [00:09:27] However, recent concerns regarding shipments in the Black Sea,
-[00:09:31] given the conflict between Ukraine and Russia,
+[00:09:30] given the conflict between Ukraine and Russia,
 [00:09:33] may trigger an increasing price.
-[00:09:36] In the U.S., the investment in converting our plant in Rossoville
-[00:09:40] to a case-ready operation to further strengthen key customer partnerships was completed as planned.
-[00:09:47] We will also continue to improve our sales makes,
+[00:09:36] In the US, the investment in converting our plant in Rossoville
+[00:09:40] to a case ready operation to further strengthen key customer partnerships was completed as planned.
+[00:09:46] We will also continue to improve our sales makes,
 [00:09:49] given the recent installation of dark meat deboning
-[00:09:52] and portioning equipment in several big bird plants.
-[00:09:56] Given this work, our portfolio was more prepared to manage
-[00:09:59] the counter seasonal declines in commodity cutout values,
+[00:09:51] and portioning equipment in several big bird plants.
+[00:09:55] Given this work, our portfolio was more prepared to manage
+[00:09:58] the counter seasonal declines in commodity cutout values,
 [00:10:02] enhancing profitability from the first quarter.
-[00:10:06] In fresh, varmose grew compared to the same period last year.
-[00:10:10] Margins expanded from the previous quarter,
+[00:10:05] In Fresh, Varmus grew compared to the same period last year.
+[00:10:09] Margins expanded from the previous quarter,
 [00:10:12] given the completion of the plant upgrades and continued improvements in live operations.
-[00:10:17] Case-ready volumes rose compared to last year from incremental distribution
+[00:10:17] Case ready volumes rose compared to last year from incremental distribution
 [00:10:22] and stable velocity throughout retail.
-[00:10:25] We also secured several promotional events with the several leading retailers
+[00:10:24] We also secure several promotional events with the several leading retailers
 [00:10:29] to further drive demand during the next quarters.
-[00:10:34] Small birds also grew as volumes to keep customer exceeded channel averages.
-[00:10:39] Our big bird plants provided additional product to support the growth of prepared foods,
-[00:10:43] mitigating the impact of commodity market declines.
-[00:10:47] To support the growth of our key customers,
-[00:10:49] we recently announced investments in LTE Georgia
-[00:10:52] to expand production and do more deboning of small birds.
-[00:10:57] Based on this work, we will further align our portfolio to meet
-[00:11:00] the fast growing boneless chicken categories,
-[00:11:03] such as chicken sandwich and tenders.
-[00:11:07] Momentum to further diversify our portfolio through prepared foods continue to accelerate.
-[00:11:12] Overall volumes increased nearly 14% compared to the same period last year.
-[00:11:17] Retail sales of Just Bare increased over 30%, six times the category average.
+[00:10:33] Small birds also grew as volumes to keep customer exceeded channel averages.
+[00:10:38] Our big bird plants provide an additional product to support the growth of prepared foods,
+[00:10:42] mitigating the impact of commodity market declines.
+[00:11:04] Momentum to further diversify our portfolio through prepared foods continue to accelerate.
+[00:11:12] Overall volumes increased nearly 14 percent compared to the same period last year.
+[00:11:17] Retail sales of Just Bare increased over 30 percent, six times the category average.
 [00:11:24] We also receive additional recognition for the taste and quality of Just Bare
-[00:11:29] as recent survey of chefs by the all recipes,
+[00:11:28] as recent survey of chefs by the all recipes,
 [00:11:33] namely nugget one of the best in the category.
-[00:11:38] Even its extensive growth and consumer acceptance,
-[00:11:42] it has achieved nearly 15% market share,
-[00:11:45] making it the second largest brand in frozen fully cooked.
+[00:11:37] Even its extensive growth and consumer acceptance,
+[00:11:41] it has achieved nearly 15 percent market share,
+[00:11:45] making it the second largest branding frozen fully cooked.
 [00:11:49] We continue to drive growth of our brand's presence in retail through innovation.
-[00:11:54] To that end, we've created expansions
-[00:11:57] to expand Just Bare presence across different occasions and consumer segments.
+[00:11:53] To that end, we've created expansions to expand Just Bare presence across
+[00:11:59] different occasions and consumer segments.
 [00:12:02] Similarly, we are securing partnership to deliver and launch new flavor offerings
-[00:12:07] through the retail and club for the pilgrims branded in retail.
-[00:12:12] We are building further awareness of our superior taste and culinary focus
-[00:12:17] of the broader Just Bare fresh prepared portfolio through media partnerships.
-[00:12:23] Recently, our innovation was featured on the award winning television series, The Bear
-[00:12:28] and further supported by selected dining experience, meal kits and press coverage.
-[00:12:55] Our investment in the Walker County, Georgia to further support our growth remains on track
-[00:13:00] with commissions slated for the second half of 2027.
-[00:13:05] In Europe, our diversified portfolio continues to adapt to meet evolving marketplace needs.
-[00:13:11] The affordability of our poultry and meals resonated with inflation-strapped consumers
-[00:13:17] as each were among the fastest growing categories in retail.
-[00:13:20] Our volumes to key customer rolls faster than both of the grocery channel averages
-[00:13:25] and prior year, reinforcing our partnerships.
-[00:13:29] In the branded segments, volume in the rollover grew double digits
-[00:13:33] and garnered significant retailer acceptance and consumer interest.
-[00:13:38] Fridge raiders remain relatively steady as additional distribution was secured
-[00:13:43] throughout grocery enabling further growth for the remaining of the year.
-[00:13:49] While Richmond's margins remain attractive, the pace of volume growth lags our expectations
-[00:13:53] as extensive promotion activity along with significant retailer support
-[00:13:58] of premium private label offerings has intensified competition pressures.
-[00:14:03] Given Richmond's market presence and further profitability growth potential,
-[00:14:08] we'll continue to emphasize sales execution, investment in brand building
-[00:14:12] and drive innovation.
-[00:14:15] In food service, QSRs continue to experience declines in store visits,
-[00:14:20] resulting in lower volumes and sales.
-[00:14:22] We'll continue to work closely with leading food service providers
-[00:14:26] to expand our portfolio of value-focused offerings, generating additional traffic.
-[00:14:32] Despite increasing costs from the Middle East conflict and competition
-[00:14:35] from important pork into the UK, overall profitability was comparable with last year.
-[00:14:40] Within pork, continual reductions in the existing herd along with further diversification
-[00:14:45] and prepare should alleviate margin pressures.
-[00:14:49] In addition, our passing arrangements for customer-specific offerings allow for recovery
-[00:14:55] from raw material escalation.
-[00:14:58] Turning to Mexico, the country experienced a counter-seasonal,
-[00:15:01] very positive growing environment for birds.
-[00:15:04] As a result, production expanded from elevated livability and higher live weights.
-[00:15:11] Increased production of domestic eggs and additional pork imports further grew
-[00:15:16] overall protein availability in the country.
-[00:15:19] Nonetheless, demand for chicken was very strong, absorbing the additional supply.
-[00:15:24] We continue to grow our differentiated brandy offerings.
-[00:15:27] In fresh, volumes of retail branded products grew over 30% compared to last year.
-[00:15:33] Just Bare once led the growth as volumes increased over two and a half times.
-[00:15:40] Prepared foods offerings continued to gain marketplace traction as volumes rose
-[00:15:44] across retail and food service.
+[00:12:07] through the retail and club for the Pilgrims branded in retail.
+[00:12:11] We are building further awareness of our superior taste and culinary focus
+[00:12:16] of the broader Just Bare fresh prepare portfolio through media partnerships.
+[00:12:22] Recently, our innovation was featured on the award-winning television series,
+[00:12:27] The Bear, and further supported by selected dining experience, meal kits, and press coverage.
+[00:12:52] Digital engagement and new product development, our investment in the Walker County,
+[00:12:57] Georgia to further support our growth remains on track with commissions
+[00:13:01] slated for the second half of 2027.
+[00:13:04] In Europe, our diversified portfolio continues to adapt to meet evolving marketplace needs.
+[00:13:10] The affordability of our poultry and meals resonated with inflation-strapped consumers,
+[00:13:16] as each were among the fastest growing categories in retail.
+[00:13:20] Our volumes to key customer roles faster than both of the grocery
+[00:13:23] channel averages and prior year, reinforcing our partnerships.
+[00:13:29] In the branded segments, volume in the rollover grew double digits and
+[00:13:33] garnered significant retailer acceptance and consumer interest.
+[00:13:37] Fridge raiders remains relatively steady as additional distribution was secured
+[00:13:43] throughout grocery, enabling further growth for the remainder of the year.
+[00:13:48] While Richmond's margins remain attractive, the pace of volume growth lags our expectations
+[00:13:53] as extensive promotion activity along with significant retailer support of premium
+[00:13:58] private label offerings has intensified competition pressures.
+[00:14:03] Given Richmond's market presence and further profitability growth potential will continue
+[00:14:08] to emphasize sales execution, investment in brand building, and drive innovation.
+[00:14:13] In food service, QSRs continue to experience declines in store visits,
+[00:14:18] resulting in lower volumes and sales.
+[00:14:20] We will continue to work closely with leading food service providers to expand
+[00:14:24] our portfolio of value-focused offerings, generating additional traffic.
+[00:14:30] Despite increasing costs from the Middle East conflict and competition from important
+[00:14:34] pork into the UK, overall profitability was comparable with last year.
+[00:14:38] Within pork, continual reductions in the existing herd, along with further
+[00:14:42] diversification in prepare, show alleviate margin pressures.
+[00:14:47] In addition, our processing arrangements for customer-specific offerings allow for
+[00:14:52] recovery from raw material escalation.
+[00:14:55] Turning to Mexico, the country experienced a counter-seasonal, very positive
+[00:15:00] growing environment for birds.
+[00:15:02] As a result, production expanded from elevated livability and higher
+[00:15:09] life-weight.
+[00:15:10] Increased production of domestic eggs and additional pork imports further
+[00:15:15] grew overall protein availability in the country.
+[00:15:18] Nonetheless, demand for chicken was very strong, absorbing the additional supply.
+[00:15:23] We continue to grow our differentiated brandy offerings.
+[00:15:26] In fresh, volumes of retail branded products grew over 30% compared to last year.
+[00:15:32] Just Bare once led the growth as volumes increased over two and a half times.
+[00:15:39] Prepared foods offerings continued to gain marketplace traction as volumes
+[00:15:43] rose across retail and food service.
 [00:15:46] Pilgrim's branded offering led growth as volumes grew double-digit across both channels.
-[00:15:53] Operational excellence efforts made significant progress,
-[00:15:56] given improvements in productivity and live operations,
+[00:15:52] Operational excellence efforts made significant progress,
+[00:15:56] given improvements in productivity and life operations,
 [00:15:59] further enabling our business to navigate these challenging market conditions.
 [00:16:04] We continue our investments to drive sales growth and reduce the volatility of our portfolio.
-[00:16:09] To that end, we complete our expansion of the prepared plan, prepare line at Porvenir
+[00:16:09] To that end, we complete our expansion of the prepared line at Porvenir
 [00:16:15] and start the production as scheduled.
 [00:16:18] Our investments in live in the South and Peninsula are also on track and ramp up continues.
 [00:16:26] We continue to emphasize all aspects of sustainability throughout our operations.
-[00:16:32] As part of this effort, we've made repeated investments in team member training
-[00:16:36] to reinforce our values throughout our organization, build technical skills, and develop management capabilities.
-[00:17:05] Good morning, everyone.
+[00:16:31] As part of this effort, we've made repeated investments in team member training
+[00:16:35] to reinforce our values throughout our organization,
+[00:16:39] build technical skills and develop management capabilities.
+[00:16:43] Given our continued focus, we've been recognized as leader
+[00:16:47] in workplace satisfaction across multiple publications,
+[00:16:51] including Newsweek in the U.S., The Grocery in Europe,
+[00:16:54] and Institute for Promotional Quality in Mexico.
+[00:16:57] With that in mind, I'd like to ask our CFO Matt Galvanoni to discuss our financial results.
+[00:17:03] Thank you, Fabio. Good morning, everyone.
 [00:17:06] For the second quarter of 2026, net revenues were $4.63 billion versus $4.76 billion a year ago,
-[00:17:14] with adjusted EBITDA 360.0 million and a margin of 7.8%,
-[00:17:20] compared to 686.9 million and a 14.4% margin in Q2 last year.
-[00:17:26] Adjusted EBITDA margins in Q2 were 8.7% in the U.S., compared to 17.1% a year ago.
-[00:17:34] For our Europe business, adjusted EBITDA margins came in at 7.6% for Q2, compared to 8.2% last year.
+[00:17:13] with adjusted EBITDA 360.0 million and a margin of 7.8%.
+[00:17:19] Compared to 686.9 million and a 14.4% margin in Q2 last year, adjusted EBITDA margins in Q2 were 8.7% in the U.S., compared to 17.1% a year ago.
+[00:17:33] For our Europe business, adjusted EBITDA margins came in at 7.6% for Q2, compared to 8.2% last year.
 [00:17:41] In Mexico, adjusted EBITDA margins in Q2 were 3.9% versus 16.3% a year ago.
 [00:17:49] U.S. net revenues were $2.65 billion versus $2.82 billion a year ago.
-[00:17:55] Adjusted EBITDA in the U.S. for Q2 came in at 231.5 million, compared to 482.7 million last year.
-[00:18:04] U.S. margins declined year over year primarily due to the 27% decrease in jumbo cutout value.
-[00:18:10] However, sequentially, U.S. margins improved while both lapping the impact of significant plant downtime
-[00:18:17] in the first quarter and through improved performance in our live operations.
-[00:18:21] U.S. prepared foods continues to demonstrate robust growth with year over year volumes increasing nearly 14%.
-[00:18:29] In our U.S. gap results, we incurred legal settlement expenses of $136 million in the quarter,
-[00:18:34] primarily due to reaching settlements with certain parties associated with the ongoing broiler's litigation.
-[00:18:40] Also, we took a $26 million charge in the quarter, primarily related to an asset impairment
-[00:18:46] associated with our previously announced forthcoming shutdown of the harvesting facility in Chattanooga.
+[00:17:55] Adjusted EBITDA in the U.S. for Q2 came in at 231.5 million compared to 482.7 million last year.
+[00:18:03] U.S. margins declined year over year primarily due to the 27% decrease in jumbo cutout value.
+[00:18:10] However, sequentially, U.S. margins improved while both lapping the impacts of significant plant
+[00:18:15] downtime in the first quarter and through improved performance in our live operations.
+[00:18:21] U.S. prepared foods continues to demonstrate robust growth with year over year volumes
+[00:18:25] increasing nearly 14%. In our U.S. gap results, we incurred legal settlement expenses of $136
+[00:18:33] million in the quarter, primarily due to reaching settlements with certain parties associated
+[00:18:37] with the ongoing broilers litigation. Also, we took a $26 million charge in the quarter,
+[00:18:43] primarily related to an asset impairment associated with our previously announced
+[00:18:48] forthcoming shutdown of the harvesting facility in Chattanooga.
 [00:18:52] In Europe, adjusted EBITDA in Q2 was $105.8 million versus $111.8 million last year.
-[00:19:01] The business benefited from strength and poultry and meals offerings during the quarter,
-[00:19:05] along with the continued benefits of its structural reorganization.
-[00:19:09] The strength and poultry and meals helped compensate for pressured pork margins due to higher European imports in the U.K.
-[00:19:16] increased costs driven by the Middle East conflict and decreases in food service traffic.
-[00:19:21] Mexico generated $22.6 million in the adjusted EBITDA in Q2 compared to $92.3 million last year.
-[00:19:28] As Fabio mentioned earlier, Mexico's results were impacted by year over year changes in bird growing conditions,
+[00:19:00] The business benefited from strength and poultry and meals offerings during the quarter,
+[00:19:04] along with the continued benefits of its structural reorganization.
+[00:19:08] The strength and poultry and meals helped compensate for pressured pork margins
+[00:19:12] due to higher European imports in the U.K., increased costs driven by the Middle East conflict,
+[00:19:18] and decreases in food service traffic. Mexico generated $22.6 million in adjusted
+[00:19:24] EBITDA in Q2 compared to $92.3 million last year. As Fabio mentioned earlier,
+[00:19:29] Mexico's results were impacted by year over year changes in bird growing conditions,
 [00:19:34] increasing supply in the live markets, and lower price competing proteins.
-[00:19:40] SG&A costs in the quarter were higher year over year, primarily due to an increase in legal settlement and defense costs.
-[00:19:46] However, these costs were partially offset by lower incentive compensation accruals and marketing expense during the quarter.
-[00:19:52] Our effective tax rate for the quarter is 39.3 percent. However, our year-to-date effective tax rate is 25.3.
-[00:20:00] We continue to anticipate that the full-year effective tax rate will approximate 25 percent.
-[00:20:05] We have a strong balance sheet, and we continue to emphasize cash flows from operating activities,
-[00:20:10] management of working capital, and disciplined investment in high-return projects.
-[00:20:15] During Q2, we completed the $250 million tender offer of our 2033 bonds.
-[00:20:20] At the end of the quarter, our net debt totaled less than $2.5 billion with the leverage ratio of 1.43 times our last 12 months adjusted EBITDA.
-[00:20:30] We had nearly $1.6 billion in total cash and available credit at the end of the quarter.
-[00:20:36] GAP net interest expense of the quarter totaled $46.1 million.
-[00:20:40] However, excluding the loss on the early extinguishment of debt, our net interest expense was $28.5 million.
-[00:20:47] Excluding the impact of early extinguishment of debt, we anticipate our full-year netting's interest expense to be approximately $115 to $120 million.
-[00:20:55] We spent $230 million in CAPEX in the second quarter.
-[00:20:59] The spending this quarter included the finalization of the Russellville conversion, continued progress in our new prepared foods plant in Georgia,
-[00:21:07] and the investment in LHA, Georgia, to enhance our mix in support of key customers in the food service space.
-[00:21:13] At this time, we maintain our full-year CAPEX estimate of approximately $900 million.
-[00:21:19] These near-term growth projects align to our overall strategies of portfolio diversification, focus on key customers, operational excellence, and our commitment to team member health and safety.
-[00:21:31] Operator, this concludes our prepared remarks.
-[00:21:33] Please open the call for questions.
-[00:21:38] We will now begin the question and answer session.
-[00:21:41] In the interest of allowing equal access, we request that you limit your questions to two, then rejoin the queue for any follow-up.
-[00:21:48] To ask a question, you may press star, then one on your touch-tone phone.
-[00:21:54] If you're using a speakerphone, please pick up your handset before pressing the keys to minimize background noise.
-[00:22:00] To withdraw a question, please press star, then two.
+[00:19:39] SG&A costs in the quarter were higher year over year primarily due to an increase in legal settlement
+[00:19:44] and defense costs. However, these costs were partially offset by lower incentive compensation
+[00:19:49] accruals and marketing expense during the quarter. Our effective tax rate for the quarter was 39.3%.
+[00:19:55] However, our year-to-date effective tax rate is 25.3%. We continue to anticipate that the
+[00:20:00] full year effective tax rate will approximate 25%. We have a strong balance sheet,
+[00:20:06] and we continue to emphasize cash flows from operating activities, management of working
+[00:20:10] capital, and disciplined investment in high return projects. During Q2, we completed the $250
+[00:20:16] million tender offer of our 2033 bonds. At the end of the quarter, our net debt
+[00:20:22] totaled less than $2.5 billion with a leverage ratio of 1.43 times our last 12 months
+[00:20:28] adjusted EBITDA. We had nearly $1.6 billion in total cash and available credit at the end
+[00:20:33] of the quarter. GAP net interest expense for the quarter totaled $46.1 million. However,
+[00:20:40] excluding the loss on the early extinguishment of debt, our net interest expense was $28.5
+[00:20:45] million. Excluding the impact of early extinguishment of debt, we anticipate our
+[00:20:50] full year net interest expense to be approximately $115 to $120 million. We spent $230
+[00:20:56] million in CAPEX in the second quarter. The spending this quarter included the
+[00:21:00] finalization of the Russellville conversion, continued progress in our new prepared
+[00:21:04] foods plant in Georgia, and the investment in LAJ Georgia to enhance our mix in
+[00:21:09] support of key customers in the food service space. At this time, we maintain
+[00:21:14] our full year CAPEX estimate of approximately $900 million. These near-term
+[00:21:19] growth projects align to our overall strategies of portfolio diversification,
+[00:21:24] focus on key customers, operational excellence, and our commitment to team member
+[00:21:28] health and safety. Operator, this concludes our prepared remarks.
+[00:21:32] Please open the calls to questions. We will now begin the question and answer
+[00:21:39] session. In the interest of allowing equal access, we request that you limit
+[00:21:43] your questions to two, then rejoin the queue for any follow-up. To ask a
+[00:21:48] question, you may press star, then one on your touchtone phone. If you're
+[00:21:54] using a speakerphone, please pick up your handset before pressing the keys to
+[00:21:57] minimize background noise. To withdraw a question, please press star, then two.
 [00:22:03] At this time, we will pause just momentarily to assemble our roster.
-[00:22:07] Our first question here will come from Ben Foyer with Barclays.
-[00:22:18] Please go ahead.
-[00:22:20] Yeah, good morning, Fabio, Matt.
-[00:22:22] Thanks for taking my questions.
-[00:22:24] Just real quick, maybe digging into your expectations for the second half, and if you could help us maybe understand a little bit what you're seeing in terms of supply as it relates to the U.S. market and how it should impact third and fourth quarter.
-[00:22:42] You flagged in the presentation a little bit of an uptick, if you want to call it an uptick, at least a little bit, on some of the pricing, particularly on wings from this very low level, slightly more improving,
-[00:22:56] but tenders still being very much down on a historic basis.
-[00:23:00] So as we think about the cutout value and how that flows into that business that is more commodity price exposed for you guys,
-[00:23:08] what are your expectations in terms of just how it's going to flow through into profits for the third and the fourth quarter?
-[00:23:14] That would be my first question, and I have a very quick follow-up.
-[00:23:18] Yeah, Ben, good morning.
-[00:23:21] As we mentioned, we saw a significant increase in supply during Q2, four and a half percent.
-[00:23:28] I think the initial expectation was a little lower than that.
-[00:23:32] What we saw was we started with the egg sets and the industry set two percent more eggs in the quarter.
-[00:23:40] We expected a little bit better management and we saw that a little bit improving the hatchability.
-[00:23:45] So the chick placements were 2.4 percent.
-[00:23:48] I think what was different this quarter is that we saw an improvement in the growing conditions of the birds and the livability was significantly better than last year.
-[00:23:58] As you remember, last year we have a lot of issues in the industry with respiratory diseases and low-pat AIs.
-[00:24:07] So we saw some more mortality and this livability actually translated into more than one percent increase in total supply.
-[00:24:16] So the head count was a little higher than everybody anticipated, and that is what created a 4.5 percent growth in the supply in Q2.
-[00:24:27] Coming to Q3 and Q4, starting with the breeding flock, I think we saw the same number as last year.
-[00:24:37] So we don't expect a significant improvement in number of eggs.
-[00:24:42] So I think it's all about the increase in egg sets and how that will translate into ready to cook pounds.
-[00:24:50] We don't expect that effect of increased livability for Q3 and Q4, as those issues were more in concentrating Q2.
-[00:24:58] We're also seeing a little bit of warm weather, which typically impact the growth of the birds, especially now in July, August.
-[00:25:08] So we're expecting, and USDA is expecting, growth in the second half to moderate.
-[00:25:14] For the third and fourth quarter of 2026, USDA is expecting 2.5 percent increase in the supply, which is more in line with the strong demand that we are seeing for chicken.
-[00:25:28] I think when you go to the pricing, and you need to go into individual segments and into individual pieces.
-[00:25:35] I think first we'll start with overall trends that are happening in the consumer, right?
-[00:25:40] I think we've seen several trends and changes in the environment that are supporting the demand for chicken in both retail and food service.
-[00:25:49] Starting with the food service, I think we are seeing the fight for traffic.
-[00:25:54] Food service is struggling with traffic.
-[00:25:57] And because of that, they are focusing on promotional activities, and we're seeing that they're using chicken for those promotional activities to generate traffic.
-[00:26:05] That's why we saw an increase of 3.1 percent in 3.4 percent actually in the volume of chicken in the food service category.
-[00:26:16] And then we see the retail, where consumers are strapped for money.
-[00:26:20] They are looking for a control over their budgets, and they're going to the retail to buy protein.
-[00:26:28] We saw growth in retail of 2.8 percent on the chicken category, especially on the prepared side, where we've seen our brands really resonating with the consumer on the prepared, on the Just Bare.
-[00:26:41] Consumers are looking for affordability and also for convenience.
-[00:26:46] So we saw significant growth in prepared, but it's also significant growth in fresh as well with the industry or the volume in chicken growing by 1.8 percent.
-[00:26:58] Going more specifically to the cuts, we saw the wings bouncing back after getting off the menus on the food service, and we are seeing some increase in availability in wings in retail.
-[00:27:11] So we expect wings demand to continue to increase, especially starting now the football season and the basketball season.
-[00:27:19] I think on the boneless breast, we've been talking about this for more than a year right now, right?
-[00:27:26] The delta between ground beef and boneless breast continues to widen, and I think it's the highest it's ever been.
-[00:27:35] I think that is helping the demand for boneless breast, and more important than that, we are seeing some significant promotional activity on the retail coming into the fall and coming into the next month.
-[00:27:50] That is happening because I think the retail is also looking for food traffic.
-[00:27:56] They're also increasing their promotional activity and boneless breast has been a significant and important part for that.
-[00:28:05] On the boneless dark meat, we're also seeing some great trends with changing demographics and changing culinary preferences and boneless dark meat has been the fastest growing category in the retail.
-[00:28:20] So we're seeing some very positive trends overall for protein and for chicken and special both in food service and retail.
-[00:28:32] And that can help for the pricing and for the demand as long as the supply is in line with what we expect.
-[00:28:46] Perfect. Thank you very much. And then one real quick one for Matt probably, as it relates to the CapEx cadence, I think you just said 900 million for the year.
-[00:29:01] Initially it was 900, I think to 950. So should we assume closer to the lower end of that just given on the run rate of the projects or is there anything that you've kind of like postponed or what's driving that guidance more to the lower end of the previous guidance for the CapEx versus what was 900 to 950.
-[00:29:22] Yeah, no, sure. Good morning, but I think, you know, year to date, we're at 465 and, you know, kind of looking at the 900, we have a lot of the projects that kind of compete, you know, gone through already with all the Russellville conversion, some of the other plants we had, of course, we've got continuing spend on Walker County with the new prepared foods plant.
-[00:29:43] And then with LHA, but we've got some of the, some of the bigger projects, you know, behind us and spent in the first half of the year. So, you know, at 465, you know, my guide at 900 kind of just gets you kind of almost equal first half, second half, but maybe just slightly, slightly below in the second half compared to the first half of the year.
-[00:30:02] Okay, thank you very much. I'll pass it on.
-[00:30:09] And our next question will come from Peter Galvo with Bank of America. Please go ahead.
-[00:30:15] Hey guys, good morning. Thanks for taking the question. Maybe to follow up to Ben, initial question and ask it slightly differently. Fabio, I know you gave a very comprehensive answer, but just, is there an expectation that as we get closer to the fall that we might see the industry kind of go through with its normal seasonal cuts on production?
-[00:30:39] I know that that was obviously last year kind of something that didn't happen that, you know, typically, again, we would expect to happen seasonally. So just given where the commodity, you know, markets sit, like, are we in a more normal environment this year where, you know, production cuts are kind of expected for the industry?
-[00:30:57] Yeah, good morning Peter. It's normal for the industry to do the seasonal cuts. As we all know, our industry always produce to the expected demand. And during the fall, giving the tax giving and other events, we don't see a strong demand for chicken.
-[00:31:18] So it is normal to have that seasonal cuts. Last year, I think they waited a little because of the high prices that we were seeing during the, especially in the commodity segment in the second quarter last year.
-[00:31:36] But the seasonal cuts always happen and they start around the end of August and September. So our industry always produces to the demand. Like I mentioned, I think it was unexpected, or it was welcome, but unexpected, the increasing livability that we have in Q2, because the exits were only increasing by 2%, which was in line with the expected demand growth that we have for production.
-[00:32:06] For chicken for the whole year. I think the livability was what increased the production a little bit over what the industry was expecting. And I cannot speak for the industry as well.
-[00:32:17] Again, but for Pilgrim's, we will always adjust our production to demand for our key customers. And I think you mentioned one important point, which is the portfolio, right? As we always mentioned, we have a differentiated portfolio. We have the small birds, we have the case ready, the big birds and the prepared foods, and we're seeing some strong growth in the prepared foods.
-[00:32:39] So, and with all the investments we did in the big bird plants, a big portion of our production is using on the growth of our prepared foods, especially on the portion side. So, I think that's also important. But overall, a long story short, our industry will always adjust the demand to the expected, the production to the expected demand.
-[00:33:05] Great. Okay. Thanks for that. Maybe if I could ask on Mexico, obviously a very dynamic first half, you know, with a lot of moving pieces there, and maybe things will start to normalize out in the second half. But if you could give us some perspective on, you know, we've gone through a challenge first half, both from a, you know, a top line and a profitability perspective, just kind of how that shapes up for the back half of the year. Thanks very much.
-[00:33:32] No, sure. Thank you, Peter. Yeah, Mexico, we always mentioned that Mexico could be very volatile quarter over quarter, but is resilient in double digits year over year. I think we're seeing a little bit of a persistent low margins, at least to our expectations in Mexico, but the reasons are a little bit different from Q1 than Q2.
-[00:33:57] Typically, what we see in Q2, similar a little bit to what I mentioned in the U.S., it is that the growing conditions are not favorable in Mexico. This year, very different from other years. We saw some outstanding growing conditions. So the industry normally increased the sets expecting this worsening or this bad growing conditions.
-[00:34:22] And because of this year mortality was much lower than expected, or livability was much higher than expected, and we saw a significant increase in the supply of chicken in Mexico, almost double digit increase in volume.
-[00:34:38] At the same time, we are seeing in Mexico the same behavior than U.S. on the egg, on the shell egg. We saw a significant increase in the supply of shell eggs and the consequent reduction in price.
-[00:34:56] And in Mexico, because it is a growing economy, and chicken is the entry protein, but egg competes more with chicken than in other countries. So we saw a significant increase in chicken, a significant increase in eggs with a lower price.
-[00:35:12] And we also saw some significant imports on the country of pork from the United States. With all that, we saw a very large increase in the supply of protein in the country. Nonetheless, demand continues to be excellent because we saw that it was able to absorb all this growing protein, which signifies to us that our strategy of growing in Mexico, it is the right one.
-[00:35:41] We are, as I mentioned, building two complexes in the peninsula and in the south to grow our geographical diversification, and we continue to invest in our brands in our prepared foods.
-[00:35:54] So the changing in the consumer behavior in Mexico towards more convenience can also be supported with our brand. So I think Mexico, once again, it's very volatile quarter over quarter, but we expect very good margins year over year, giving this demand for chicken and for overall protein that continues to grow.
-[00:36:22] And our next question will come from Ben Mayhew with BMO Capital Markets. Please go ahead.
-[00:36:29] Hey, good morning guys. Thank you for taking the questions. So my first question is around US chicken demand.
-[00:36:37] So you spoke about and referenced ongoing strong demand for US chicken. But, you know, we've seen food service industry traffic trends soften in recent months and grocery industry trends remain somewhat soft.
-[00:36:53] So I was just wondering if you could frame the demand side of the equation, maybe relative to like six to nine months ago and just how it's evolving.
-[00:37:04] Sure. Sure. Yeah. I think, again, like I mentioned, I think we need to, I need to get back to overall trends and changes in the environment.
-[00:37:16] The consumer continues to be looking their budgets with greater efficiency and they are strapped in their spending. It's interesting that we look at in service when consumers are asked about the first thing that they will cut from the budget, 75% of the consumer will say that they will cut dining out.
-[00:37:42] So I think that's the food traffic impact, right? When the budget is constrained, 75% of the consumers will say that they will reduce dining out. That will help the demand on retail.
-[00:37:56] And then what food service is doing about it? It is increasing the promotions to get this food traffic that is trying to cut their budgets. And that's where chicken has been winning on the food service and increasing manual penetration.
-[00:38:12] I think we're seeing the manual penetration for chicken increasing every single quarter and being used for attracting the consumers. And when it drew down into all the segments in the food service, we're seeing the QSRs growing the fastest.
-[00:38:28] Manual penetration and chicken volume in QSRs increased by 4.1%. I think the non-commercial also will see the resume of the in-person operations in companies and hospitals and hospitality were seeing growth in chicken of 5.9%.
-[00:38:50] And the only segment that was stagnant and just a little bit of growth was the food service restaurants. And that's the segment that is being more impacted by these consumers cutting their budgets.
-[00:39:03] And then that helps the chicken on the food service despite the weakness in the food traffic. And then we go to the retail. And like I mentioned, retail volume has been growing, especially on the prepare side.
-[00:39:19] And when we go for the same survey, when consumers ask whether they cut from the budget, 29% saying that they're cut from groceries, spending, but only 3% say that they are willing to cut meat and poultry consumption.
-[00:39:35] 68% of the consumers say that meat is a non-negotiable or important item at retail. And that's what we are seeing this resilient demand for protein and chicken on retail growing by 2.8%.
-[00:39:51] So I think that that is the overall consumer sentiment and the several trends that are helping with the demand for protein.
-[00:40:01] Okay, thank you for that. And my follow up question has to do with the European UK business.
-[00:40:10] You know, the top line continues to actually trend constructively with volumes up almost 1% there.
-[00:40:22] The margins, however, have kind of stagnated. And so I'm just wondering, I know that the pork business is has been under pressure, and you're not getting out of it what, you know, you maybe have hoped for a couple of years ago when you acquired it.
-[00:40:40] What is there any way to quantify like how big of an impact pork is? And is there a timeline that you would expect, you know, that to recover and just where do you see this margin profile, you know, going from here from roughly like 5%.
-[00:40:58] And that'll be my last question. Thanks.
-[00:41:01] Of course. Thank you, Ben. Well, I think, first of all, we finish all the reorganization, and we really have one integrated company in Europe, very diversified, as we mentioned, we have the fresh chicken, the fresh pork, the prepared foods, we have the branded business, the meals business, and the food service business.
-[00:41:24] So when we look at all these different segments, I think they are balancing each other really well to what's happening to the consumer in Europe, which is very similar to what's happening to the consumer in the United States.
-[00:41:36] So we're seeing growth in the chicken demand in Europe. Our challenge to grow there, it is to build more housing. I think that has been the challenge, but it is in the works for us to be able to grow the supply of chicken for the increased demand there.
-[00:41:54] So chicken was really growing in Europe. The meals business also is growing really fast with the convenience and pricing, being a great alternative to these consumers in Europe.
-[00:42:07] Then we go to the segments that are not growing as we expected.
-[00:42:12] The first is the QSRs, or the food service segment that we have in Europe. That segment, it is stagnant Euro-Variant, and we're working with our key customers there to enable, just like in the US, more promotional activity to increase food traffic and increase volumes.
-[00:42:33] The second is the branded business. We are seeing a lot of competition from private label and the consumers, when they are trying to save money, they tend to go to the cheaper private label.
-[00:42:44] But we are also increasing our promotional activity on the branded segments and expanding innovation, especially on the Richmond brand, so we can achieve growth in that segment.
-[00:42:55] And then we go to the one that is being struggling for us in Europe, which is the pork business.
-[00:43:03] Because of the China increase in the pork supply, we're seeing a reduction in European exports to China.
-[00:43:12] When those exports reduced, especially from countries like Spain and Denmark, we saw a significant increase in the supply of pork into the UK.
-[00:43:23] We have a differentiated operation in the UK, which is high welfare, so it's a higher value, let's say proposition, but we saw this increase in the supply of very competitive, cheap pork into the UK.
-[00:43:39] That impacted more on the wholesale business, left the retail, where we have a very differentiated offering, but all the wholesale prices went down.
-[00:43:48] So I think that's what impacted the pork operations in there. We are seeing some herd reduction in other countries, and we expect the prices to react.
-[00:44:00] I don't think that there will be some increase in the export to China in the short term.
-[00:44:05] I think it will be more on the reduction of herd in Europe, and then we'll see less imports of pork cuts into the UK, especially in the wholesale market.
+[00:22:06] Our first question here will come from Ben Fleuter with Barclays. Please go ahead.
+[00:22:20] Yeah, good morning, Fabio, Matt. Thanks for taking my questions. Just a real quick maybe
+[00:22:25] digging into your expectations for the second half, and if you could help us
+[00:22:31] maybe understand a little bit what you're seeing in terms of supply as it relates to the U.S.
+[00:22:37] market and how it should impact third and fourth quarter. You flagged in the presentation a little
+[00:22:44] bit of an uptick, if you want to call it an uptick at least a little bit, on some of the
+[00:22:51] pricing, particularly on wings from this like very low level, slightly more improving, but
+[00:22:56] tenders still being very much down on a historic basis. So as we think about the cutout value
+[00:23:01] and how that flows into that business that is more commodity price exposed for you guys,
+[00:23:07] what are your expectations in terms of just how it's going to flow through and to profits
+[00:23:12] for the third and the fourth quarter? That would be my first question, and I'll have a very
+[00:23:15] quick follow-up. Yeah, Ben, good morning. As we mentioned, we saw a significant increase
+[00:23:23] in supply during Q2, 4.5%. I think the initial expectation was a little lower than that.
+[00:23:31] What we saw was we started with the egg sets, and the industry set 2% more eggs in the quarter.
+[00:23:39] We expected a little bit better management, and we saw that a little bit improved in the hatch
+[00:23:44] ability. So the chick placements were 2.4%. I think what was different this quarter is that
+[00:23:50] we saw an improvement in the growing conditions of the birds, and the livability was significantly
+[00:23:56] better than last year. As you remember, last year we have a lot of issues in the industry
+[00:24:02] with respiratory diseases and low-pat AI. So we saw some more mortality, and this
+[00:24:09] livability actually translated into more than 1% increase in total supply. So the head count
+[00:24:17] was a little higher than everybody anticipated, and that is what created a 4.5% growth in the
+[00:24:25] supply in Q2. Coming to Q3 and Q4, starting with the breeding flock, I think we saw the
+[00:24:34] same number as last year. So we don't expect a significant improvement in number of eggs.
+[00:24:41] So I think it's all about the increase in egg sets and how that will translate
+[00:24:47] into ready-to-cook pounds. We don't expect that effect of increased livability for Q3 and Q4,
+[00:24:54] as those issues were more in concentrating Q2. We're also seeing a little bit of warm weather,
+[00:25:01] which typically impacts the growth of the birds, especially now in July, August.
+[00:25:07] So we're expecting, and USDA is expecting, growth in the second half to moderate.
+[00:25:13] For the third and fourth quarter of 2026, USDA is expecting 2.5% increase in the supply,
+[00:25:21] which is more in line with the strong demand that we are seeing for chicken.
+[00:25:27] I think when you go to the pricing, and you need to go into individual segments and into
+[00:25:33] individual pieces, I think first we'll start with overall trends that are happening in the
+[00:25:38] consumer. I think we're seeing several trends and changes in the environment that are supporting
+[00:25:44] the demand for chicken in both retail and food service. Starting with the food service,
+[00:25:50] I think we are seeing the fight for traffic. Food service is struggling with traffic,
+[00:25:56] and because of that, they are focusing on promotional activities, and we're seeing that they're
+[00:26:01] using chicken for those promotional activities to generate traffic. That's why we saw an increase
+[00:26:06] of 3.1% in 3.4%, actually, in the volume of chicken in the food service category.
+[00:26:15] And then we see the retail, where consumers are strapped for money, they are looking for
+[00:26:21] a control over their budgets, and they're going to the retail to buy protein.
+[00:26:28] We saw growth in retail of 2.8% on the chicken category, especially on the prepared side,
+[00:26:35] where we've seen our brands really resonating with the consumer on the prepared, on the Just
+[00:26:40] Bare. Consumers are looking for affordability and also for convenience, so we saw significant
+[00:26:47] growth in prepared, but we saw some significant growth in fresh as well with the industry or
+[00:26:52] the volume in chicken growing by 1.8%. Going more specifically to the cuts, we saw the wings
+[00:27:02] bouncing back after getting off the menus on the food service, and we are seeing some
+[00:27:07] increase in availability in wings in retail, so we expect wings demand to continue to
+[00:27:13] increase, especially starting now the football season and the basketball season.
+[00:27:19] I think on the boneless breast, we've been talking about this for more than a year right
+[00:27:25] now, right? The delta between ground beef and boneless breast continues to widen, and I think
+[00:27:33] it's the highest it's ever been. I think that is helping the demand for boneless breasts,
+[00:27:39] and more important than that, we are seeing some significant promotional activity on the retail
+[00:27:46] coming into the fall and coming into the next months. That is happening because I think the
+[00:27:53] retail is also looking for food traffic, they are also increasing their promotional activity,
+[00:27:59] and boneless breast has been a significant and important part for that. On the boneless
+[00:28:07] dark meat, we're also seeing some great trends with changing demographics and changing
+[00:28:13] culinary preferences, and boneless dark meat has been the fastest growing category in the
+[00:28:19] retail. So we're seeing some very positive trends overall for protein and for chicken
+[00:28:29] and special, both in food service and retail, and that can help for the pricing and for the
+[00:28:36] demand as long as the supply is in line with what we expect. Perfect, thank you very much.
+[00:28:48] And then one real quick one for Matt probably, as it relates to the CapEx cadence, I think
+[00:28:57] you just said 900 million for the year, initially it was 900 I think to 950, so should we assume
+[00:29:05] closer to the lower end of that just given the run rate of the projects or is there anything
+[00:29:10] that you've kind of like postponed or what's driving that guidance more to the lower end of the
+[00:29:16] previous guidance for the CapEx versus what was 900 to 950? Yeah, no, sure. Good morning, Ben.
+[00:29:24] I think year to date, we're at 465, and looking at the 900, we have a lot of the projects
+[00:29:31] that's kind of gone through already with all the Russellville conversions, some of the other plants
+[00:29:37] we had. Of course, we've got continuing spend on Walker County with the permute prepared foods
+[00:29:43] plant, and then with LAJ, but we've got some of the bigger projects behind us and spent
+[00:29:49] in the first half of the year. So at 465, my guide at 900 kind of just gets you kind of
+[00:29:56] almost equal, first half, second half, but maybe just slightly below in the second half
+[00:30:01] compared to the first half of the year. Okay, thank you very much. I'll pass it on.
+[00:30:09] And our next question will come from Peter Galvo with Thanks for America. Please go ahead.
+[00:30:15] Hey guys, good morning. Thanks for taking the question. Maybe to follow up to Ben's
+[00:30:20] initial question and ask it slightly differently. Fabio, I know you gave a
+[00:30:26] very comprehensive answer, but just is there an expectation that as we get closer to the
+[00:30:31] fall that we might see the industry kind of go through its normal seasonal cuts on production?
+[00:30:39] I know that that was obviously last year kind of something that didn't happen, that
+[00:30:44] you know, typically again, we would expect to happen seasonally. So just given where the
+[00:30:48] commodity, you know, markets it, like, are we in a more normal environment this year where,
+[00:30:53] you know, production cuts are kind of expected for the industry?
+[00:30:59] Yeah, good morning Peter. It's normal for the industry to do the seasonal cuts. As we all
+[00:31:06] know, our industry always produced to the expected demand. And during the fall,
+[00:31:11] giving the tax giving and other events, we don't see a strong demand for chicken. So it is
+[00:31:19] normal to have that seasonal cuts. Last year, I think they waited a little because of the high
+[00:31:26] prices that we were seeing during the, especially in the commodity segment in the second quarter
+[00:31:35] last year. But the seasonal cuts always happen and they start around the end of August and
+[00:31:41] September. So our industry always produces to the demand. Like I mentioned, I think it was
+[00:31:48] unexpected or it was welcome but unexpected the increase in livability that we have in Q2 because
+[00:31:57] the exits were only increasing by 2%, which was in line with the expected demand growth that we
+[00:32:03] have for chicken for the whole year. I think the livability was what increased the production
+[00:32:10] a little bit over what the industry was expecting. And I cannot speak for the industry as well,
+[00:32:17] again, but for Pilgrim's, we will always adjust our production to demand for our key customers. And
+[00:32:23] I think you mentioned one important point, which is the portfolio. As we always mentioned,
+[00:32:29] we have a differentiated portfolio. We have the small birds, we have the case ready, the big
+[00:32:34] birds and the prepared foods. And we're seeing some strong growth in the prepared foods.
+[00:32:38] So with all the investments we did in the big bird plants, a big portion of our production is
+[00:32:47] using on the growth of our prepared foods, especially on the portion side. So I think
+[00:32:52] that's also important. But overall, long story short, our industry will always
+[00:32:57] adjust the demand to the expected, the production to the expected demand.
+[00:33:06] Thanks for that. Maybe if I could ask on Mexico, obviously a very dynamic first half
+[00:33:15] with a lot of moving pieces there, and maybe things will start to normalize out
+[00:33:19] in the second half. But if you could give us some perspective on we've gone through a
+[00:33:24] challenge first half, both from a top line and a profitability perspective,
+[00:33:28] just kind of how that shapes up for the back half of the year. Thanks very much.
+[00:33:32] No, sure. Thank you, Peter. Yeah, Mexico, we always mentioned that Mexico could be very volatile
+[00:33:39] quarter over quarter, but is resilient in double digits year over year. I think
+[00:33:45] we're seeing a little bit of a persistent low margins, at least to our expectations
+[00:33:52] in Mexico. But the reasons are a little bit different from Q1 than Q2. Typically, what we
+[00:33:58] see in Q2, similar a little bit to what I mentioned in the U.S., it is that the growing conditions
+[00:34:04] are not favorable in Mexico. This year, very different from other years. We saw some outstanding
+[00:34:11] growing conditions. So the industry normally increased the sets, expecting this worsening
+[00:34:19] or these bad growing conditions. And because of this year, mortality was much lower than
+[00:34:25] expected or livability was much higher than expected. And we saw a significant increase
+[00:34:31] in the supply of chicken in Mexico, almost double digit increase in volume. At the same time,
+[00:34:39] we are seeing in Mexico the same behavior than U.S. on the shell egg. We saw a significant
+[00:34:48] increase in the supply of shell eggs and the consequent reduction in price. And in Mexico,
+[00:34:57] because it is a growing economy, and chicken is the entry protein, but egg competes more
+[00:35:03] with chicken than in other countries. So we saw a significant increase in chicken,
+[00:35:09] significant increase in eggs with a lower price. And we also saw some significant imports
+[00:35:16] on the country of pork from United States. With all that, we saw a very large increase
+[00:35:24] in the supply of protein in the country. Nonetheless, demand continues to be excellent
+[00:35:30] because we saw that it was able to absorb all this protein, which signifies to us
+[00:35:37] that our strategy of growing in Mexico, it is the right one. We are, as I mentioned,
+[00:35:42] building two complexes in the peninsula and in the south to grow our geographical
+[00:35:49] diversification. And we continue to invest in our brands in our prepared foods.
+[00:35:54] So the changing in the consumer behavior in Mexico towards more convenience can also be
+[00:36:01] supported with our brand. So I think Mexico, once again, is very volatile quarter over
+[00:36:06] quarter, but we expect very good margins year over year, giving this demand for
+[00:36:12] chicken and for protein that continues to grow. And our next question will come from
+[00:36:23] Ben Mayhew with BMO Capital Markets. Please go ahead.
+[00:36:28] Hey, good morning, guys. Thank you for taking the questions. So my first question is around
+[00:36:33] U.S. chicken demand. So you spoke about and referenced ongoing strong demand for U.S.
+[00:36:42] chicken, but we've seen food service industry traffic trends soften in recent months,
+[00:36:48] and grocery industry trends remain somewhat soft. So I was just wondering if you could
+[00:36:54] frame the demand side of the equation, maybe relative to like six to nine months ago and
+[00:37:01] just how it's evolving. All right, thanks. Sure, sure. Yeah. I think, again, like I
+[00:37:08] mentioned, I think we need to get back to overall trends and changes in the environment.
+[00:37:16] The consumer continues to be looking their budgets with great efficiency,
+[00:37:23] and they are strapped in their spending. It's interesting that we look at,
+[00:37:30] in surveys, when consumers are asked about the first thing that they will cut from the
+[00:37:36] budget, 75 percent of the consumer will say that they will cut dining out. So I think that's the
+[00:37:42] food traffic impact, right? When the budget is constrained, 75 percent of the consumers will
+[00:37:49] say that they reduce dining out. That will help the demand on retail. And then what food
+[00:37:56] service is doing about it? It is increasing the promotions to get this food traffic
+[00:38:03] that is trying to cut their budgets. And that's where chicken has been winning on the food service
+[00:38:10] and increasing menu penetration. I think we're seeing the menu penetration
+[00:38:14] for chicken increasing every single quarter and being used for attracting the consumers. And
+[00:38:21] when it drew down into all the segments in the food service, we're seeing the QSRs growing
+[00:38:26] the fastest. Menu penetration and chicken volume in QSRs increased by 4.1 percent.
+[00:38:36] I think the non-commercial also will resume of the in-person operations in companies and
+[00:38:44] hospitals and hospitality. We're seeing growth in chicken of 5.9 percent. The only segment
+[00:38:50] that was stagnant and just a little bit of growth was the food service restaurants. And
+[00:38:55] that's the segment that is being more impacted by these consumers cutting their budget.
+[00:39:02] And then that helps the chicken on the food service despite the weakness in the food
+[00:39:09] traffic. And then we go to the retail. And like I mentioned, the retail volume has
+[00:39:14] been growing, especially on the prepared side. And when we go for the same survey,
+[00:39:21] when the consumers ask whether they cut from the budget, 29 percent saying that they're cut from
+[00:39:27] groceries, spending, but only 3 percent say that they are willing to cut meat and poultry
+[00:39:33] consumption. 68 percent of the consumers say that meat is a non-negotiable or important
+[00:39:39] item at retail. And that's what we are seeing, this resilient demand for protein and chicken
+[00:39:47] on retail growing by 2.8 percent. So I think that that is the overall consumer sentiment and
+[00:39:57] these several trends that are helping with the demand for protein.
+[00:40:02] Okay, thank you for that. And my follow-up question has to do with the European UK business.
+[00:40:10] You know, the top line continues to actually trend constructively
+[00:40:17] with volumes up almost 1 percent there. The margins, however, have kind of stagnated.
+[00:40:24] And so I'm just wondering, I know that the pork business has been under pressure
+[00:40:31] and you're not getting out of it what, you know, you maybe have hoped for a couple years
+[00:40:38] ago when you acquired it. Is there any way to quantify like how big of an impact pork is?
+[00:40:45] And is there a timeline that you would expect, you know, that to recover and just where do you
+[00:40:52] see this margin profile, you know, going from here from roughly like 5 percent?
+[00:40:58] And that'll be my last question. Thanks. Of course. Thank you, Ben. Well, I think first
+[00:41:04] of all, we finish all the reorganization and we really have one integrated company
+[00:41:11] in Europe, very diversified as we mentioned. We have the fresh chicken, the fresh pork,
+[00:41:17] the prepared foods. We have the branded business, the meals business, and the food
+[00:41:22] service business. So when we look at all these different segments, I think they are
+[00:41:28] balancing each other really well to what's happening to the consumer in Europe,
+[00:41:32] which is very similar to what's happening to the consumer in the United States.
+[00:41:36] So we're seeing growth in the chicken demand in Europe. Our challenge to grow there,
+[00:41:43] it is to build more housing. I think that has been the challenge, but it is in the works for
+[00:41:48] us to be able to grow the supply of chicken for the increased demand there. So chicken was
+[00:41:56] really growing in Europe. The meals business also is growing really fast with the convenience
+[00:42:03] and pricing being a great alternative to these consumers in Europe. Then we go to the segments
+[00:42:09] that are not growing as we expected. First is the QSRs or the food service
+[00:42:15] segment that we have in Europe. That segment, it is stagnant Euro variant.
+[00:42:21] And we're working with our key customers there to enable, just like in the US,
+[00:42:27] more promotional activity to increase food traffic and increase volumes. The second is the
+[00:42:34] branded business. We're seeing a lot of competition from private label and the consumers, when they
+[00:42:39] are trying to save money, they tend to go to the cheaper private label. But we are also
+[00:42:45] increasing our promotional activity on the branded segments and expanding innovation,
+[00:42:50] especially on the Richmond brand, so we can achieve growth in that segment.
+[00:42:55] And then we go to the one that is being struggling for us in Europe, which is the pork
+[00:43:02] business. Because of the China increase in the pork supply, we're seeing a reduction in European
+[00:43:09] exports to China. When those exports reduce, especially from countries like Spain and
+[00:43:16] Denmark, we saw a significant increase in the supply of pork into the UK. We have a
+[00:43:23] differentiated operation in the UK, which is high welfare, so it's a higher value, let's say,
+[00:43:30] proposition. But we saw this increase in the supply of very competitive cheap pork into the UK,
+[00:43:38] and that impacted more on the wholesale business. Left the retail, where we have a
+[00:43:43] very differentiated offering, but all the wholesale prices went down. So I think that's
+[00:43:49] what impacted the pork operations in there. We are seeing some herd reduction in other countries, and we expect the prices to react. I don't think that there will be some increase in the export to China in the short term. I think it will be more on the reduction of herd in Europe. And then we'll see less imports of pork cuts into the UK, especially in the wholesale market.
 [00:44:18] So, overall, again, a portfolio that is highly diversified, and we are investing in innovation and brand growth and in chicken growth to be able to increase our volumes in Europe.
-[00:44:35] Thank you.
-[00:44:40] And our next question will come from Karan Sharma with Stevens. Please go ahead.
-[00:44:47] Thanks for the question here.
-[00:44:49] Fabio, you kind of alluded to this in the prepared comments, and you've said this in the past, but wanted to talk about the benefit of lower raw material costs for your prepared foods business, which sounds like it has strong momentum.
-[00:45:07] You said Just Bare up 30% in retail.
-[00:45:11] Given kind of just the downturn in pricing, can you remind us how long of a lag it takes for you to see benefits from your prepared foods business?
-[00:45:31] Yeah, like I said, I think looking at the overall portfolio, what we want is to grow our branded business in the United States that will compensate the volatility in the big bird commodity market.
-[00:45:44] Once again, we don't want to reduce our commodity operation.
-[00:45:48] We want to reduce the volatility of the overall portfolio with the growth of prepared foods.
-[00:45:53] So we invested in our big bird plants in more portioning so we can have internal supply.
-[00:45:59] We used to have more than half of our supply from outside, and we are increasing that to much less than half of our needs in terms of raw meat for our prepared foods from external.
-[00:46:13] And that's what we want, quality and assurance of supply of the no antibiotics ever material that is important for our Just Bare brand.
-[00:46:24] There is no lag because all of our internal transferring are always based on market pricing.
-[00:46:31] So we run our prepared foods operation just like a stand alone and the overall portfolio will benefit from that exposure.
-[00:46:40] So we price our products in the prepared food based on competition from the market and based on the value that they generate.
-[00:46:49] As I mentioned, the Just Bare brand adds a lot of velocity to the retailers when they are on the shelves both on the prepared and on the fresh side.
-[00:47:01] So I think it is more about improving our operations in the big bird category, achieving all the efficiencies that we want so we can improve the profitability in that category.
-[00:47:15] The prepared foods profitability has been strong since the raw materials are very competitive as you mentioned.
-[00:47:26] I appreciate the color there and just on the follow up here, I think you recently on the July WASD we saw quarterly production estimates raised, but you know, on the table egg layer front, we've been hearing of heat stress impacting birds, and so you can't get an optimal sized egg there.
-[00:47:55] And I know it's different genetics when you go over to broilers, but just being in the same geographic location, will we see maybe the opposite of last year where you saw better growing conditions in 3Q, will we see maybe worse growing conditions in 3Q this year just given implications for heat stress thus far.
-[00:48:21] And then, do you think that is reflected in USDA estimates at all?
-[00:48:29] Yeah, I think that is a great point, Poran. And as I mentioned, I think in Q2, out of 2% increase in egg sets, which is what the industry believe is going to be the increase in supply, we saw 4.5% increase in ready to cook pounds.
-[00:48:47] And as I mentioned, I think livability was the biggest unknown or different factor during Q2. I think to your exact point, given the heat wave, that increasing livability should not be a bigger factor in Q3.
-[00:49:05] And that's why I think the increase in egg sets and chicks place, it's more in line with the end, with the increase in ready to cook. And we normally see that, I think last year, you have a great point, during the fall we saw some great growing conditions.
-[00:49:25] The weather was mild, we didn't see big stretches of hot weather, and that helped in Q3, 2025, an increase in production, especially in September. So I think you're right, if the weather continues to be what it is with some hot weather in the south and other regions where there is a big production of chicken and table eggs,
-[00:49:53] I think the egg set increase will be more in line with the RTC increase. And then that is incorporated to the WASD. I think WASD is expecting the same conditions as last year. And if livability is not as good as last year, we can see actually reduction in the production compared to the increase in egg set.
-[00:50:17] Appreciate the color.
-[00:50:26] Again, if you have a question, you may press star then one to join the queue. And in the interest of time, we ask that you please limit your questions to only one from this point in the call going forward.
-[00:50:37] Our next question will come from Leah Jordan with Goldman Sachs. Please go ahead.
+[00:44:35] Thank you. And our next question will come from Karam Sharma with Stevens. Please go ahead.
+[00:44:45] Hey, good morning, and thanks for the question here.
+[00:44:48] Fabio, you kind of alluded to this in the prepared comments, and you've said this in the past, but wanted to talk about the benefit of lower raw material costs for your prepared foods business, which sounds like it has strong momentum. You said, Just Bare, up 30% in retail, given kind of just the downturn in pricing, can you remind us how long?
+[00:45:19] Of a lag it takes for you to see benefits from your prepared foods business?
+[00:45:30] Super. Yeah, like I said, I think looking at the overall portfolio, what we want is to grow our branded business in the United States that will compensate the volatility in the big bird commodity market.
+[00:45:43] Once again, we don't want to reduce our commodity operation.
+[00:45:47] We want to reduce the volatility of the overall portfolio with the growth of prepared foods.
+[00:45:52] We invested in our big bird plants in more portioning so we can have internal supply.
+[00:45:58] We used to have more than half of our supply from outside, and we are increasing that to much less than half of our needs in terms of raw meat for our prepared foods from external.
+[00:46:13] And that's what we want, quality and assurance of supply of the no antibiotics ever material that is important for our Just Bare brand. There is no lag because all of our internal transferring are always basal market pricing. So we run our prepared foods operation just like a stand alone and the overall portfolio will benefit from that exposure.
+[00:46:40] So we price our products in the prepared food based on competition from the market and based on the value that they generate. As I mentioned, the Just Bare brand adds a lot of velocity to the retailers when they are on the shelves, both on the prepared and on the fresh side.
+[00:47:01] So I think it is more about improving our operations in the big bird category, achieving all the efficiencies that we want.
+[00:47:11] So we can improve the profitability in that category. The prepared foods profitability has been strong since the raw materials are very competitive, as you mentioned.
+[00:47:26] Appreciate the color there. And just on the follow up here, I think recently on the July WASDE, we saw quarterly production estimates raised, but
+[00:47:41] you know, on the table egg layer front, we've been hearing of heat stress impacting birds. And so you can't get an optimal sized egg there. And I know it's different genetics when you go over to broilers, but just being in the same geographic location,
+[00:48:03] will we see maybe the opposite of last year where you saw better growing conditions in 3Q, will we see maybe worse growing conditions in 3Q this year, just given implications for heat stress thus far, and then, do you think that is reflected in USDA estimates at all?
+[00:48:27] Yeah, I think that is a great point, Poran. And as I mentioned, I think in Q2, out of the 2% increase in egg sets, which is what the industry
+[00:48:38] believe is going to be the increase in supply, we saw 4.5% increase in ready to cook pounds. And as I mentioned, I think livability was the biggest unknown or different factor during Q2.
+[00:48:53] I think to your exact point, given the heat wave, that increase in livability should not be a bigger factor in Q3. And that's why I think the increase in egg sets and chicks placed, it's more in line with the end, with the increase in ready to cook.
+[00:49:16] And we normally see that, I think last year, you have a great point, during the fall we saw some great growing conditions, the weather was mild, we didn't see big stretches of hot weather, and that helped in Q3, 2025, an increase in production, especially in September.
+[00:49:38] So I think you're right, if the weather continues to be what it is, with some hot weather in the south and other regions, where there is a big production of chicken and table eggs, I think the egg set increase will be more in line with the RTC increase.
+[00:49:59] And then that is incorporated to the WASDI. I think WASDI is expecting the same conditions as last year, and if livability is not as good as last year, we can see actually reduction in the production compared to the increase in egg set.
+[00:50:16] Appreciate the color.
+[00:50:21] Again, if you have a question, you may press star then 1 to join the queue.
+[00:50:30] And in the interest of time, we ask that you please limit your questions to only one from this point in the call going forward. Our next question will come from Leah Jordan with Goldman Sachs. Please go ahead.
 [00:50:45] Hi, good morning. Thanks for taking my question. I wanted to go back to the response in the question before last you talked about some of these actions, you know, reducing the volatility of your business longer term.
 [00:50:58] So, you know, after you've completed these plant upgrades, we've got a few more value added projects that are still on the come. I was just seeing if you could walk through, you know, how you're thinking about mix and operational efficiency as margin tailwinds into the back half and into next year, just to kind of support that reducing volatility outlook. Thank you.
-[00:51:20] I think it's a great point. Again, operational efficiency is at the core of our beliefs and our values, right. We always need to be the best at everything that we do, regardless of the segment we are in.
-[00:51:32] Then we try to reduce the volatility through our portfolio. And I think reduce the volatility.
-[00:51:38] I don't think that we want to or can create a portfolio that is going to be total immunity volatility because we want to capture the upsides in the commodity segment when they happen. What we want is to really create a protection from the downsides where because of our portfolio, the company will be not stressed in the results.
-[00:52:00] So what we want is to always keep a great base of profitability, giving geographical diversification and giving the business diversification in US with the small birds that are more stable with the case ready.
-[00:52:14] There is also more stable, but we won't end the prepared foods that encounter, as I mentioned, a little bit of volatility in the big bird segment, which we are again is the segment we are seeing the highest volatility.
+[00:51:20] I think it's a great point. Again, operational efficiency is at the core of our beliefs and our values, right? We always need to be the best at everything that we do, regardless of the segment we are in.
+[00:51:32] Then we try to reduce the volatility through our portfolio and I think reduce the volatility. I don't think that we want to or can create a portfolio that is going to be, you know, total immunity volatility because we want to capture the upsides in the commodity segment when they happen.
+[00:51:50] What we want is to really create a protection from the downsides where because of our portfolio, the company will be not stressed in the results. So what we want is to always keep a great base of profitability, giving geographical diversification and giving the business diversification in U.S.
+[00:52:10] With the small birds that are more stable, with the case ready, there is also more stable. But we won't end the prepared foods that encounter, as I mentioned, a little bit of volatility in the big bird segment, which we are, again, is the segment we are seeing the highest volatility.
 [00:52:27] So long term, what we want is to continue to grow our prepared foods operation.
-[00:52:33] And growth in line with our key customers. I think this is the other point and that's important. We're always looking into our portfolio and seeing if there is opportunities for the long term and the LGA conversion is a great example.
-[00:52:48] We've been seeing the reduction in the demand for bone in category, especially on the eight piece. And we're seeing the increase in the demand for the chicken sandwich segment.
-[00:52:59] And that's why we're doing the change in the LGA operation to increase the deboning and support our key customers for their growth.
-[00:53:09] And really, I'll just chime in relative to, you know, next year as we wind down the completion of our Walker County facility for the prepared foods that will that's going to benefit us to be less exposure to co packers and some, you know, some potentially a lot better margins for us as we go forward, you know, help, you know, just have that higher off take of our own internal meat also with all the work that we've done on the portioning side.
-[00:53:39] And our next question will come from Heather Jones with Heather Jones research. Please go ahead.
-[00:53:54] Good morning. Thanks for squeezing me in.
-[00:53:58] Just the first question that is really quick clarification. Fabio, you mentioned something about strong margins year over year and it was in relation to a Mexico question.
-[00:54:12] Just a long term that you expect the margins to be strong over the long term. Are you talking about you expect margins to be up strongly year on year for Q3.
-[00:54:22] Yeah, compared to Q3 last year, I think we saw some weakness in the in the second semester in Mexico. So I think we can have some growth in the in the margins in Mexico in the second semester.
-[00:54:35] I think it's more about the growth in the demand of a growing economy like Mexico, where their imports are significant part of their protein consumption and our operation in the country continues to grow.
-[00:54:49] So long term is we expect double digit margins. Again, quarter over quarter could be very volatile.
-[00:54:57] Okay, and then a bigger picture question is just, I know that supply has surprised to the upside in the first half and thus far in Q3 in the US.
-[00:55:10] But it also seems to be that there's been some incremental softening in demand and even more so over the last couple of weeks, which I guess is related to the cyclospora that's affecting food service traffic.
-[00:55:24] I'm just wondering if you could give us your big picture view as to when we look at pricing and margins. Have you tried to pinpoint what you think is attributable to supply and what do you think is attributable to demand and just how you're thinking about that going forward.
-[00:55:45] That's a great question, Heather. I think on the food service, we've had these issues before in the industry and we always bounce back. I think it's always a small or short time.
-[00:55:57] We saw that in Panera and Chipotle and others in the past. I think from time to time we have, but I think we have a great food supply and we have great resilience and we have good health conditions overall in the restaurants in the United States.
-[00:56:18] So I expect that only to be a small reduction in any specific week. Again, the consumers continue to go to food service, food service. It is a great option for the consumers, but the food traffic continues to be an issue, like I said.
-[00:56:36] And again, chicken is a great opportunity for generating food traffic through promotional activity. And we're seeing that already happening. I think during Q2, to be honest, I think we saw less promotional activity in the food service, but yet we saw the growth of 3.4% in the segment and like I mentioned, especially on the QSR.
-[00:57:00] I think what can change to be honest on the demand is in retail in terms of promotional activity. We have not seen great promotional activity in boneless breast during the first semester and we're seeing some strong indication and we saw some price decreases, some significant price decreases in boneless breast in retail during Q3.
-[00:57:29] And I think that can lead to a bigger or stronger demand, especially for that cut because boneless dark meat has been growing a lot like I mentioned. But especially for the breast meat, I think the promotional activity, the reduction in pricing in the retail is going to be a significant improvement into the demand going into Q3 and Q4.
-[00:57:55] And this will conclude our question and answer session. I'd like to turn the conference back over to Fabio Sandri for any closing remarks.
-[00:58:08] Thank you everyone for attending today's call. During the quarter, chicken demand remained firm across all regions as affordability continued to resonate among consumers. We made significant progress in our investments to drive growth and mitigate downside risks as volumes and margins improved from previous quarter in the volatile commodity markets.
+[00:52:33] And growth in line with our key customers. I think this is the other point and that's important. We're always looking into our portfolio and seeing if there is opportunities for the long term and the LHA conversion is a great example.
+[00:52:47] We've been seeing the reduction in the demand for bone in category, especially on the eight piece, and we're seeing the increase in the demand for the chicken sandwich segment. And that's why we're doing the change in the LHA operation to increase the deboning and support our key customers for their growth.
+[00:53:08] And Leah, I'll just chime in relative to next year as we wind down the completion of our Walker County facility for the prepared foods, that's going to benefit us to have less exposure to co-packers and potentially a lot better margins for us as we go forward.
+[00:53:29] You know, to help, you know, just have that higher offtake of our own internal meat also with all the work that we've done on the portioning side in the big bird plant.
+[00:53:47] And our next question will come from Heather Jones with Heather Jones Research. Please go ahead.
+[00:53:54] Good morning. Thanks for squeezing me in. Just the first question that is really quick clarification. Fabio, you mentioned something about strong margins year over year and it was in relation to a Mexico question.
+[00:54:11] Is that just the long term that you expect the margins to be strong over the long term? Are you talking about you expect margins to be up strongly year on year for Q3?
+[00:54:22] Yeah, compared to Q3 last year, I think we saw some weakness in the second semester in Mexico. So I think we can have some growth in the margins in Mexico in the second semester.
+[00:54:34] But I think it's more about the growth in the demand of a growing economy like Mexico where their imports are significant part of their protein consumption and our operation in the country continues to grow.
+[00:54:49] So long term, we expect double digit margins. Again, quarter over quarter could be very volatile.
+[00:54:56] Right. Okay. And then a bigger picture question is just, I know that supply has surprised to the upside in the first half and thus far in Q3 in the US, but it also seems to be that there's been some incremental
+[00:55:14] softening in demand and even more so over the last couple of weeks, which I guess is related to the cyclospora that's affecting food service traffic.
+[00:55:24] They're just wondering if you could give us your big picture view as to when we look at pricing and margins. Have you tried to pinpoint what you think is attributable to supply and what do you think is attributable to demand and just how you're thinking about that going forward.
+[00:55:44] That's a great question, Heather. I think on the food service we've had these issues before in the industry and we always balance back. I think it's always a small or short time.
+[00:55:57] We saw that in Panera and Chipotle and others in the past, right? I think from time to time we have, but I think we have a great food supply and we have great resilience and we have good health conditions overall in the restaurants in the United States.
+[00:56:18] I expect that only to be a small reduction in any specific week. Again, the consumers continue to go to food service, food service. It is a great option for the consumers, but the food traffic continues to be an issue, like I said.
+[00:56:36] And again, chicken is a great opportunity for generating food traffic through promotional activity. And we're seeing that already happening. I think during Q2, to be honest, I think we saw less promotional activity in the food service, but yet we saw the growth of 3.4% in the segment.
+[00:56:58] Like I mentioned especially on the QSR. I think what can change to be honest on the demand is in retail in terms of promotional activity. We have not seen great promotional activity in boneless breast during the first semester.
+[00:57:17] And we're seeing some strong indication and we saw some price decreases, some significant price decreases in boneless breast in retail during Q3. And I think that can lead to a bigger or stronger demand, especially for that cut because boneless dark meat has been growing a lot like I mentioned.
+[00:57:41] Especially for the breast meat, I think the promotional activity is reduction in pricing in the retail is going to be a significant improvement into the demand going into Q3 and Q4.
+[00:58:00] And this will conclude our question and answer session. I'd like to turn the conference back over to Fabio Sandri for any closing remarks.
+[00:58:08] Thank you everyone for attending today's call. During the quarter, chicken demand remain firm across all regions as affordability continue to resonate among consumers.
+[00:58:18] We made significant progress in our investments to drive growth and mitigate downside risks as volumes and margins improved from previous quarter in the volatile commodity market.
 [00:58:30] Our investments in prepared foods at Walker County and small birds in LJ will further strengthen our portfolio. We will continue to work with our commitment to have the best team and our relentless pursuit of operational excellence.
-[00:58:43] When these efforts are combined with our commitment to quality, service and sustainability, we can further build our legacy and achieve our vision to be the best and most respected company in our industry creating the opportunity of a better future for our team members.
+[00:58:43] When these efforts are combined with our commitment to quality, service and sustainability, we can further build our legacy and achieve our vision to be the best and most respected company in our industry, creating the opportunity of a better future for our team members.
 [00:58:57] Thank you everyone. The conference has now concluded. Thank you for attending today's presentation. You may now disconnect your lines.
