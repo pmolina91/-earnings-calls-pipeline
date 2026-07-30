@@ -1,0 +1,1 @@
+13:24:42Z sem fala real ate T+180s (mean_volume=-91.0dB) — captura provavelmente na pagina/espera errada; disparar runner AO VIVO (join_offset +120).
