@@ -1,0 +1,138 @@
+{
+ "url": "https://event.choruscall.com/mediaframe/webcast.html?webcastid=Zpb9nyac",
+ "pre_title": "Registration | Pilgrim’s Pride Second Quarter 2026 Earnings Call",
+ "pre_inputs": [
+  {
+   "type": "hidden",
+   "name": "streamId"
+  },
+  {
+   "type": "hidden",
+   "name": "loginType"
+  },
+  {
+   "type": "hidden",
+   "name": "campaign"
+  },
+  {
+   "type": "hidden",
+   "name": "disabledCacheBusting"
+  },
+  {
+   "type": "hidden",
+   "name": "listenByPhone"
+  },
+  {
+   "type": "hidden",
+   "name": "logging"
+  },
+  {
+   "type": "hidden",
+   "name": "overrideActivation"
+  },
+  {
+   "type": "hidden",
+   "name": "showBetaElements"
+  },
+  {
+   "type": "hidden",
+   "name": "time"
+  },
+  {
+   "type": "text",
+   "name": "firstName"
+  },
+  {
+   "type": "text",
+   "name": "lastName"
+  },
+  {
+   "type": "tel",
+   "name": "primaryPhone"
+  },
+  {
+   "type": "text",
+   "name": "company"
+  },
+  {
+   "type": "text",
+   "name": "title"
+  },
+  {
+   "type": "email",
+   "name": "email"
+  }
+ ],
+ "pre_buttons": [
+  "Close",
+  "Convert to local time.",
+  "Submit"
+ ],
+ "register_log": [
+  "adapter:generico",
+  "fill:first_name",
+  "fill:last_name",
+  "fill:email",
+  "fill:phone",
+  "fill:company",
+  "fill:jobtitle",
+  "click:button[type=submit]"
+ ],
+ "post_title": "Webcast | Pilgrim’s Pride Second Quarter 2026 Earnings Call",
+ "post_url": "https://event.choruscall.com/mediaframe/webcast.html?webcastid=Zpb9nyac",
+ "post_media": [
+  {
+   "src": "blob:https://event.choruscall.com/409d94bd-4ba0-4b38-8d1e-611dbe34de87",
+   "paused": false,
+   "muted": false,
+   "ready": 4,
+   "dur": 39.986281
+  }
+ ],
+ "after_play_media": [
+  {
+   "src": "blob:https://event.choruscall.com/409d94bd-4ba0-4b38-8d1e-611dbe34de87",
+   "paused": false,
+   "muted": false,
+   "ready": 4,
+   "dur": 39.986281
+  }
+ ],
+ "post_buttons": [
+  "Close",
+  "Reload now",
+  "Cancel",
+  "Support information",
+  "Close",
+  "Play Video",
+  "Pause",
+  "Skip Backward",
+  "Skip Forward",
+  "Mute",
+  "Seek to live, currently behind liveLIVE",
+  "Playback Rate",
+  "Chapters",
+  "Descriptions",
+  "Captions",
+  "Audio Track",
+  "Support",
+  "Dim the lights"
+ ],
+ "post_body": "Presentation\nSettings\nSupport\nPilgrim’s Pride Second Quarter 2026 Earnings Call\nPause\nMute\nStream Type \nLIVE\nPilgrim's Pride Second Quarter 2026 Earnings Call\nJuly 30th, 2026\n\nUser Guide | © 2026 Pilgrim's Pride Corporation\n\nSupport \nDim the lights\n ",
+ "media_requests": [
+  "https://event.choruscall.com/mediaframe/webcast.html?webcastid=Zpb9nyac",
+  "https://event.choruscall.com/mediaframe/css/frame/font-awesome-5.8.2/css/all.min.css",
+  "https://event.choruscall.com/mediaframe/css/frame/font-awesome-5.8.2/webfonts/fa-regular-400.woff2",
+  "https://event.choruscall.com/mediaframe/css/frame/font-awesome-5.8.2/webfonts/fa-solid-900.woff2",
+  "https://78449.choruscall.com/dataconf/resources/dynamicframe/mediaries/Chorus%20Call%20USA/choruscall_mediary.png",
+  "https://event.choruscall.com/mediaframe/registration/submit",
+  "https://event.choruscall.com/mediaframe/v2/dynamicframe/join?streamid=28724&registrantId=7431251&pageViewId=2026y6m4d13h31m21s584",
+  "https://pmd.choruscall.com/httporiginlive/p@389703_http/playlist.m3u8",
+  "https://event.choruscall.com/MediaSockets/mediaframe/info?t=1785418281561",
+  "https://pmd.choruscall.com/httporiginlive/p@389703_http/chunklist.m3u8",
+  "https://pmd.choruscall.com/httporiginlive/p@389703_http/media-uf0hbmjpl_777.ts",
+  "https://pmd.choruscall.com/httporiginlive/p@389703_http/media-uf0hbmjpl_778.ts",
+  "https://pmd.choruscall.com/httporiginlive/p@389703_http/media-uf0hbmjpl_779.ts",
+  "https://pmd.choruscall.com/httporiginlive/p@389703_http/media-uf0hbmjpl_780.ts"
+ ]
+}
