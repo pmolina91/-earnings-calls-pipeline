@@ -1,0 +1,14 @@
+{
+ "ticker": "PPC",
+ "ticker_short": "PPC",
+ "company": "Pilgrim's Pride",
+ "quarter": "2T26",
+ "call_datetime_utc": "2026-07-30T13:00:00Z",
+ "join_offset_seconds": 0,
+ "webcast_url": "https://event.choruscall.com/mediaframe/webcast.html?webcastid=Zpb9nyac",
+ "notion_database_id": "26b3a8f749884dc7a59e67171784e07b",
+ "language": "en",
+ "hotwords": "Pilgrim's Pride, Fabio Sandri, Matt Galvanoni, JBS, broiler, chicken, prepared foods, Just Bare, grain costs, corn, soybean meal, USDA, Mexico, Europe, exports, EBITDA margin, live operations, big bird, case ready",
+ "max_capture_minutes": 90,
+ "_rescue": "call ao vivo — entra imediato; codigo com registro no reload (fix ChorusCall live form)"
+}
