@@ -1,0 +1,112 @@
+/home/runner/work/-earnings-calls-pipeline/-earnings-calls-pipeline/scripts/capture.py:115: SyntaxWarning: invalid escape sequence '\/'
+  join = page.evaluate('''() => { const a=[...document.querySelectorAll('a')].find(x=>/zoom.us\/(w|wc)\//.test(x.href)); return a?a.href:null }''')
+19
+[aist#0:0/pcm_s16le @ 0x564fe70d79c0] Guessed Channel Layout: stereo
+[watchdog] 20:48:04Z mean_volume=-23.4 som=True fala_real=True apos_inicio=True
+[watchdog] 20:48:44Z mean_volume=-22.5 som=True fala_real=True apos_inicio=True
+[watchdog] 20:49:22Z mean_volume=-26.4 som=True fala_real=True apos_inicio=True
+[watchdog] 20:50:00Z mean_volume=-25.3 som=True fala_real=True apos_inicio=True
+[watchdog] 20:50:39Z mean_volume=-24.8 som=True fala_real=True apos_inicio=True
+[watchdog] 20:51:17Z mean_volume=-25.9 som=True fala_real=True apos_inicio=True
+[watchdog] 20:51:55Z mean_volume=-26.3 som=True fala_real=True apos_inicio=True
+[watchdog] 20:52:33Z mean_volume=-27.1 som=True fala_real=True apos_inicio=True
+[watchdog] 20:53:12Z mean_volume=-27.4 som=True fala_real=True apos_inicio=True
+[watchdog] 20:53:50Z mean_volume=-26.5 som=True fala_real=True apos_inicio=True
+[watchdog] 20:54:28Z mean_volume=-25.9 som=True fala_real=True apos_inicio=True
+[watchdog] 20:55:06Z mean_volume=-27.7 som=True fala_real=True apos_inicio=True
+[watchdog] 20:55:45Z mean_volume=-25.4 som=True fala_real=True apos_inicio=True
+[watchdog] 20:56:23Z mean_volume=-28.7 som=True fala_real=True apos_inicio=True
+[watchdog] 20:57:01Z mean_volume=-30.6 som=True fala_real=True apos_inicio=True
+[watchdog] 20:57:39Z mean_volume=-27.5 som=True fala_real=True apos_inicio=True
+[watchdog] 20:58:18Z mean_volume=-26.8 som=True fala_real=True apos_inicio=True
+[watchdog] 20:58:56Z mean_volume=-27.2 som=True fala_real=True apos_inicio=True
+[watchdog] 20:59:34Z mean_volume=-26.7 som=True fala_real=True apos_inicio=True
+[watchdog] 21:00:12Z mean_volume=-27.0 som=True fala_real=True apos_inicio=True
+[watchdog] 21:00:51Z mean_volume=-28.5 som=True fala_real=True apos_inicio=True
+[watchdog] 21:01:29Z mean_volume=-29.0 som=True fala_real=True apos_inicio=True
+[watchdog] 21:02:07Z mean_volume=-26.9 som=True fala_real=True apos_inicio=True
+[watchdog] 21:02:45Z mean_volume=-27.7 som=True fala_real=True apos_inicio=True
+[watchdog] 21:03:24Z mean_volume=-28.7 som=True fala_real=True apos_inicio=True
+[watchdog] 21:04:02Z mean_volume=-29.0 som=True fala_real=True apos_inicio=True
+[watchdog] 21:04:40Z mean_volume=-28.1 som=True fala_real=True apos_inicio=True
+[watchdog] 21:05:18Z mean_volume=-27.5 som=True fala_real=True apos_inicio=True
+[watchdog] 21:05:57Z mean_volume=-25.7 som=True fala_real=True apos_inicio=True
+[watchdog] 21:06:35Z mean_volume=-26.9 som=True fala_real=True apos_inicio=True
+[watchdog] 21:07:13Z mean_volume=-25.8 som=True fala_real=True apos_inicio=True
+[watchdog] 21:07:51Z mean_volume=-26.4 som=True fala_real=True apos_inicio=True
+[watchdog] 21:08:30Z mean_volume=-26.9 som=True fala_real=True apos_inicio=True
+[watchdog] 21:09:08Z mean_volume=-26.3 som=True fala_real=True apos_inicio=True
+[watchdog] 21:09:46Z mean_volume=-25.2 som=True fala_real=True apos_inicio=True
+[watchdog] 21:10:24Z mean_volume=-23.8 som=True fala_real=True apos_inicio=True
+[watchdog] 21:11:03Z mean_volume=-25.0 som=True fala_real=True apos_inicio=True
+[watchdog] 21:11:41Z mean_volume=-26.8 som=True fala_real=True apos_inicio=True
+[watchdog] 21:12:19Z mean_volume=-28.3 som=True fala_real=True apos_inicio=True
+[watchdog] 21:12:58Z mean_volume=-28.1 som=True fala_real=True apos_inicio=True
+[watchdog] 21:13:36Z mean_volume=-28.5 som=True fala_real=True apos_inicio=True
+[watchdog] 21:14:14Z mean_volume=-29.2 som=True fala_real=True apos_inicio=True
+[watchdog] 21:14:52Z mean_volume=-26.6 som=True fala_real=True apos_inicio=True
+[watchdog] 21:15:31Z mean_volume=-31.8 som=True fala_real=True apos_inicio=True
+[watchdog] 21:16:09Z mean_volume=-32.4 som=True fala_real=True apos_inicio=True
+[watchdog] 21:16:47Z mean_volume=-27.4 som=True fala_real=True apos_inicio=True
+[watchdog] 21:17:25Z mean_volume=-28.4 som=True fala_real=True apos_inicio=True
+[watchdog] 21:18:04Z mean_volume=-34.7 som=True fala_real=False apos_inicio=True
+[watchdog] 21:18:43Z mean_volume=-26.1 som=True fala_real=True apos_inicio=True
+[watchdog] 21:19:22Z mean_volume=-25.4 som=True fala_real=True apos_inicio=True
+[watchdog] 21:20:00Z mean_volume=-31.9 som=True fala_real=True apos_inicio=True
+[watchdog] 21:20:38Z mean_volume=-31.7 som=True fala_real=True apos_inicio=True
+[watchdog] 21:21:16Z mean_volume=-25.7 som=True fala_real=True apos_inicio=True
+[watchdog] 21:21:55Z mean_volume=-28.2 som=True fala_real=True apos_inicio=True
+[watchdog] 21:22:33Z mean_volume=-27.3 som=True fala_real=True apos_inicio=True
+[watchdog] 21:23:11Z mean_volume=-28.5 som=True fala_real=True apos_inicio=True
+[watchdog] 21:23:49Z mean_volume=-32.4 som=True fala_real=True apos_inicio=True
+[watchdog] 21:24:28Z mean_volume=-28.7 som=True fala_real=True apos_inicio=True
+[watchdog] 21:25:06Z mean_volume=-27.1 som=True fala_real=True apos_inicio=True
+[watchdog] 21:25:44Z mean_volume=-32.4 som=True fala_real=True apos_inicio=True
+[watchdog] 21:26:22Z mean_volume=-28.0 som=True fala_real=True apos_inicio=True
+[watchdog] 21:27:01Z mean_volume=-26.4 som=True fala_real=True apos_inicio=True
+[watchdog] 21:27:39Z mean_volume=-29.1 som=True fala_real=True apos_inicio=True
+[watchdog] 21:28:17Z mean_volume=-29.2 som=True fala_real=True apos_inicio=True
+[watchdog] 21:28:55Z mean_volume=-25.7 som=True fala_real=True apos_inicio=True
+[watchdog] 21:29:34Z mean_volume=-26.1 som=True fala_real=True apos_inicio=True
+[watchdog] 21:30:12Z mean_volume=-28.0 som=True fala_real=True apos_inicio=True
+[watchdog] 21:30:50Z mean_volume=-26.7 som=True fala_real=True apos_inicio=True
+[watchdog] 21:31:28Z mean_volume=-28.9 som=True fala_real=True apos_inicio=True
+[watchdog] 21:32:07Z mean_volume=-32.2 som=True fala_real=True apos_inicio=True
+[watchdog] 21:32:45Z mean_volume=-27.2 som=True fala_real=True apos_inicio=True
+[watchdog] 21:33:23Z mean_volume=-29.1 som=True fala_real=True apos_inicio=True
+[watchdog] 21:34:01Z mean_volume=-26.0 som=True fala_real=True apos_inicio=True
+[watchdog] 21:34:40Z mean_volume=-29.9 som=True fala_real=True apos_inicio=True
+[watchdog] 21:35:18Z mean_volume=-28.7 som=True fala_real=True apos_inicio=True
+[watchdog] 21:35:56Z mean_volume=-27.8 som=True fala_real=True apos_inicio=True
+[watchdog] 21:36:34Z mean_volume=-28.8 som=True fala_real=True apos_inicio=True
+[watchdog] 21:37:13Z mean_volume=-26.2 som=True fala_real=True apos_inicio=True
+[watchdog] 21:37:51Z mean_volume=-35.3 som=True fala_real=False apos_inicio=True
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
+[watchdog] 21:38:31Z mean_volume=-18.3 som=True fala_real=True apos_inicio=True
+[watchdog] 21:39:09Z mean_volume=-26.0 som=True fala_real=True apos_inicio=True
+[watchdog] 21:39:47Z mean_volume=-27.5 som=True fala_real=True apos_inicio=True
+[watchdog] 21:40:25Z mean_volume=-28.0 som=True fala_real=True apos_inicio=True
+[watchdog] 21:41:04Z mean_volume=-32.7 som=True fala_real=True apos_inicio=True
+[watchdog] 21:41:42Z mean_volume=-28.9 som=True fala_real=True apos_inicio=True
+[watchdog] 21:42:20Z mean_volume=-28.0 som=True fala_real=True apos_inicio=True
+[watchdog] 21:42:58Z mean_volume=-28.8 som=True fala_real=True apos_inicio=True
+[watchdog] 21:43:37Z mean_volume=-28.9 som=True fala_real=True apos_inicio=True
+[watchdog] 21:44:15Z mean_volume=-29.5 som=True fala_real=True apos_inicio=True
+[watchdog] 21:44:53Z mean_volume=-27.8 som=True fala_real=True apos_inicio=True
+[watchdog] 21:45:31Z mean_volume=-25.6 som=True fala_real=True apos_inicio=True
+[watchdog] 21:46:10Z mean_volume=-27.6 som=True fala_real=True apos_inicio=True
+[watchdog] 21:46:48Z mean_volume=-91.0 som=False fala_real=False apos_inicio=True
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
+[watchdog] 21:47:27Z mean_volume=-91.0 som=False fala_real=False apos_inicio=True
+[watchdog] 21:48:05Z mean_volume=-91.0 som=False fala_real=False apos_inicio=True
+[watchdog] 21:48:44Z mean_volume=-91.0 som=False fala_real=False apos_inicio=True
+[watchdog] 21:49:22Z mean_volume=-91.0 som=False fala_real=False apos_inicio=True
+[watchdog] 21:50:00Z mean_volume=-91.0 som=False fala_real=False apos_inicio=True
+gravando via PulseAudio (áudio da aba)
+[capture] confirmacao CONECTADO commitada
+[capture] webcast sem audio — recarregando p/ pegar o player ao vivo
+[capture] webcast sem audio — recarregando p/ pegar o player ao vivo
+[capture] webcast sem audio — recarregando p/ pegar o player ao vivo
+captura encerrada
