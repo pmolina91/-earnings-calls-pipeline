@@ -1,0 +1,105 @@
+{
+ "url": "https://event.choruscall.com/mediaframe/webcast.html?webcastid=Zpb9nyac",
+ "title": "Registration | Pilgrim’s Pride Second Quarter 2026 Earnings Call",
+ "final_url": "https://event.choruscall.com/mediaframe/webcast.html?webcastid=Zpb9nyac",
+ "top_media": [],
+ "iframes": [],
+ "forms": 1,
+ "inputs": [
+  {
+   "type": "hidden",
+   "name": "streamId",
+   "ph": ""
+  },
+  {
+   "type": "hidden",
+   "name": "loginType",
+   "ph": ""
+  },
+  {
+   "type": "hidden",
+   "name": "campaign",
+   "ph": ""
+  },
+  {
+   "type": "hidden",
+   "name": "disabledCacheBusting",
+   "ph": ""
+  },
+  {
+   "type": "hidden",
+   "name": "listenByPhone",
+   "ph": ""
+  },
+  {
+   "type": "hidden",
+   "name": "logging",
+   "ph": ""
+  },
+  {
+   "type": "hidden",
+   "name": "overrideActivation",
+   "ph": ""
+  },
+  {
+   "type": "hidden",
+   "name": "showBetaElements",
+   "ph": ""
+  },
+  {
+   "type": "hidden",
+   "name": "time",
+   "ph": ""
+  },
+  {
+   "type": "text",
+   "name": "firstName",
+   "ph": "Your first name"
+  },
+  {
+   "type": "text",
+   "name": "lastName",
+   "ph": "Your last name"
+  },
+  {
+   "type": "tel",
+   "name": "primaryPhone",
+   "ph": "Your phone number"
+  },
+  {
+   "type": "text",
+   "name": "company",
+   "ph": "Your company"
+  },
+  {
+   "type": "text",
+   "name": "title",
+   "ph": "Your current job title or position"
+  },
+  {
+   "type": "email",
+   "name": "email",
+   "ph": "Your email address"
+  }
+ ],
+ "buttons": [
+  "Close",
+  "Registration",
+  "Convert to local time.",
+  "Submit"
+ ],
+ "body": "Registration\nPilgrim’s Pride Second Quarter 2026 Earnings Call\nThursday, July 30, 2026 at 9:00 AM EDT\nConvert to local time.\n\nTo view this presentation, provide the requested information below.\n\nFirst name*\n\t\nLast name*\n\t\nPhone*\n\t\n\nAcceptable characters:\n\nNumbers, hyphens, parentheses and periods.\nCompany*\n\t\nTitle*\n\t\n\nHints:\n\nYour current job title or position.\nEmail*\n\t\nSubmit\n\nYour data will be processed according to the European GDPR, the Swiss LPD, and the Brazilian LGPD. For more information, please refer to the Chorus Call website.\n\n© 2026 Pilgrim's Pride Corporation\n\n ",
+ "frames": [
+  {
+   "url": "https://event.choruscall.com/mediaframe/webcast.html?webcastid=Zpb9nyac",
+   "media": []
+  }
+ ],
+ "media_requests": [
+  "https://event.choruscall.com/mediaframe/webcast.html?webcastid=Zpb9nyac",
+  "https://event.choruscall.com/mediaframe/css/frame/font-awesome-5.8.2/css/all.min.css",
+  "https://event.choruscall.com/mediaframe/css/frame/font-awesome-5.8.2/webfonts/fa-regular-400.woff2",
+  "https://event.choruscall.com/mediaframe/css/frame/font-awesome-5.8.2/webfonts/fa-solid-900.woff2",
+  "https://78449.choruscall.com/dataconf/resources/dynamicframe/mediaries/Chorus%20Call%20USA/choruscall_mediary.png"
+ ]
+}
