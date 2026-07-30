@@ -168,8 +168,10 @@ with sync_playwright() as pw:
     em_sala = False
     try:
         _body = (page.evaluate('() => document.body.innerText') or '').lower()
-        em_sala = (('registration' not in page.url and 'register' not in page.url) and
-                   ('/wc/' in page.url or any(s in _body for s in ['aguardando','aguarde','wait for','waiting for','has not started','não começou','nao comecou','leave','sair','audio','áudio','webinar em andamento','host to start','organizador'])))
+        _url = page.url.lower()
+        _webcast_pg = ('choruscall' in _url) or ('webcast' in _body) or ('broadcast' in _body) or ('return to this page' in _body)
+        em_sala = (('registration' not in _url and 'register' not in _url) and
+                   ('/wc/' in _url or _webcast_pg or any(s in _body for s in ['aguardando','aguarde','wait for','waiting for','has not started','não começou','nao comecou','leave','sair','audio','áudio','webinar em andamento','host to start','organizador'])))
     except Exception:
         pass
     # CONFIRMACAO DE CONEXAO auto-reportada (pedido do usuario 23/07):
@@ -200,10 +202,35 @@ with sync_playwright() as pw:
     # ffmpeg se ele travar (sem chunk novo). Isso ataca a causa da perda do começo dos calls.
     t_end = time.time() + float(spec.get('max_capture_minutes', 180))*60
     last_n, last_grow = -1, time.time()
+    # WEBCAST (nao-Zoom): a pagina pre-call e' estatica ("return before start") e injeta o player
+    # so' quando fica ao vivo. Se nao recarregarmos, gravamos silencio. Recarrega ate' o player tocar.
+    is_webcast = ('zoom.us' not in (spec.get('join_url','') + spec.get('webcast_url',''))) and bool(spec.get('webcast_url'))
+    last_reload = time.time()
     while time.time() < t_end and not os.path.exists('work/audio/END'):
         time.sleep(20)
         try:
             subprocess.run(['pactl','set-default-sink','cap'], check=False)  # mantém roteamento do áudio
+            if is_webcast:
+                try:
+                    playing = page.evaluate('() => [...document.querySelectorAll("audio,video")].some(m=>!m.paused && !m.ended && m.readyState>2)')
+                except Exception:
+                    playing = False
+                # sem audio tocando + ja' perto/depois do inicio -> RECARREGA (pega o player ao vivo)
+                if not playing and time.time() - last_reload > 45 and \
+                        datetime.now(timezone.utc).timestamp() >= (call.timestamp() - 120):
+                    try:
+                        print('[capture] webcast sem audio — recarregando p/ pegar o player ao vivo')
+                        page.goto(spec['webcast_url'], timeout=60000, wait_until='domcontentloaded')
+                        time.sleep(5)
+                        for s in ['button[aria-label*=play i]','button[title*=play i]','.play','.vjs-big-play-button','button:has-text("Play")','button:has-text("Listen")','button:has-text("Ouvir")']:
+                            try:
+                                el = page.locator(s).first
+                                if el.is_visible(timeout=1000): el.click(); break
+                            except Exception: pass
+                        page.evaluate('() => { for (const m of document.querySelectorAll("audio,video")) { try{m.muted=false;m.play();}catch(e){} } }')
+                    except Exception as e:
+                        print(f'[capture] erro reload webcast: {e}')
+                    last_reload = time.time()
             # re-clica "entrar por áudio do computador" / play e desmuta (main thread = seguro p/ Playwright)
             try:
                 page.locator('button:has-text("udio do computador"), button:has-text("Computer Audio"), button:has-text("Join Audio")').first.click(timeout=1500)
