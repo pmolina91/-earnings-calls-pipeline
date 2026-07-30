@@ -20,6 +20,11 @@ jobs:
           pip install -q playwright
           playwright install --with-deps chromium
       - name: Inspecionar
+        env:
+          REG_NAME: ${{ secrets.REG_NAME }}
+          REG_EMAIL: ${{ secrets.REG_EMAIL }}
+          REG_COMPANY: ${{ secrets.REG_COMPANY }}
+          REG_PHONE: ${{ secrets.REG_PHONE }}
         run: |
           mkdir -p logs
           URL="https://event.choruscall.com/mediaframe/webcast.html?webcastid=Zpb9nyac"

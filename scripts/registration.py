@@ -99,6 +99,7 @@ def try_register(page, name, email, company, phone='', title_category='Buy side'
         (['input[type=email]', 'input[name*=email i]', 'input[id*=email i]', 'input[placeholder*=mail i]'], email, 'email'),
         (['input[name*=phone i]', 'input[id*=phone i]', 'input[type=tel]'], phone, 'phone'),
         (['input[name*=company i]', 'input[name*=empresa i]', 'input[id*=org i]', 'input[placeholder*=empresa i]', 'input[placeholder*=company i]'], company, 'company'),
+        (['input[name=title]', 'input[name*=jobtitle i]', 'input[id*=jobtitle i]', 'input[placeholder*=job title i]', 'input[placeholder*=position i]'], 'Buy-side Analyst', 'jobtitle'),
         (['input[name=name]', 'input[id=name]', 'input[placeholder*=nome i]'], name, 'full_name'),
     ]
     for sels, val, tag in fields:
