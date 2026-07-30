@@ -1,0 +1,64 @@
+name: probe-webcast
+# Sonda de validacao: roda capture.py num run CURTO contra uma pagina de webcast (probe/*.json)
+# para validar ENTRADA + registro + modo de audio + plumbing de captura ANTES do call real.
+# Dispara por push de probe/*.json (nao mexe com jobs/ nem com os workflows agendados).
+# Commita diagnostico em logs/ (capture.log, ls do audio, dB dos chunks). Descartavel.
+on:
+  push:
+    paths: ['probe/*.json']
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Instalar dependencias (sem whisper — sonda nao transcreve)
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg pulseaudio xvfb
+          pip install -q playwright requests
+          playwright install --with-deps chromium
+
+      - name: Rodar capture.py (probe curto)
+        env:
+          REG_NAME: ${{ secrets.REG_NAME }}
+          REG_EMAIL: ${{ secrets.REG_EMAIL }}
+          REG_COMPANY: ${{ secrets.REG_COMPANY }}
+          REG_PHONE: ${{ secrets.REG_PHONE }}
+          REG_TITLE_CATEGORY: Buy side
+        run: |
+          mkdir -p work
+          xvfb-run -a python3 scripts/capture.py probe/PPC_PROBE.json > work/capture.log 2>&1 || true
+
+      - name: Commitar diagnostico (capture.log + dB dos chunks)
+        if: always()
+        run: |
+          mkdir -p logs
+          RID=${{ github.run_id }}
+          cp work/capture.log "logs/PROBE_capturelog_${RID}.txt" || true
+          {
+            echo "== ls work/audio =="; ls -la work/audio 2>&1 || true
+            echo; echo "== dB dos ultimos chunks =="
+            for f in $(ls work/audio/chunk_*.wav 2>/dev/null | tail -3); do
+              echo "-- $f --"
+              ffmpeg -i "$f" -af volumedetect -f null - 2>&1 | grep -E "mean_volume|max_volume" || true
+            done
+          } > "logs/PROBE_diag_${RID}.txt" 2>&1 || true
+          git config user.name earnings-bot; git config user.email bot@users.noreply.github.com
+          git add logs/
+          git commit -q -m "probe diag ${RID}" || echo "nada a commitar"
+          git pull -q --rebase || true
+          git push -q || echo "push falhou"
+
+      - name: Upload do audio da sonda (artifact)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: probe-audio-${{ github.run_id }}
+          path: work/audio/
+          retention-days: 7
