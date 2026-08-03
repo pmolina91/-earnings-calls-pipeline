@@ -1,0 +1,27 @@
+name: find-webcast-url
+on:
+  push:
+    paths: ['find/**']
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  find:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: deps
+        run: |
+          pip install -q playwright
+          playwright install --with-deps chromium
+      - name: descobrir
+        run: |
+          mkdir -p logs
+          python3 scripts/find_webcast_url.py "https://ir.tyson.com" > "logs/FINDURL_${{ github.run_id }}.json" 2>&1 || true
+      - name: commit
+        if: always()
+        run: |
+          git config user.name earnings-bot; git config user.email bot@users.noreply.github.com
+          git add logs/ ; git commit -q -m "find url ${{ github.run_id }}" || echo nada
+          git pull -q --rebase || true ; git push -q || echo pushfail
