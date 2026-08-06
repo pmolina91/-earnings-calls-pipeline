@@ -1,0 +1,13 @@
+{
+ "ticker": "CPLE3",
+ "ticker_short": "CPLE",
+ "company": "Copel",
+ "quarter": "2T26",
+ "call_datetime_utc": "2026-08-06T13:00:00Z",
+ "join_offset_seconds": 0,
+ "webcast_url": "https://mzgroup.zoom.us/webinar/register/WN_yw51bwQGTaqtAccDWDl62Q#/registration",
+ "language": "pt",
+ "notion": false,
+ "max_capture_minutes": 75,
+ "hotwords": "Copel, CPLE3, Daniel Slaviero, Felipe Gutterres, distribuicao, transmissao, geracao, RAB, RAP, PDD, alavancagem, dividendos"
+}
