@@ -1,0 +1,5 @@
+FALHA_CONEXAO 2026-08-07T14:23:57Z
+ticker=ENGI11 evento=2T26
+modo=pulse
+em_sala=False
+url_pagina=https://tenmeetings.com.br/ten-events/#/webinar?evento=ConferenciadeResultados2T26-ENERGISA_716
