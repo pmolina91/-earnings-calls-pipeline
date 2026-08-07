@@ -1,0 +1,13 @@
+{
+ "ticker": "ENGI11",
+ "ticker_short": "ENGI",
+ "company": "Energisa",
+ "quarter": "2T26",
+ "call_datetime_utc": "2026-08-07T14:30:00Z",
+ "join_offset_seconds": -600,
+ "webcast_url": "https://tenmeetings.com.br/ten-events/#/webinar?evento=ConferenciadeResultados2T26-ENERGISA_716",
+ "language": "pt",
+ "notion": false,
+ "max_capture_minutes": 90,
+ "hotwords": "Energisa, ENGI11, distribuicao, transmissao, geracao, RAB, RAP, WACC, revisao tarifaria, VNR, perdas, inadimplencia, PDD, EBITDA, alavancagem, dividendos, CapEx"
+}
